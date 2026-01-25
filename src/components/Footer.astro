@@ -1,0 +1,96 @@
+---
+import { comunidades } from '../data/comunidades';
+
+const currentYear = new Date().getFullYear();
+
+const links = {
+  servicios: [
+    { label: 'Identificación', href: '#servicios' },
+    { label: 'Tramitación', href: '#servicios' },
+    { label: 'Seguimiento', href: '#servicios' },
+    { label: 'Justificación', href: '#servicios' },
+  ],
+  legal: [
+    { label: 'Aviso legal', href: '/aviso-legal' },
+    { label: 'Privacidad', href: '/privacidad' },
+    { label: 'Cookies', href: '/cookies' },
+  ],
+};
+
+const comunidadesDestacadas = comunidades.slice(0, 6);
+---
+
+<footer class="bg-slate-900">
+  <div class="container-tight py-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-4 lg:col-span-2">
+        <a href="/" class="inline-block mb-4">
+          <img src="/logo.svg" alt="Graphenum" class="h-7" />
+        </a>
+        <p class="text-sm text-slate-500 max-w-xs mb-4">
+          Gestoría especializada en tramitación de subvenciones y ayudas públicas para empresas y autónomos.
+        </p>
+        <a href="mailto:info@graphenum.es" class="text-sm text-slate-400 hover:text-white">
+          info@graphenum.es
+        </a>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <p class="text-sm font-medium text-white mb-4">Servicios</p>
+        <ul class="space-y-2">
+          {links.servicios.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-slate-500 hover:text-slate-300">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Comunidades -->
+      <div>
+        <p class="text-sm font-medium text-white mb-4">Comunidades</p>
+        <ul class="space-y-2">
+          {comunidadesDestacadas.map((c) => (
+            <li>
+              <a href={`/subvenciones/${c.slug}/`} class="text-sm text-slate-500 hover:text-slate-300">
+                {c.nombre}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a href="#comunidades" class="text-sm text-slate-400 hover:text-white">
+              Ver todas →
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <p class="text-sm font-medium text-white mb-4">Legal</p>
+        <ul class="space-y-2">
+          {links.legal.map((link) => (
+            <li>
+              <a href={link.href} class="text-sm text-slate-500 hover:text-slate-300">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-slate-800">
+    <div class="container-tight py-4">
+      <p class="text-xs text-slate-600">
+        © {currentYear} Graphenum. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Servicios from '../components/Servicios.astro';
+import Comunidades from '../components/Comunidades.astro';
+import ComoFunciona from '../components/ComoFunciona.astro';
+import Estadisticas from '../components/Estadisticas.astro';
+import Contacto from '../components/Contacto.astro';
+import Footer from '../components/Footer.astro';
+
+const seoTitle = 'Subvenciones España 2025 | Gestoría de Ayudas Públicas - Graphenum';
+const seoDescription = 'Expertos en tramitación de subvenciones y ayudas públicas para empresas y autónomos en toda España. Consulta gratuita. Solo cobramos si la consigues.';
+const seoKeywords = 'subvenciones españa, ayudas empresas, subvenciones autonomos, gestoría subvenciones, ayudas publicas, tramitación subvenciones';
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  keywords={seoKeywords}
+>
+  <Header />
+  <main>
+    <Hero />
+    <Servicios />
+    <ComoFunciona />
+    <Comunidades />
+    <Estadisticas />
+    <Contacto />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,72 @@
+---
+const pasos = [
+  {
+    numero: '1',
+    titulo: 'Contacto inicial',
+    descripcion: 'Rellena el formulario o agenda una llamada. Analizamos tu empresa y sector.',
+  },
+  {
+    numero: '2',
+    titulo: 'Análisis de opciones',
+    descripcion: 'Identificamos las subvenciones disponibles y evaluamos la viabilidad de cada una.',
+  },
+  {
+    numero: '3',
+    titulo: 'Preparación y presentación',
+    descripcion: 'Elaboramos toda la documentación y presentamos la solicitud en plazo.',
+  },
+  {
+    numero: '4',
+    titulo: 'Seguimiento y cobro',
+    descripcion: 'Monitorizamos el expediente y gestionamos la justificación para el cobro.',
+  },
+];
+---
+
+<section id="proceso" class="section bg-slate-50">
+  <div class="container-tight">
+    <!-- Header -->
+    <div class="max-w-2xl mb-12">
+      <p class="text-sm font-medium text-accent uppercase tracking-wide mb-3">
+        Proceso
+      </p>
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+        Cómo trabajamos
+      </h2>
+      <p class="text-slate-600">
+        Un proceso claro y transparente, de principio a fin.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      {pasos.map((paso, index) => (
+        <div class="relative">
+          <div class="bg-white border border-slate-200 rounded p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-8 h-8 bg-slate-900 text-white rounded flex items-center justify-center text-sm font-semibold">
+                {paso.numero}
+              </span>
+              {index < pasos.length - 1 && (
+                <div class="hidden lg:block absolute top-10 left-full w-6 border-t border-slate-300 -translate-x-3"></div>
+              )}
+            </div>
+            <h3 class="text-base font-semibold text-slate-900 mb-2">
+              {paso.titulo}
+            </h3>
+            <p class="text-sm text-slate-600">
+              {paso.descripcion}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="#contacto" class="btn-primary btn-lg">
+        Comenzar ahora
+      </a>
+    </div>
+  </div>
+</section>

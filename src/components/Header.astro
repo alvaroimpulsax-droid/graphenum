@@ -1,0 +1,139 @@
+---
+const navLinks = [
+  { href: '#servicios', label: 'Servicios' },
+  { href: '#comunidades', label: 'Comunidades' },
+  { href: '#proceso', label: 'Proceso' },
+  { href: '#contacto', label: 'Contacto' },
+];
+---
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-slate-900 transition-all duration-300">
+  <nav class="container-tight">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href="/" class="relative z-10">
+        <img src="/logo.svg" alt="Graphenum" class="h-7" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-1">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="px-4 py-2 text-sm text-slate-400 hover:text-white transition-colors"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="#contacto" class="btn-accent">
+          Consulta gratuita
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden relative z-10 p-2 -mr-2"
+        aria-label="Abrir menú"
+      >
+        <div class="w-6 h-5 flex flex-col justify-between">
+          <span class="menu-line w-full h-0.5 bg-white transition-all duration-300 origin-center"></span>
+          <span class="menu-line w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="menu-line w-full h-0.5 bg-white transition-all duration-300 origin-center"></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-40 translate-x-full transition-transform duration-500 ease-out">
+    <div class="flex flex-col justify-center items-center h-full gap-8">
+      {navLinks.map((link, index) => (
+        <a
+          href={link.href}
+          class="mobile-link text-3xl font-semibold text-slate-800 hover:text-primary-900 transition-colors opacity-0"
+          style={`transition-delay: ${index * 50}ms`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="#contacto"
+        class="mobile-link btn-accent btn-lg mt-4 opacity-0"
+        style="transition-delay: 200ms"
+      >
+        Consulta gratuita
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  #header.scrolled {
+    @apply bg-slate-900/95 backdrop-blur-lg border-b border-slate-800;
+  }
+
+  #header.menu-open .menu-line:first-child {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  #header.menu-open .menu-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #header.menu-open .menu-line:last-child {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  #mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  #mobile-menu.open .mobile-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-link {
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+</style>
+
+<script>
+  const header = document.getElementById('header');
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Scroll effect
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();
+
+  // Mobile menu toggle
+  menuBtn?.addEventListener('click', () => {
+    header?.classList.toggle('menu-open');
+    mobileMenu?.classList.toggle('open');
+    document.body.style.overflow = mobileMenu?.classList.contains('open') ? 'hidden' : '';
+  });
+
+  // Close menu on link click
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      header?.classList.remove('menu-open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
