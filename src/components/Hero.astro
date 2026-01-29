@@ -1,11 +1,12 @@
 ---
-// Corporate Hero section
+import { Image } from 'astro:assets';
+import heroBg from '../assets/hero-bg.webp';
 ---
 
 <section class="relative min-h-screen flex items-center overflow-hidden">
   <!-- Background image -->
   <div class="absolute inset-0">
-    <img src="/hero-bg.jpg" alt="" class="w-full h-full object-cover" />
+    <Image src={heroBg} alt="" class="w-full h-full object-cover" loading="eager" />
     <div class="absolute inset-0 bg-slate-900/85"></div>
   </div>
 
