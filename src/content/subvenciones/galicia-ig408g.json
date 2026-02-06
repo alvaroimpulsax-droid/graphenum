@@ -1,0 +1,15 @@
+{
+  "id": "galicia-startup-ig408g",
+  "codigo": "IG408G",
+  "nombre": "Start up Galicia",
+  "comunidad": "galicia",
+  "categoria": "emprendedores",
+  "organismo": "IGAPE - Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "28 de enero de 2026",
+  "plazoFin": "30 de septiembre de 2026",
+  "plazoTexto": "Desde el 28 de enero al 30 de septiembre de 2026",
+  "objeto": "Financiar gastos operativos de startups y empresas emergentes gallegas",
+  "beneficiarios": "Startups y empresas emergentes con sede en Galicia.",
+  "imagen": "/images/subvenciones/innovacion-igape.png"
+}

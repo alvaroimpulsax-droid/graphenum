@@ -1,0 +1,15 @@
+{
+  "id": "galicia-suma-talento-tr301p",
+  "codigo": "TR301P",
+  "nombre": "Galicia Suma Talento: Plan formación empresas 2026",
+  "comunidad": "galicia",
+  "categoria": "contratacion",
+  "organismo": "Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "14 de enero de 2026",
+  "plazoFin": "1 de diciembre de 2026",
+  "plazoTexto": "Desde el 14 de enero hasta el 1 de diciembre de 2026",
+  "objeto": "Financiar planes de formación empresarial con compromiso de contratación posterior",
+  "beneficiarios": "Empresas con centro de trabajo en Galicia que se comprometan a contratar a las personas formadas.",
+  "imagen": "/images/subvenciones/galicia-emprega.png"
+}

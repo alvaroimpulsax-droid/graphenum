@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Contacto from '../components/Contacto.astro';
+import { comunidades } from '../data/comunidades';
+
+const categorias = [
+  { id: 'contratacion', nombre: 'Contratación', descripcion: 'Ayudas para la creación de empleo y contratación de personal' },
+  { id: 'digitalizacion', nombre: 'Digitalización', descripcion: 'Subvenciones para transformación digital y tecnología' },
+  { id: 'emprendedores', nombre: 'Emprendedores', descripcion: 'Apoyo a nuevos autónomos y startups' },
+  { id: 'innovacion', nombre: 'Innovación', descripcion: 'Proyectos de I+D+i y desarrollo tecnológico' },
+  { id: 'internacionalizacion', nombre: 'Internacionalización', descripcion: 'Expansión a mercados internacionales' },
+  { id: 'inversion', nombre: 'Inversión', descripcion: 'Incentivos para inversión productiva' },
+];
+---
+
+<Layout
+  title="Subvenciones para Empresas 2025 | Todas las Ayudas Disponibles"
+  description="Encuentra todas las subvenciones disponibles para tu empresa. Ayudas por comunidad autónoma y por categoría. Consulta gratuita."
+>
+  <Header />
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section class="bg-slate-900 py-16 md:py-24">
+      <div class="container-tight">
+        <div class="max-w-3xl">
+          <p class="text-sm font-medium text-accent uppercase tracking-wide mb-4">
+            Catálogo de ayudas
+          </p>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Subvenciones para empresas y autónomos
+          </h1>
+          <p class="text-lg text-slate-400 leading-relaxed">
+            Explora todas las ayudas disponibles por comunidad autónoma o por categoría. Te ayudamos a encontrar las subvenciones que mejor se adaptan a tu negocio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por Comunidad -->
+    <section class="py-16 bg-white">
+      <div class="container-tight">
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-900 mb-3">
+            Por Comunidad Autónoma
+          </h2>
+          <p class="text-slate-600">
+            Cada comunidad tiene sus propias convocatorias y requisitos específicos.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {comunidades.map((comunidad) => (
+            <a
+              href={`/subvenciones/${comunidad.slug}/`}
+              class="group border border-slate-200 rounded p-4 hover:border-slate-300 hover:bg-slate-50 transition-colors"
+            >
+              <img
+                src={`/flags/${comunidad.slug}.svg`}
+                alt={`Bandera de ${comunidad.nombre}`}
+                class="w-8 h-5 rounded-sm object-cover mb-2"
+                loading="lazy"
+              />
+              <p class="text-sm font-medium text-slate-900 group-hover:text-accent">
+                {comunidad.nombre}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Por Categoría -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200">
+      <div class="container-tight">
+        <div class="mb-10">
+          <h2 class="text-2xl font-bold text-slate-900 mb-3">
+            Por Categoría
+          </h2>
+          <p class="text-slate-600">
+            Encuentra ayudas según el tipo de proyecto o necesidad de tu empresa.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {categorias.map((cat) => (
+            <div class="bg-white border border-slate-200 rounded p-6 hover:border-slate-300 transition-colors">
+              <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                {cat.nombre}
+              </h3>
+              <p class="text-sm text-slate-600 mb-4">
+                {cat.descripcion}
+              </p>
+              <a href="#contacto" class="text-sm font-medium text-accent hover:underline">
+                Consultar ayudas →
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-slate-900">
+      <div class="container-tight text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
+          ¿No encuentras lo que buscas?
+        </h2>
+        <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+          Hay cientos de convocatorias activas. Cuéntanos tu proyecto y te informamos de todas las opciones disponibles.
+        </p>
+        <a href="#contacto" class="btn-accent btn-lg">
+          Consulta gratuita
+        </a>
+      </div>
+    </section>
+
+    <Contacto />
+  </main>
+
+  <Footer />
+</Layout>

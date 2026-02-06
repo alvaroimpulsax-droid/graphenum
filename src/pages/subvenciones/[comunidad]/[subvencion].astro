@@ -1,0 +1,277 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import Contacto from '../../../components/Contacto.astro';
+import { comunidades } from '../../../data/comunidades';
+import { subvenciones, getSubvencionById } from '../../../data/subvenciones';
+
+export function getStaticPaths() {
+  return subvenciones.map((sub) => {
+    const comunidad = comunidades.find(c => c.slug === sub.comunidad);
+    return {
+      params: {
+        comunidad: sub.comunidad,
+        subvencion: sub.id
+      },
+      props: {
+        subvencion: sub,
+        comunidad
+      },
+    };
+  });
+}
+
+const { subvencion, comunidad } = Astro.props;
+
+const seoTitle = `${subvencion.nombre} | Subvenciones ${comunidad?.nombre}`;
+const seoDescription = `${subvencion.objeto}. Plazo: ${subvencion.plazoTexto}. Te ayudamos con la tramitación de esta ayuda.`;
+
+const estadoConfig = {
+  abierta: { label: 'Convocatoria abierta', color: 'bg-green-100 text-green-800 border-green-200' },
+  proxima: { label: 'Próxima convocatoria', color: 'bg-amber-100 text-amber-800 border-amber-200' },
+  nueva: { label: 'Nueva ayuda', color: 'bg-accent/10 text-accent border-accent/20' },
+  cerrada: { label: 'Convocatoria cerrada', color: 'bg-slate-100 text-slate-600 border-slate-200' },
+};
+
+const estado = estadoConfig[subvencion.estado];
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <Header />
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section class="bg-slate-900 py-12 md:py-16">
+      <div class="container-tight">
+        <!-- Breadcrumb -->
+        <nav class="mb-6">
+          <ol class="flex items-center gap-2 text-sm">
+            <li>
+              <a href="/" class="text-slate-400 hover:text-white">Inicio</a>
+            </li>
+            <li class="text-slate-600">/</li>
+            <li>
+              <a href={`/subvenciones/${comunidad?.slug}/`} class="text-slate-400 hover:text-white">{comunidad?.nombre}</a>
+            </li>
+            <li class="text-slate-600">/</li>
+            <li class="text-slate-300">{subvencion.codigo}</li>
+          </ol>
+        </nav>
+
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="text-sm font-mono text-slate-400 bg-slate-800 px-3 py-1 rounded">{subvencion.codigo}</span>
+          <span class={`text-sm font-medium px-3 py-1 rounded-full border ${estado.color}`}>
+            {estado.label}
+          </span>
+        </div>
+
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">
+          {subvencion.nombre}
+        </h1>
+
+        <p class="text-lg text-slate-300 mb-6">
+          {subvencion.organismo}
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#contacto" class="btn-accent btn-lg">
+            Solicitar esta ayuda
+          </a>
+          <a href="#detalles" class="btn-outline-light btn-lg">
+            Ver detalles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="bg-slate-50 border-b border-slate-200 py-6">
+      <div class="container-tight">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Plazo</p>
+            <p class="text-sm font-medium text-slate-900">{subvencion.plazoTexto}</p>
+          </div>
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Tipo de ayuda</p>
+            <p class="text-sm font-medium text-slate-900">{subvencion.tipoAyuda}</p>
+          </div>
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Comunidad</p>
+            <p class="text-sm font-medium text-slate-900">{comunidad?.nombre}</p>
+          </div>
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Organismo</p>
+            <p class="text-sm font-medium text-slate-900">{subvencion.organismo}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="detalles" class="py-12 md:py-16">
+      <div class="container-tight">
+        <div class="space-y-10">
+            <!-- Objeto -->
+            <div>
+              <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Objeto de la ayuda
+              </h2>
+              <p class="text-slate-700 leading-relaxed">{subvencion.objeto}</p>
+            </div>
+
+            <!-- Beneficiarios -->
+            <div>
+              <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                Beneficiarios
+              </h2>
+              <p class="text-slate-700 leading-relaxed mb-4">{subvencion.beneficiarios}</p>
+
+              {subvencion.beneficiariosDetalle && subvencion.beneficiariosDetalle.length > 0 && (
+                <div class="space-y-3">
+                  {subvencion.beneficiariosDetalle.map((detalle, index) => (
+                    <div class="bg-slate-50 border border-slate-200 rounded p-4">
+                      <p class="text-sm text-slate-700">{detalle}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <!-- Actuaciones Subvencionables -->
+            {subvencion.actuacionesSubvencionables && subvencion.actuacionesSubvencionables.length > 0 && (
+              <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                  </svg>
+                  Actuaciones subvencionables
+                </h2>
+
+                <div class="space-y-6">
+                  {subvencion.actuacionesSubvencionables.map((linea) => (
+                    <div class="border border-slate-200 rounded-lg overflow-hidden">
+                      <div class="bg-slate-100 px-5 py-3 border-b border-slate-200">
+                        <h3 class="font-semibold text-slate-900">{linea.linea}</h3>
+                        {linea.porcentaje && (
+                          <p class="text-sm text-accent font-medium">Subvención: {linea.porcentaje} del importe</p>
+                        )}
+                      </div>
+                      <div class="divide-y divide-slate-100">
+                        {linea.items.map((item) => (
+                          <div class="flex justify-between items-start px-5 py-3 hover:bg-slate-50">
+                            <span class="text-sm text-slate-700 pr-4">{item.nombre}</span>
+                            {item.importeMax && (
+                              <span class="text-sm font-medium text-slate-900 whitespace-nowrap">
+                                hasta {item.importeMax}
+                              </span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <!-- Plazo de ejecución -->
+            {subvencion.plazoEjecucion && (
+              <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  Plazo de ejecución
+                </h2>
+                <p class="text-slate-700">{subvencion.plazoEjecucion}</p>
+              </div>
+            )}
+
+            <!-- Requisitos -->
+            {subvencion.requisitos && subvencion.requisitos.length > 0 && (
+              <div>
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Requisitos técnicos
+                </h2>
+                <div class="space-y-3">
+                  {subvencion.requisitos.map((req) => (
+                    <div class="flex items-start gap-3 bg-slate-50 border border-slate-200 rounded p-4">
+                      <svg class="w-4 h-4 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <p class="text-sm text-slate-700">{req}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+          <!-- CTA Box -->
+          <div class="bg-slate-900 rounded-lg p-8 md:p-10">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">¿Te interesa esta ayuda?</h3>
+                <p class="text-slate-400">
+                  Te ayudamos con toda la tramitación. Analizamos tu caso gratis y solo pagas si la consigues.
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4 md:justify-end">
+                <a href="#contacto" class="btn-accent btn-lg justify-center">
+                  Solicitar información
+                </a>
+                <a href={`/subvenciones/${comunidad?.slug}/`} class="btn-outline-light btn-lg justify-center">
+                  Ver más ayudas
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-700">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm text-slate-300">Análisis gratuito</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm text-slate-300">Documentación completa</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm text-slate-300">Seguimiento total</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-sm text-slate-300">Solo pagas si la consigues</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <Contacto />
+  </main>
+
+  <Footer />
+</Layout>

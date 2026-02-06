@@ -1,0 +1,15 @@
+{
+  "id": "galicia-ticket-innova-ig408k",
+  "codigo": "IG408K",
+  "nombre": "Ticket Innova IGAPE",
+  "comunidad": "galicia",
+  "categoria": "innovacion",
+  "organismo": "IGAPE - Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "26 de enero de 2026",
+  "plazoFin": "30 de septiembre de 2026",
+  "plazoTexto": "Desde el 26 de enero al 30 de septiembre de 2026",
+  "objeto": "Financiar servicios de innovación tecnológica y asesoramiento especializado",
+  "beneficiarios": "Pymes con sede social o centro de trabajo en Galicia.",
+  "imagen": "/images/subvenciones/innovacion-igape.png"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "galicia-fotovoltaica-in421s",
+  "codigo": "IN421S",
+  "nombre": "Energía Fotovoltaica",
+  "comunidad": "galicia",
+  "categoria": "inversion",
+  "organismo": "Xunta de Galicia - INEGA",
+  "estado": "abierta",
+  "plazoInicio": "28 de enero de 2026",
+  "plazoFin": "2 de marzo de 2026",
+  "plazoTexto": "Desde el 28 de enero al 2 de marzo de 2026",
+  "objeto": "Instalación de paneles solares fotovoltaicos y sistemas de almacenamiento",
+  "beneficiarios": "Empresas, autónomos y entidades con sede en Galicia.",
+  "imagen": "/images/subvenciones/energia.png",
+  "destacada": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "galicia-autonomos-contratacion-tr349f",
+  "codigo": "TR349F",
+  "nombre": "Programa de ayudas a personas trabajadoras autónomas por contratación indefinida",
+  "comunidad": "galicia",
+  "categoria": "contratacion",
+  "organismo": "Xunta de Galicia - Consellería de Emprego",
+  "estado": "abierta",
+  "plazoInicio": "11 de febrero de 2026",
+  "plazoFin": "30 de septiembre de 2026",
+  "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
+  "objeto": "Incentivar la contratación indefinida del 1º, 2º y 3º trabajador por parte de personas trabajadoras autónomas",
+  "beneficiarios": "Personas trabajadoras autónomas dadas de alta en el RETA con domicilio fiscal en Galicia que realicen contrataciones indefinidas.",
+  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "destacada": true
+}

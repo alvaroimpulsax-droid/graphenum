@@ -1,0 +1,118 @@
+{
+  "id": "galicia-transformacion-digital-comercio-co300c",
+  "codigo": "CO300C",
+  "nombre": "Subvenciones para la transformación digital, innovación y modernización del sector comercial y artesanal",
+  "comunidad": "galicia",
+  "categoria": "digitalizacion",
+  "organismo": "Xunta de Galicia - Consellería de Economía e Industria",
+  "estado": "abierta",
+  "plazoInicio": "16 de enero de 2026",
+  "plazoFin": "16 de febrero de 2026",
+  "plazoTexto": "Desde el 16 de enero al 16 de febrero de 2026",
+  "tipoAyuda": "En concurrencia no competitiva. Régimen de minimis.",
+  "objeto": "Apoyo para el impulso de la innovación, digitalización y sostenibilidad del comercio local y artesanal",
+  "beneficiarios": "Comerciantes minoristas con tienda física y talleres artesanos inscritos en el Registro de Artesanía de Galicia.",
+  "beneficiariosDetalle": [
+    "COMERCIANTES MINORISTAS: Que desarrollen su actividad comercial en Galicia, sean PYME con 10 o menos empleados, y tengan superficie de venta igual o inferior a 300 m².",
+    "TALLERES ARTESANOS: Inscritos en el Registro General de Artesanía de Galicia."
+  ],
+  "actuacionesSubvencionables": [
+    {
+      "linea": "Línea de digitalización comercial e innovación",
+      "porcentaje": "80%",
+      "items": [
+        {
+          "nombre": "Página web con o sin venta en línea",
+          "importeMax": "1.200 €"
+        },
+        {
+          "nombre": "Sistema TPV, impresora, lector código barras, báscula",
+          "importeMax": "1.200 €"
+        },
+        {
+          "nombre": "Software de gestión comercial",
+          "importeMax": "5.000 €"
+        },
+        {
+          "nombre": "Posicionamiento digital (SEO, SEM, ADS)",
+          "importeMax": "2.500 €"
+        },
+        {
+          "nombre": "Gestor de redes sociales",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Etiquetado electrónico",
+          "importeMax": "2.500 €"
+        },
+        {
+          "nombre": "Sistemas click and collect",
+          "importeMax": "2.500 €"
+        },
+        {
+          "nombre": "Soluciones de ciberseguridad",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Chatbots y asistentes virtuales",
+          "importeMax": "1.000 €"
+        },
+        {
+          "nombre": "Apps móviles y realidad virtual/aumentada",
+          "importeMax": "2.500 €"
+        },
+        {
+          "nombre": "Pantallas y escaparates virtuales",
+          "importeMax": "5.000 €"
+        }
+      ]
+    },
+    {
+      "linea": "Línea de modernización comercial",
+      "porcentaje": "80%",
+      "items": [
+        {
+          "nombre": "Obras de reforma y mobiliario",
+          "importeMax": "5.250 €"
+        },
+        {
+          "nombre": "Proyecto de interiorismo",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Puertas automáticas",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Iluminación eficiente",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Climatización eficiente",
+          "importeMax": "4.000 €"
+        },
+        {
+          "nombre": "Mejora de fachada y rótulos",
+          "importeMax": "2.000 €"
+        },
+        {
+          "nombre": "Equipamiento comercial",
+          "importeMax": "5.000 €"
+        }
+      ]
+    },
+    {
+      "linea": "Línea de sostenibilidad ambiental",
+      "porcentaje": "80%",
+      "items": [
+        {
+          "nombre": "Embalajes sostenibles (cartón reciclado, bolsas de papel/tela)",
+          "importeMax": "2.500 €"
+        }
+      ]
+    }
+  ],
+  "plazoEjecucion": "Desde el 25 de octubre de 2025 hasta el 13 de noviembre de 2026",
+  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "destacada": true
+}

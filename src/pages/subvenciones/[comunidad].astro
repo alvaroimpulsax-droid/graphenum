@@ -4,6 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import Contacto from '../../components/Contacto.astro';
 import { comunidades, type Comunidad } from '../../data/comunidades';
+import { getSubvencionesByComunidadYCategoria, type Subvencion } from '../../data/subvenciones';
 
 export function getStaticPaths() {
   return comunidades.map((comunidad) => ({
@@ -18,8 +19,8 @@ interface Props {
 
 const { comunidad } = Astro.props;
 
-const seoTitle = `Subvenciones ${comunidad.nombre} 2025 | Ayudas y Convocatorias Actualizadas`;
-const seoDescription = `Descubre todas las subvenciones disponibles en ${comunidad.nombre} para 2025. ✓ Requisitos ✓ Plazos ✓ Importes. Te ayudamos con la tramitación.`;
+const seoTitle = `Subvenciones ${comunidad.nombre} 2026 | Ayudas y Convocatorias Actualizadas`;
+const seoDescription = `Descubre todas las subvenciones disponibles en ${comunidad.nombre} para 2026. ✓ Requisitos ✓ Plazos ✓ Importes. Te ayudamos con la tramitación.`;
 const seoKeywords = `subvenciones ${comunidad.nombre.toLowerCase()}, ayudas ${comunidad.nombre.toLowerCase()}, subvenciones empresas ${comunidad.nombre.toLowerCase()}, ayudas autonomos ${comunidad.nombre.toLowerCase()}`;
 
 // Categories
@@ -32,111 +33,9 @@ const categorias = [
   { id: 'inversion', nombre: 'Inversión' },
 ];
 
-// Subvenciones organizadas por categoría
-const subvencionesPorCategoria = {
-  contratacion: [
-    {
-      codigo: 'TR342C',
-      nombre: `Plan ${comunidad.nombre} Emprega 2026 - Ayuda a la Contratación`,
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria prevista a inicios de 2026',
-      estado: 'nueva',
-    },
-    {
-      codigo: 'TR349F',
-      nombre: 'Programa de ayudas a personas trabajadoras autónomas por la contratación indefinida',
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria prevista a inicios de 2026',
-      estado: 'nueva',
-    },
-    {
-      codigo: 'TR301P',
-      nombre: `${comunidad.nombre} Suma Talento: Plan formación empresas 2026`,
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Desde el 14 de enero hasta el 1 de diciembre de 2026',
-      estado: 'nueva',
-    },
-  ],
-  digitalizacion: [
-    {
-      codigo: 'DIG2026',
-      nombre: 'Kit Digital - Ayudas a la Digitalización de Pymes',
-      organismo: 'Red.es - Gobierno de España',
-      plazo: 'Convocatoria abierta hasta agotar fondos',
-      estado: 'abierta',
-    },
-    {
-      codigo: 'TRANS01',
-      nombre: 'Programa de Transformación Digital Empresarial',
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria prevista primer trimestre 2026',
-      estado: 'proxima',
-    },
-  ],
-  emprendedores: [
-    {
-      codigo: 'EMP2026',
-      nombre: 'Ayudas al Emprendimiento y Creación de Empresas',
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria permanente',
-      estado: 'abierta',
-    },
-    {
-      codigo: 'AUTONOM',
-      nombre: 'Cuota Cero para Nuevos Autónomos',
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Vigente durante 2026',
-      estado: 'abierta',
-    },
-  ],
-  innovacion: [
-    {
-      codigo: 'INNO2026',
-      nombre: 'Proyectos de I+D+i Empresarial',
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria prevista a mediados de 2026',
-      estado: 'proxima',
-    },
-    {
-      codigo: 'CDTI01',
-      nombre: 'Proyectos de Desarrollo Experimental',
-      organismo: 'CDTI - Gobierno de España',
-      plazo: 'Convocatoria permanente',
-      estado: 'abierta',
-    },
-  ],
-  internacionalizacion: [
-    {
-      codigo: 'ICEX01',
-      nombre: 'ICEX Next - Programa de Internacionalización',
-      organismo: 'ICEX - Gobierno de España',
-      plazo: 'Convocatorias periódicas',
-      estado: 'abierta',
-    },
-    {
-      codigo: 'EXPORT',
-      nombre: `Ayudas a la Exportación ${comunidad.nombre}`,
-      organismo: `Gobierno de ${comunidad.nombre}`,
-      plazo: 'Convocatoria prevista segundo trimestre 2026',
-      estado: 'proxima',
-    },
-  ],
-  inversion: [
-    {
-      codigo: 'INV2026',
-      nombre: 'Incentivos Regionales a la Inversión',
-      organismo: 'Ministerio de Industria',
-      plazo: 'Convocatoria permanente',
-      estado: 'abierta',
-    },
-    {
-      codigo: 'REIND',
-      nombre: 'Reindustrialización y Fortalecimiento Industrial',
-      organismo: 'Ministerio de Industria',
-      plazo: 'Convocatoria anual - 2026',
-      estado: 'proxima',
-    },
-  ],
+// Get subsidies from the data file for this community
+const getSubsForCategory = (catId: string): Subvencion[] => {
+  return getSubvencionesByComunidadYCategoria(comunidad.slug, catId);
 };
 ---
 
@@ -208,27 +107,60 @@ const subvencionesPorCategoria = {
             </h2>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {subvencionesPorCategoria[categoria.id as keyof typeof subvencionesPorCategoria]?.map((sub) => (
+              {getSubsForCategory(categoria.id).map((sub) => (
                 <a
-                  href="#contacto"
-                  class="block p-5 border border-slate-200 rounded hover:border-slate-300 hover:shadow-sm transition-all group"
+                  href={`/subvenciones/${comunidad.slug}/${sub.id}/`}
+                  class="relative border border-slate-200 rounded-lg overflow-hidden hover:border-accent/50 hover:shadow-md transition-all group bg-white block"
                 >
-                  <div class="flex items-center justify-between gap-2 mb-3">
-                    <span class="text-xs font-mono text-slate-400">{sub.codigo}</span>
-                    {sub.estado === 'abierta' && (
-                      <span class="text-xs text-green-600">Abierta</span>
+                  {/* Diagonal Favorite Badge */}
+                  {sub.destacada && (
+                    <div class="absolute top-0 right-0 z-10 overflow-hidden w-24 h-24 pointer-events-none">
+                      <div class="absolute top-3 -right-8 w-32 bg-accent text-white text-[10px] font-bold text-center py-1 rotate-45 shadow-sm uppercase tracking-wide">
+                        Recomendada
+                      </div>
+                    </div>
+                  )}
+
+                  <div class="p-5">
+                    {/* Small Logo Image */}
+                    {sub.imagen && (
+                      <div class="w-24 h-14 mb-4 bg-slate-50 rounded overflow-hidden flex items-center justify-center p-2">
+                        <img
+                          src={sub.imagen}
+                          alt=""
+                          class="w-full h-full object-contain"
+                          loading="lazy"
+                        />
+                      </div>
                     )}
-                    {sub.estado === 'nueva' && (
-                      <span class="text-xs text-accent">Nueva</span>
-                    )}
-                    {sub.estado === 'proxima' && (
-                      <span class="text-xs text-slate-400">Próxima</span>
-                    )}
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                      <span class="text-xs font-mono text-slate-400 bg-slate-100 px-2 py-0.5 rounded">{sub.codigo}</span>
+                      {sub.estado === 'abierta' && (
+                        <span class="text-xs font-medium text-green-700 bg-green-100 px-2 py-0.5 rounded-full">● Abierta</span>
+                      )}
+                      {sub.estado === 'nueva' && (
+                        <span class="text-xs font-medium text-accent bg-accent/10 px-2 py-0.5 rounded-full">Nueva</span>
+                      )}
+                      {sub.estado === 'proxima' && (
+                        <span class="text-xs font-medium text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Próxima</span>
+                      )}
+                    </div>
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 leading-snug group-hover:text-accent transition-colors">
+                      {sub.nombre}
+                    </h3>
+                    <p class="text-xs text-slate-500 mb-4">
+                      <svg class="w-3 h-3 inline-block mr-1 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      {sub.plazoTexto}
+                    </p>
+                    <span class="inline-flex items-center gap-1 text-xs font-medium text-accent group-hover:text-accent/80 transition-colors">
+                      Ver detalles
+                      <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </span>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-2 leading-snug group-hover:text-accent">
-                    {sub.nombre}
-                  </h3>
-                  <p class="text-xs text-slate-500">{sub.plazo}</p>
                 </a>
               ))}
             </div>

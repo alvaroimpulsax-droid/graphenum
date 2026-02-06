@@ -1,9 +1,8 @@
 ---
 const navLinks = [
-  { href: '#servicios', label: 'Servicios' },
-  { href: '#comunidades', label: 'Comunidades' },
-  { href: '#proceso', label: 'Proceso' },
-  { href: '#contacto', label: 'Contacto' },
+  { href: '/', label: 'Inicio' },
+  { href: '/subvenciones', label: 'Subvenciones' },
+  { href: '/nosotros', label: 'Sobre Nosotros' },
 ];
 ---
 
@@ -29,7 +28,7 @@ const navLinks = [
 
       <!-- CTA -->
       <div class="hidden md:block">
-        <a href="#contacto" class="btn-accent">
+        <a href="/contacto" class="btn-accent">
           Consulta gratuita
         </a>
       </div>
@@ -62,7 +61,7 @@ const navLinks = [
         </a>
       ))}
       <a
-        href="#contacto"
+        href="/contacto"
         class="mobile-link btn-accent btn-lg mt-4 opacity-0"
         style="transition-delay: 200ms"
       >

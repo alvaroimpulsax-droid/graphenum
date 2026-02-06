@@ -1,0 +1,15 @@
+{
+  "id": "galicia-promocion-autonomo-tr341d",
+  "codigo": "TR341D",
+  "nombre": "Promoción del empleo autónomo",
+  "comunidad": "galicia",
+  "categoria": "emprendedores",
+  "organismo": "Xunta de Galicia - Consellería de Emprego",
+  "estado": "abierta",
+  "plazoInicio": "11 de febrero de 2026",
+  "plazoFin": "30 de septiembre de 2026",
+  "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
+  "objeto": "Apoyar a las personas que se establezcan como trabajadoras autónomas en Galicia",
+  "beneficiarios": "Personas que se den de alta como autónomas y creen su propio puesto de trabajo.",
+  "imagen": "/images/subvenciones/contratacion-autonomos.png"
+}

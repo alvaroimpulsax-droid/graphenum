@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Contacto from '../components/Contacto.astro';
+---
+
+<Layout
+  title="Contacto | Consulta Gratuita de Subvenciones"
+  description="Contacta con Graphenum para una consulta gratuita sobre subvenciones. Te informamos de las ayudas disponibles para tu empresa."
+>
+  <Header />
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section class="bg-slate-900 py-16 md:py-24">
+      <div class="container-tight">
+        <div class="max-w-3xl">
+          <p class="text-sm font-medium text-accent uppercase tracking-wide mb-4">
+            Contacto
+          </p>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Hablemos de las subvenciones para tu empresa
+          </h1>
+          <p class="text-lg text-slate-400 leading-relaxed">
+            Agenda una consulta gratuita con nuestro equipo. Analizaremos tu situación y te informaremos de todas las ayudas disponibles sin compromiso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Contacto />
+  </main>
+
+  <Footer />
+</Layout>

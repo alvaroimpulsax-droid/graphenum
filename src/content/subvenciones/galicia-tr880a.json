@@ -1,0 +1,16 @@
+{
+  "id": "galicia-emprendimiento-tr880a",
+  "codigo": "TR880A",
+  "nombre": "Emprendimiento 2026",
+  "comunidad": "galicia",
+  "categoria": "emprendedores",
+  "organismo": "Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "31 de enero de 2026",
+  "plazoFin": "2 de marzo de 2026",
+  "plazoTexto": "Desde el 31 de enero al 2 de marzo de 2026",
+  "objeto": "Apoyar inversiones en maquinaria, reformas y software para nuevos emprendedores",
+  "beneficiarios": "Nuevos emprendedores y empresas de reciente creación en Galicia.",
+  "imagen": "/images/subvenciones/emprendimiento.png",
+  "destacada": true
+}

@@ -1,0 +1,117 @@
+backend:
+  name: github
+  repo: alvaroimpulsax-droid/graphenum
+  branch: master
+
+# Para desarrollo local sin autenticación
+local_backend: true
+
+media_folder: "public/images/subvenciones"
+public_folder: "/images/subvenciones"
+
+locale: "es"
+
+collections:
+  - name: "subvenciones"
+    label: "Subvenciones"
+    label_singular: "Subvención"
+    folder: "src/content/subvenciones"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{comunidad}}-{{codigo}}"
+    summary: "{{nombre}} ({{codigo}}) - {{comunidad}}"
+    sortable_fields: ["nombre", "comunidad", "categoria", "estado"]
+    view_filters:
+      - label: "Galicia"
+        field: comunidad
+        pattern: "galicia"
+      - label: "Madrid"
+        field: comunidad
+        pattern: "madrid"
+      - label: "Abiertas"
+        field: estado
+        pattern: "abierta"
+    view_groups:
+      - label: "Comunidad"
+        field: comunidad
+      - label: "Categoría"
+        field: categoria
+      - label: "Estado"
+        field: estado
+    fields:
+      - { label: "ID", name: "id", widget: "string", hint: "Identificador único (ej: galicia-autonomos-tr349f)" }
+      - { label: "Código", name: "codigo", widget: "string", hint: "Código oficial (ej: TR349F)" }
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - label: "Comunidad"
+        name: "comunidad"
+        widget: "select"
+        options:
+          - { label: "Galicia", value: "galicia" }
+          - { label: "Madrid", value: "madrid" }
+          - { label: "Canarias", value: "canarias" }
+          - { label: "Andalucía", value: "andalucia" }
+          - { label: "Cataluña", value: "cataluna" }
+          - { label: "País Vasco", value: "pais-vasco" }
+          - { label: "Comunidad Valenciana", value: "comunidad-valenciana" }
+          - { label: "Castilla y León", value: "castilla-y-leon" }
+          - { label: "Castilla-La Mancha", value: "castilla-la-mancha" }
+          - { label: "Aragón", value: "aragon" }
+          - { label: "Murcia", value: "murcia" }
+          - { label: "Extremadura", value: "extremadura" }
+          - { label: "Asturias", value: "asturias" }
+          - { label: "Navarra", value: "navarra" }
+          - { label: "Cantabria", value: "cantabria" }
+          - { label: "La Rioja", value: "la-rioja" }
+          - { label: "Baleares", value: "baleares" }
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options:
+          - { label: "Contratación", value: "contratacion" }
+          - { label: "Digitalización", value: "digitalizacion" }
+          - { label: "Emprendedores", value: "emprendedores" }
+          - { label: "Innovación", value: "innovacion" }
+          - { label: "Internacionalización", value: "internacionalizacion" }
+          - { label: "Inversión", value: "inversion" }
+      - { label: "Organismo", name: "organismo", widget: "string" }
+      - label: "Estado"
+        name: "estado"
+        widget: "select"
+        options:
+          - { label: "Abierta", value: "abierta" }
+          - { label: "Próxima", value: "proxima" }
+          - { label: "Cerrada", value: "cerrada" }
+      - { label: "Plazo Inicio", name: "plazoInicio", widget: "string", required: false }
+      - { label: "Plazo Fin", name: "plazoFin", widget: "string", required: false }
+      - { label: "Plazo (texto)", name: "plazoTexto", widget: "string", hint: "Ej: Desde el 11 de febrero al 30 de septiembre de 2026" }
+      - { label: "Tipo de Ayuda", name: "tipoAyuda", widget: "string", required: false }
+      - { label: "Objeto", name: "objeto", widget: "text" }
+      - { label: "Beneficiarios", name: "beneficiarios", widget: "text", required: false }
+      - label: "Detalle Beneficiarios"
+        name: "beneficiariosDetalle"
+        widget: "list"
+        required: false
+        field: { label: "Detalle", name: "detalle", widget: "text" }
+      - label: "Actuaciones Subvencionables"
+        name: "actuacionesSubvencionables"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Línea", name: "linea", widget: "string" }
+          - { label: "Porcentaje", name: "porcentaje", widget: "string", required: false }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Importe Máximo", name: "importeMax", widget: "string", required: false }
+      - { label: "Plazo de Ejecución", name: "plazoEjecucion", widget: "string", required: false }
+      - label: "Requisitos"
+        name: "requisitos"
+        widget: "list"
+        required: false
+        field: { label: "Requisito", name: "requisito", widget: "text" }
+      - { label: "Imagen", name: "imagen", widget: "image", required: false }
+      - { label: "Destacada", name: "destacada", widget: "boolean", default: false }

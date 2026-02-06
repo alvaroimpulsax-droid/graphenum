@@ -1,0 +1,15 @@
+{
+  "id": "galicia-estaciones-servicio-in519f",
+  "codigo": "IN519F",
+  "nombre": "Estaciones de Servicio Rurales",
+  "comunidad": "galicia",
+  "categoria": "inversion",
+  "organismo": "Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "24 de enero de 2026",
+  "plazoFin": "9 de marzo de 2026",
+  "plazoTexto": "Desde el 24 de enero al 9 de marzo de 2026",
+  "objeto": "Modernización digital de estaciones de servicio en zonas rurales",
+  "beneficiarios": "Estaciones de servicio ubicadas en zonas rurales de Galicia.",
+  "imagen": "/images/subvenciones/energia.png"
+}

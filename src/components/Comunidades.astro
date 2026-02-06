@@ -24,7 +24,13 @@ import { comunidades } from '../data/comunidades';
           href={`/subvenciones/${comunidad.slug}/`}
           class="group border border-slate-200 rounded p-4 hover:border-slate-300 hover:bg-slate-50 transition-colors"
         >
-          <p class="text-sm font-medium text-slate-900 group-hover:text-primary-900">
+          <img
+            src={`/flags/${comunidad.slug}.svg`}
+            alt={`Bandera de ${comunidad.nombre}`}
+            class="w-8 h-5 rounded-sm object-cover mb-2"
+            loading="lazy"
+          />
+          <p class="text-sm font-medium text-slate-900 group-hover:text-accent">
             {comunidad.nombre}
           </p>
           <p class="text-xs text-slate-500 mt-1">

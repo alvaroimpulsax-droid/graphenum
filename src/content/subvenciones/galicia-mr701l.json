@@ -1,0 +1,15 @@
+{
+  "id": "galicia-leader-mr701l",
+  "codigo": "MR701L",
+  "nombre": "Ayudas LEADER GDR",
+  "comunidad": "galicia",
+  "categoria": "inversion",
+  "organismo": "Grupos de Desarrollo Rural - Xunta de Galicia",
+  "estado": "abierta",
+  "plazoInicio": "3 de febrero de 2026",
+  "plazoFin": "6 de abril de 2026",
+  "plazoTexto": "Desde el 3 de febrero al 6 de abril de 2026",
+  "objeto": "Financiar infraestructuras y proyectos empresariales en zonas rurales",
+  "beneficiarios": "Empresas y entidades ubicadas en zonas rurales elegibles de Galicia.",
+  "imagen": "/images/subvenciones/emprendimiento.png"
+}
