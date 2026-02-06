@@ -1,7 +1,7 @@
 {
   "id": "galicia-startup-ig408g",
   "codigo": "IG408G",
-  "nombre": "Start up Galicia",
+  "nombre": "Ayudas a Startups en Galicia 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
   "organismo": "IGAPE - Xunta de Galicia",
@@ -9,7 +9,43 @@
   "plazoInicio": "28 de enero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 28 de enero al 30 de septiembre de 2026",
-  "objeto": "Financiar gastos operativos de startups y empresas emergentes gallegas",
-  "beneficiarios": "Startups y empresas emergentes con sede en Galicia.",
-  "imagen": "/images/subvenciones/innovacion-igape.png"
+  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
+  "objeto": "Fomentar la actividad de las startups gallegas (reconocidas oficialmente) o con un centro de trabajo en Galicia",
+  "beneficiarios": "Startups gallegas o con centro de trabajo en Galicia con menos de 5 años desde inscripción en registro mercantil (7 años en biotecnología, energía e industriales innovadores).",
+  "beneficiariosDetalle": [
+    "Startups gallegas o con centro de trabajo en Galicia",
+    "Menos de 5 años desde inscripción en registro mercantil",
+    "7 años máximo para biotecnología, energía e industriales innovadores"
+  ],
+  "requisitosAlMenosUno": [
+    "Certificación de ENISA",
+    "Cualificación de Iniciativa de empleo de base tecnológica (EIBT) de la Xunta",
+    "Participación en procesos de aceleración públicos",
+    "Spin-off universitarios, de FP o centros tecnológicos",
+    "Inscripción en Registro de Pymes Innovadoras",
+    "Certificación EA 0047:2015 o EA 0043:2015",
+    "Marca EIBT de ANCES"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Inversión mínima",
+      "importe": "10.000 €"
+    },
+    {
+      "concepto": "Cobertura",
+      "importe": "100% de la inversión"
+    },
+    {
+      "concepto": "Subvención máxima",
+      "importe": "20.000 €"
+    }
+  ],
+  "requisitos": [
+    "Inversiones realizadas desde el 1 de enero de 2026 hasta la fecha de solicitud",
+    "Activos deben ser nuevos, adquiridos en propiedad a terceros no vinculados",
+    "Mantener activos durante mínimo 2 años",
+    "No exceder el valor de mercado"
+  ],
+  "imagen": "/images/subvenciones/innovacion-igape.png",
+  "destacada": true
 }

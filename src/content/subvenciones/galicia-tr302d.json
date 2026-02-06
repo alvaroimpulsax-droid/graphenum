@@ -4,10 +4,64 @@
   "nombre": "Bonos Talento Empresa 2026-2027",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia",
+  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
   "estado": "proxima",
   "plazoTexto": "Convocatoria prevista para mediados de 2026",
-  "objeto": "Financiar formación no formal en materias específicas para trabajadores de empresas gallegas",
-  "beneficiarios": "Empresas con centro de trabajo en Galicia.",
-  "imagen": "/images/subvenciones/galicia-emprega.png"
+  "tipoAyuda": "Concurrencia no competitiva. Orden de entrada.",
+  "objeto": "Financiar acciones formativas no formal de corta duración para mejorar la cualificación de los trabajadores de empresas gallegas",
+  "beneficiarios": "Microempresas, pymes, grandes empresas y personas autónomas con actividad ininterrumpida desde al menos el 11 de julio de 2023.",
+  "beneficiariosDetalle": [
+    "Microempresas, pymes y grandes empresas válidamente constituidas",
+    "Personas autónomas",
+    "Requisito: actividad ininterrumpida desde al menos 11 de julio de 2023"
+  ],
+  "areasFormativas": [
+    "Competencias digitales",
+    "Procesos industriales",
+    "Gestión empresarial",
+    "Prestación de servicios a clientes",
+    "Ámbito asistencial",
+    "Tecnologías limpias y eficientes"
+  ],
+  "caracteristicasFormacion": [
+    "Duración: mínimo 16 horas, máximo 100 horas por acción",
+    "Máximo 3 acciones formativas por entidad",
+    "Modalidad: presencial o aula virtual",
+    "Período: desarrollo entre julio 2026 y septiembre 2027"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Cuantía máxima por entidad",
+      "importe": "25.000 €"
+    },
+    {
+      "concepto": "Grandes empresas",
+      "importe": "50% de costes subvencionables"
+    },
+    {
+      "concepto": "Medianas empresas",
+      "importe": "60%"
+    },
+    {
+      "concepto": "Pequeñas y microempresas",
+      "importe": "70%"
+    },
+    {
+      "concepto": "Sector transporte marítimo",
+      "importe": "100% (condiciones especiales)"
+    },
+    {
+      "concepto": "Coste hora formación por participante",
+      "importe": "16,70 €"
+    },
+    {
+      "concepto": "Coste hora para salarios participantes",
+      "importe": "17,93 €"
+    }
+  ],
+  "incompatibilidades": [
+    "No es compatible con otras subvenciones, ayudas e ingresos procedentes de cualquier otra Administración"
+  ],
+  "imagen": "/images/subvenciones/galicia-emprega.png",
+  "destacada": false
 }

@@ -1,13 +1,63 @@
 {
-  "id": "galicia-emprega-tr342c",
+  "id": "galicia-emprega-contratacion-tr342c",
   "codigo": "TR342C",
   "nombre": "Plan Galicia Emprega 2026 - Ayuda a la Contratación",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia - Consellería de Emprego",
-  "estado": "proxima",
-  "plazoTexto": "Convocatoria prevista a inicios de 2026",
-  "objeto": "Fomentar la contratación de personas desempleadas con especiales dificultades de inserción laboral en Galicia",
-  "beneficiarios": "Empresas y autónomos con centro de trabajo en Galicia que realicen contrataciones indefinidas de personas desempleadas.",
-  "imagen": "/images/subvenciones/galicia-emprega.png"
+  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
+  "estado": "abierta",
+  "plazoInicio": "Febrero de 2026",
+  "plazoFin": "Septiembre de 2026",
+  "plazoTexto": "Convocatoria abierta a principios de 2026",
+  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
+  "objeto": "Incentivar la contratación de personas desempleadas con dificultades de inserción laboral",
+  "beneficiarios": "Personas autónomas y empresas de cualquier forma jurídica que realicen contrataciones por cuenta ajena.",
+  "beneficiariosDetalle": [
+    "Personas autónomas que contraten por cuenta ajena",
+    "Empresas de cualquier forma jurídica",
+    "Empresas con 50+ empleados deben cumplir cuota del 2% para personas con discapacidad"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Contratación indefinida inicial",
+      "importe": "6.000 € (menores 30, parados larga duración, mayores 52, extranjeros, mujeres)"
+    },
+    {
+      "concepto": "Contratación mujeres ocupaciones masculinizadas o discapacidad",
+      "importe": "10.000 €"
+    },
+    {
+      "concepto": "Incremento de jornada",
+      "importe": "2.000 € - 3.000 €"
+    },
+    {
+      "concepto": "Fijos discontinuos (9+ meses)",
+      "importe": "4.000 €"
+    },
+    {
+      "concepto": "Adaptación puestos de trabajo",
+      "importe": "1.000 €"
+    },
+    {
+      "concepto": "Incrementos adicionales",
+      "importe": "+15% (municipio rural, personas trans, mujeres profesiones subrepresentadas, >45 años)"
+    }
+  ],
+  "requisitos": [
+    "Período de contratación: 1 de octubre 2025 - 30 de septiembre 2026",
+    "Persona contratada debe ser desempleada con alguna condición prioritaria",
+    "Mantener el empleo durante 36 meses",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+  "colectivosPrioritarios": [
+    "Menores de 30 años",
+    "Mayores de 52 años",
+    "Emigrantes retornados o extranjeros",
+    "Mujeres",
+    "Parados de larga duración (12+ meses inscritos)",
+    "Personas con discapacidad >33%",
+    "Personas en riesgo de exclusión social"
+  ],
+  "imagen": "/images/subvenciones/galicia-emprega.png",
+  "destacada": true
 }

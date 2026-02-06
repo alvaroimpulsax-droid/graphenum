@@ -1,7 +1,7 @@
 {
   "id": "galicia-industria-innova-ig530b",
   "codigo": "IG530B",
-  "nombre": "Industria Innova",
+  "nombre": "Ayudas para la iniciativa Industria Innova 2026",
   "comunidad": "galicia",
   "categoria": "innovacion",
   "organismo": "IGAPE - Xunta de Galicia",
@@ -9,7 +9,69 @@
   "plazoInicio": "17 de enero de 2026",
   "plazoFin": "17 de marzo de 2026",
   "plazoTexto": "Desde el 17 de enero al 17 de marzo de 2026",
-  "objeto": "Apoyar el desarrollo de innovación industrial en empresas gallegas",
-  "beneficiarios": "Empresas industriales con sede social o centro de trabajo en Galicia.",
-  "imagen": "/images/subvenciones/innovacion-igape.png"
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
+  "objeto": "Apoyo al desarrollo de la innovación empresarial en Galicia a través de proyectos en I+D+i",
+  "beneficiarios": "Pymes y grandes empresas del sector industrial con centro de trabajo en Galicia que lideren proyectos I+D+i.",
+  "beneficiariosDetalle": [
+    "Pymes y grandes empresas del sector industrial con centro de trabajo en Galicia",
+    "Agrupaciones de pymes y grandes empresas en colaboración",
+    "Agrupaciones de empresas industriales con centros tecnológicos o de apoyo a la innovación"
+  ],
+  "actividadesSubvencionables": [
+    "Investigación industrial",
+    "Desarrollo experimental",
+    "Innovación organizativa",
+    "Innovación en materia de procesos"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Presupuesto subvencionable mínimo",
+      "importe": "2.000.000 €"
+    },
+    {
+      "concepto": "Presupuesto subvencionable máximo",
+      "importe": "25.000.000 €"
+    },
+    {
+      "concepto": "Investigación Industrial - Pequeña empresa",
+      "importe": "60%"
+    },
+    {
+      "concepto": "Investigación Industrial - Mediana empresa",
+      "importe": "60%"
+    },
+    {
+      "concepto": "Investigación Industrial - Gran empresa",
+      "importe": "50%"
+    },
+    {
+      "concepto": "Desarrollo Experimental - Pequeña empresa",
+      "importe": "45%"
+    },
+    {
+      "concepto": "Desarrollo Experimental - Mediana empresa",
+      "importe": "35%"
+    },
+    {
+      "concepto": "Desarrollo Experimental - Gran empresa",
+      "importe": "25%"
+    },
+    {
+      "concepto": "Innovación Organizativa/Procesos - Pymes",
+      "importe": "50%"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Costes de personal",
+    "Equipamiento y material instrumental de nueva adquisición",
+    "Materiales y suministros",
+    "Adquisición de patentes",
+    "Subcontrataciones (servicios tecnológicos externos)",
+    "Informes de auditoría",
+    "Evaluación DNSH (no causar perjuicio ambiental)",
+    "Plan de comunicación y difusión"
+  ],
+  "plazoEjecucion": "2026: desde presentación hasta 31/12. 2027: hasta 30/11. 2028: hasta 30/09 (máximo)",
+  "imagen": "/images/subvenciones/innovacion-igape.png",
+  "destacada": true
 }

@@ -1,15 +1,69 @@
 {
   "id": "galicia-promocion-autonomo-tr341d",
   "codigo": "TR341D",
-  "nombre": "Promoción del empleo autónomo",
+  "nombre": "Ayudas para la promoción del empleo autónomo 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "Xunta de Galicia - Consellería de Emprego",
+  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
   "estado": "abierta",
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
-  "objeto": "Apoyar a las personas que se establezcan como trabajadoras autónomas en Galicia",
-  "beneficiarios": "Personas que se den de alta como autónomas y creen su propio puesto de trabajo.",
-  "imagen": "/images/subvenciones/contratacion-autonomos.png"
+  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
+  "objeto": "Conceder ayuda económica a personas desempleadas que inicien actividad empresarial o profesional en Galicia como trabajadoras autónomas",
+  "beneficiarios": "Personas que causen alta en el RETA o régimen especial por cuenta propia entre el 1 de octubre de 2025 y el 30 de septiembre de 2026.",
+  "beneficiariosDetalle": [
+    "Estar inscrita como demandante de empleo",
+    "Haber iniciado la actividad antes de solicitar la subvención",
+    "No tener ningún alta como persona autónoma desde el 4 de febrero de 2021",
+    "Estar dado de alta en el Impuesto de Actividades Económicas (IAE)",
+    "Desarrollar actividad en Galicia con domicilio fiscal en Galicia"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Importe base general",
+      "importe": "2.000 €"
+    },
+    {
+      "concepto": "Colectivos específicos (menores 30, parados larga duración, discapacidad, exclusión social, emigrantes, mayores 52)",
+      "importe": "4.000 €"
+    },
+    {
+      "concepto": "Incremento por ser mujer",
+      "importe": "+15%"
+    },
+    {
+      "concepto": "Incremento centro trabajo en municipio rural",
+      "importe": "+15%"
+    },
+    {
+      "concepto": "Incremento mayores de 45 años",
+      "importe": "+15%"
+    },
+    {
+      "concepto": "Incremento personas trans",
+      "importe": "+15%"
+    },
+    {
+      "concepto": "Máximo posible (acumulando incrementos)",
+      "importe": "7.000 €"
+    }
+  ],
+  "lineas": [
+    {
+      "nombre": "Línea 1",
+      "descripcion": "Inicio de actividad económica y mantenimiento del empleo como autónomo"
+    },
+    {
+      "nombre": "Línea 2",
+      "descripcion": "Sufragar gastos de mantenimiento equivalente a 12 meses de cuota reducida"
+    }
+  ],
+  "incompatibilidades": [
+    "Programa Emega 2026",
+    "Programa Nueva Oportunidad 2026",
+    "Cualquier otra ayuda por los mismos conceptos de administración pública"
+  ],
+  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "destacada": true
 }

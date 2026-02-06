@@ -4,13 +4,49 @@
   "nombre": "Programa de ayudas a personas trabajadoras autónomas por contratación indefinida",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia - Consellería de Emprego",
+  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
   "estado": "abierta",
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
+  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
   "objeto": "Incentivar la contratación indefinida del 1º, 2º y 3º trabajador por parte de personas trabajadoras autónomas",
-  "beneficiarios": "Personas trabajadoras autónomas dadas de alta en el RETA con domicilio fiscal en Galicia que realicen contrataciones indefinidas.",
+  "beneficiarios": "Personas trabajadoras autónomas o profesionales con domicilio social y fiscal en Galicia que realicen contrataciones indefinidas.",
+  "beneficiariosDetalle": [
+    "Autónomos con domicilio social y fiscal en Galicia",
+    "No haber desarrollado la misma o similar actividad en los 3 meses anteriores (coincidencia CNAE a 3 dígitos)",
+    "Quedan excluidas: sociedades civiles, comunidades de bienes, autónomos colaboradores"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Primera contratación indefinida",
+      "importe": "7.500 € (9.000 € para colectivos prioritarios)"
+    },
+    {
+      "concepto": "Segunda y tercera contratación",
+      "importe": "9.000 € (11.000 € para colectivos prioritarios)"
+    },
+    {
+      "concepto": "Incrementos adicionales acumulables",
+      "importe": "+15% (municipio rural, >45 años, personas trans, mujeres en profesiones subrepresentadas)"
+    }
+  ],
+  "requisitos": [
+    "Contrataciones realizadas entre octubre 2025 y septiembre 2026",
+    "Contratos indefinidos o fijos discontinuos (mínimo 6 meses/año)",
+    "Jornada completa o parcial (mínimo 50% según convenio)",
+    "Persona contratada debe estar desempleada e inscrita como demandante de empleo",
+    "Mantener el puesto durante 36 meses"
+  ],
+  "colectivosPrioritarios": [
+    "Mujeres",
+    "Desempleados de larga duración",
+    "Mayores de 52 años",
+    "Personas con discapacidad",
+    "Personas en situación de exclusión social",
+    "Emigrantes retornados",
+    "Personas extranjeras"
+  ],
   "imagen": "/images/subvenciones/contratacion-autonomos.png",
   "destacada": true
 }

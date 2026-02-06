@@ -1,7 +1,7 @@
 {
   "id": "galicia-inteligencia-artificial-ig408m",
   "codigo": "IG408M",
-  "nombre": "Ayudas Inteligencia Artificial IGAPE - IA360",
+  "nombre": "Ayudas a la Inteligencia Artificial IGAPE - IA360",
   "comunidad": "galicia",
   "categoria": "digitalizacion",
   "organismo": "IGAPE - Xunta de Galicia",
@@ -9,7 +9,52 @@
   "plazoInicio": "17 de enero de 2026",
   "plazoFin": "17 de marzo de 2026",
   "plazoTexto": "Desde el 17 de enero al 17 de marzo de 2026",
-  "objeto": "Apoyar el desarrollo e implantación de soluciones de Inteligencia Artificial en empresas gallegas",
-  "beneficiarios": "Pymes con sede social o centro de trabajo en Galicia.",
-  "imagen": "/images/subvenciones/innovacion-igape.png"
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis (excepto ayudas >300.000€).",
+  "objeto": "Apoyo a pymes y grandes empresas gallegas en desarrollo tecnológico e innovación mediante Inteligencia Artificial",
+  "beneficiarios": "Pymes y grandes empresas gallegas con centro permanente en Galicia, en sectores estratégicos.",
+  "beneficiariosDetalle": [
+    "Línea A (Desarrollo): Pymes y grandes empresas gallegas",
+    "Línea B (Implantación): Solo pymes gallegas",
+    "Sectores estratégicos: agroalimentación, automoción, energías renovables, naval, textil",
+    "Sectores emergentes: aeronáutica, salud, biotecnología, TIC"
+  ],
+  "lineas": [
+    {
+      "nombre": "Línea A - Desarrollo de IA",
+      "descripcion": "Desarrollo de productos/servicios basados en IA para mejora de procesos industriales",
+      "cuantiaMinima": "150.000 €",
+      "cuantiaMaxima": "500.000 €",
+      "porcentajes": "25-45% según tamaño empresa (+15% por divulgación)"
+    },
+    {
+      "nombre": "Línea B - Implantación de IA",
+      "descripcion": "Adquisición e implantación de soluciones IA comerciales existentes",
+      "cuantiaMinima": "30.000 €",
+      "cuantiaMaxima": "100.000 €",
+      "porcentajes": "50% de la inversión"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Costes de personal (máximo 80% Línea A, 30% Línea B)",
+    "Materiales y suministros directos",
+    "Equipamiento nuevo",
+    "Patentes y activos inmateriales",
+    "Consultoría e investigación contractual",
+    "Auditoría (máximo 1.500€/año)",
+    "Subcontrataciones (máximo 50%)",
+    "Licencias software por suscripción (Línea B)",
+    "Costes indirectos (20% a tanto alzado)"
+  ],
+  "tecnologiasPrioritarias": [
+    "Machine Learning",
+    "RPA (Automatización Robótica de Procesos)",
+    "Visión artificial",
+    "NLP (Procesamiento de Lenguaje Natural)",
+    "IA generativa",
+    "Análisis de datos",
+    "Computación cuántica"
+  ],
+  "plazoEjecucion": "Línea A: hasta 15/09/2027. Línea B: hasta 30/09/2026",
+  "imagen": "/images/subvenciones/innovacion-igape.png",
+  "destacada": true
 }

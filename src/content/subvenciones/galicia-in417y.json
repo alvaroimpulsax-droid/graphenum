@@ -1,15 +1,79 @@
 {
   "id": "galicia-eficiencia-energetica-in417y",
   "codigo": "IN417Y",
-  "nombre": "Eficiencia Energética",
+  "nombre": "Subvenciones para proyectos de ahorro y eficiencia energética 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "Xunta de Galicia - INEGA",
+  "organismo": "INEGA - Xunta de Galicia",
   "estado": "abierta",
   "plazoInicio": "30 de enero de 2026",
   "plazoFin": "15 de septiembre de 2026",
   "plazoTexto": "Desde el 30 de enero al 15 de septiembre de 2026",
-  "objeto": "Proyectos de ahorro y eficiencia energética en empresas",
-  "beneficiarios": "Empresas, autónomos y entidades con sede en Galicia.",
-  "imagen": "/images/subvenciones/energia.png"
+  "tipoAyuda": "Concurrencia no competitiva. Orden de entrada.",
+  "objeto": "Apoyar proyectos de ahorro y eficiencia energética en empresas con sede en Galicia",
+  "beneficiarios": "Empresas legalmente constituidas y autónomos con domicilio social o centro de trabajo en Galicia.",
+  "beneficiariosDetalle": [
+    "Empresas legalmente constituidas con domicilio social o centro de trabajo en Galicia",
+    "Empresarios autónomos",
+    "Empresas de servicios energéticos que gestionen instalaciones consumidoras",
+    "Excluidas: producción agrícola primaria, industria extractiva energética, refinación de petróleo, generación/distribución de energía eléctrica, actividades financieras"
+  ],
+  "lineas": [
+    {
+      "nombre": "PAPEME",
+      "descripcion": "Proyectos en pymes con ratio ≥0,18 kWh/€"
+    },
+    {
+      "nombre": "PAGE",
+      "descripcion": "Proyectos en grandes empresas con ratio ≥0,25 kWh/€"
+    },
+    {
+      "nombre": "PAE",
+      "descripcion": "Proyectos que reduzcan emisiones GEI ≥30% con ratio ≥0,1 kWh/€"
+    },
+    {
+      "nombre": "PAP",
+      "descripcion": "Infraestructuras públicas con ratio ≥0,18 kWh/€"
+    }
+  ],
+  "cuantias": [
+    {
+      "concepto": "Intensidad base",
+      "importe": "35% del coste elegible"
+    },
+    {
+      "concepto": "Incremento pequeñas empresas",
+      "importe": "+20%"
+    },
+    {
+      "concepto": "Incremento medianas empresas",
+      "importe": "+10%"
+    },
+    {
+      "concepto": "Para edificios (base)",
+      "importe": "20%"
+    },
+    {
+      "concepto": "Máximo por expediente",
+      "importe": "1.000.000 €"
+    },
+    {
+      "concepto": "Máximo por beneficiario",
+      "importe": "2.000.000 €"
+    },
+    {
+      "concepto": "Límite sector pesca/acuicultura",
+      "importe": "300.000 €"
+    }
+  ],
+  "requisitos": [
+    "Ahorro energético mínimo justificado documentalmente",
+    "Proyectos técnica, jurídica, económica y financieramente viables",
+    "Para iluminación: cumplir norma UNE-EN 12464",
+    "Obra civil: 70% mínimo residuos construcción para reutilización/reciclaje",
+    "Prohibición de amianto y sustancias preocupantes"
+  ],
+  "plazoEjecucion": "15 de septiembre de 2027",
+  "imagen": "/images/subvenciones/energia.png",
+  "destacada": true
 }

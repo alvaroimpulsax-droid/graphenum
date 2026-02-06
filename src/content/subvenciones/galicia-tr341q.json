@@ -1,15 +1,46 @@
 {
   "id": "galicia-bono-autonomos-tr341q",
   "codigo": "TR341Q",
-  "nombre": "Bono Personas Autónomas",
+  "nombre": "Programa Bono de las Personas Autónomas 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "Xunta de Galicia - Consellería de Emprego",
+  "organismo": "Xunta de Galicia - Consellería de Economía, Emprego e Industria",
   "estado": "abierta",
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
-  "objeto": "Financiar inversiones en digitalización, equipos y mejoras para autónomos",
-  "beneficiarios": "Personas trabajadoras autónomas con domicilio fiscal en Galicia.",
-  "imagen": "/images/subvenciones/contratacion-autonomos.png"
+  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
+  "objeto": "Apoyo a la consolidación de personas autónomas con más de 42 meses de antigüedad, contribuyendo a mejorar su competitividad empresarial",
+  "beneficiarios": "Personas trabajadoras autónomas con domicilio fiscal en Galicia y antigüedad superior a 42 meses ininterrumpidos.",
+  "beneficiariosDetalle": [
+    "Domicilio fiscal en Galicia",
+    "Antigüedad superior a 42 meses ininterrumpidos en actividad efectiva",
+    "No haber recibido esta ayuda en convocatorias 2021-2025",
+    "Rendimiento neto IRPF 2024 inferior a 50.000 €",
+    "Facturación mínima anual 2024: 12.000 € (IVA incluido)"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Intensidad de ayuda",
+      "importe": "60% de la inversión"
+    },
+    {
+      "concepto": "Subvención máxima",
+      "importe": "7.000 € (requiere inversión mínima de 11.666 €)"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Maquinaria",
+    "Eficiencia energética",
+    "Sustitución de combustibles/materiales críticos",
+    "Utillaje y herramientas",
+    "Reforma del local",
+    "Equipamiento informático y de oficina",
+    "Rótulos",
+    "Aplicaciones informáticas, páginas web, apps",
+    "Diseño de marca"
+  ],
+  "plazoEjecucion": "Gastos realizados desde 1 de octubre de 2025 hasta la fecha de solicitud",
+  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "destacada": true
 }

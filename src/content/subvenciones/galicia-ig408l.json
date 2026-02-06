@@ -1,16 +1,67 @@
 {
   "id": "galicia-pyme-innova-procesos-ig408l",
   "codigo": "IG408L",
-  "nombre": "Pyme Innova - Procesos y Organización",
+  "nombre": "Programa Pyme Innova: Planes de innovación de procesos y organización 2026",
   "comunidad": "galicia",
   "categoria": "innovacion",
   "organismo": "IGAPE - Xunta de Galicia",
   "estado": "abierta",
   "plazoInicio": "17 de enero de 2026",
   "plazoFin": "17 de febrero de 2026",
-  "plazoTexto": "Desde el 17 de enero al 17 de febrero de 2026",
-  "objeto": "Apoyar proyectos de innovación en procesos y organización empresarial",
-  "beneficiarios": "Pymes con sede social o centro de trabajo en Galicia.",
+  "plazoTexto": "Desde el 17 de enero al 17 de febrero de 2026 (14:00h)",
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
+  "objeto": "Financiación de actividades integradas en planes de innovación destinadas al desarrollo de productos/servicios nuevos o rediseño sustancial de existentes",
+  "beneficiarios": "Pymes y grandes empresas gallegas o con centro de trabajo en Galicia. Perfil prioritario: pymes no tecnológicas de sectores tradicionales.",
+  "beneficiariosDetalle": [
+    "Pymes y grandes empresas gallegas o con centro de trabajo en Galicia",
+    "Capacidad administrativa, financiera y operativa",
+    "Estar al corriente de pagos con Hacienda y Seguridad Social",
+    "Excluidas: entidades sin ánimo de lucro, empresas del sector público, empresas en crisis"
+  ],
+  "actividadesInnovacionProcesos": [
+    "Métodos de fabricación o producción innovadores",
+    "Sistemas logísticos y distribución",
+    "Procesamiento de información/comunicación",
+    "Marketing innovador (excepto acciones comerciales directas)",
+    "Procesos con beneficios medioambientales",
+    "Testado de tecnologías: IA, ciberseguridad, impresión 3D, robótica"
+  ],
+  "actividadesInnovacionOrganizacion": [
+    "Creación de departamentos de I+D+i",
+    "Nuevos procesos de organización empresarial",
+    "Validación de metodologías organizacionales mediante pilotos",
+    "Gestión del conocimiento y recursos humanos"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Presupuesto subvencionable mínimo",
+      "importe": "50.000 €"
+    },
+    {
+      "concepto": "Presupuesto subvencionable máximo",
+      "importe": "250.000 €"
+    },
+    {
+      "concepto": "Subvención",
+      "importe": "25.000 € a 125.000 €"
+    },
+    {
+      "concepto": "Cofinanciación para pymes",
+      "importe": "50% de la inversión total"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Personal propio y nuevo (máx. 5 personas; personal propio hasta 60%)",
+    "Personal directivo/gerencial solo pymes: máx. 30% dedicación mensual",
+    "Subcontrataciones (máx. 50% costes directos)",
+    "Materiales y software (por suscripción/uso)",
+    "Propiedad industrial (patentes, validación, defensa)",
+    "Certificaciones oficiales (EA0047, EA0043, UNE 166000)",
+    "Consultoría y apoyo a la innovación",
+    "Equipamiento (con amortización proporcional)",
+    "Costes indirectos (20% fijo de costes directos)"
+  ],
+  "plazoEjecucion": "Primera anualidad: hasta 30/09/2026. Segunda: hasta 30/09/2027",
   "imagen": "/images/subvenciones/innovacion-igape.png",
   "destacada": true
 }

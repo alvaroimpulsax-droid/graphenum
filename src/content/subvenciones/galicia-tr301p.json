@@ -4,12 +4,63 @@
   "nombre": "Galicia Suma Talento: Plan formación empresas 2026",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia",
+  "organismo": "Xunta de Galicia - Consellería de Educación, Universidades, FP y Política Lingüística",
   "estado": "abierta",
   "plazoInicio": "14 de enero de 2026",
   "plazoFin": "1 de diciembre de 2026",
   "plazoTexto": "Desde el 14 de enero hasta el 1 de diciembre de 2026",
-  "objeto": "Financiar planes de formación empresarial con compromiso de contratación posterior",
-  "beneficiarios": "Empresas con centro de trabajo en Galicia que se comprometan a contratar a las personas formadas.",
-  "imagen": "/images/subvenciones/galicia-emprega.png"
+  "tipoAyuda": "Concurrencia no competitiva.",
+  "objeto": "Apoyar acciones formativas para el empleo en unidades formativas en las empresas y con compromisos de contratación",
+  "beneficiarios": "Empresas de cualquier forma jurídica, agrupaciones temporales de empresas, y empresas que sean entidades de formación con centros acreditados en Galicia.",
+  "beneficiariosDetalle": [
+    "Empresas de cualquier forma jurídica",
+    "Agrupaciones temporales de empresas",
+    "Empresas que sean entidades de formación con centros acreditados en Galicia"
+  ],
+  "lineas": [
+    {
+      "nombre": "Línea 1",
+      "descripcion": "Acciones del catálogo de especialidades formativas del SEPE"
+    },
+    {
+      "nombre": "Línea 2",
+      "descripcion": "Acciones del Sistema de formación profesional (grados A, B y C)"
+    }
+  ],
+  "compromisosContratacion": [
+    "Contratar al 60% del alumnado aprobado durante mínimo 6 meses, O",
+    "Contratar al 40% del alumnado aprobado durante 12 meses o más",
+    "Contratación máximo 2 meses tras finalización de la formación",
+    "En ocupaciones relacionadas con la especialidad impartida",
+    "Contratos a tiempo parcial requieren mínimo 50% de jornada completa"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Administración y gestión",
+      "importe": "8,41 € a 10,28 €/hora alumno"
+    },
+    {
+      "concepto": "Comercio y logística",
+      "importe": "13,00 €/hora alumno"
+    },
+    {
+      "concepto": "Hostelería y turismo",
+      "importe": "10,68 €/hora alumno"
+    },
+    {
+      "concepto": "Teleformación",
+      "importe": "70% del módulo presencial, máximo 7,50 €/hora alumno"
+    },
+    {
+      "concepto": "Formación en empresa (prácticas)",
+      "importe": "3 €/alumno-hora"
+    },
+    {
+      "concepto": "Alumnado con discapacidad",
+      "importe": "16 €/hora + hasta 500 € por adaptaciones"
+    }
+  ],
+  "plazoEjecucion": "Desde 5 días tras concesión hasta 31 de marzo de 2027",
+  "imagen": "/images/subvenciones/galicia-emprega.png",
+  "destacada": true
 }

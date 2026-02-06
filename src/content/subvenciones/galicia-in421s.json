@@ -1,16 +1,54 @@
 {
   "id": "galicia-fotovoltaica-in421s",
   "codigo": "IN421S",
-  "nombre": "Energía Fotovoltaica",
+  "nombre": "Subvención para proyectos de energía fotovoltaica 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "Xunta de Galicia - INEGA",
+  "organismo": "INEGA - Xunta de Galicia",
   "estado": "abierta",
   "plazoInicio": "28 de enero de 2026",
   "plazoFin": "2 de marzo de 2026",
   "plazoTexto": "Desde el 28 de enero al 2 de marzo de 2026",
-  "objeto": "Instalación de paneles solares fotovoltaicos y sistemas de almacenamiento",
-  "beneficiarios": "Empresas, autónomos y entidades con sede en Galicia.",
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
+  "objeto": "Apoyar iniciativas de ahorro energético y promoción del uso de energías renovables mediante instalaciones de paneles solares en modalidad de autoconsumo",
+  "beneficiarios": "Autónomos y empresas que no se dediquen al sector de la pesca/acuicultura o producción primaria agrícola.",
+  "beneficiariosDetalle": [
+    "Autónomos y empresas con domicilio en Galicia",
+    "Excluidas: empresas del sector pesca, acuicultura y producción agrícola primaria (CNAE 1.11 al 2.40)"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Intensidad base",
+      "importe": "30% del coste elegible"
+    },
+    {
+      "concepto": "Incremento para medianas empresas",
+      "importe": "+10%"
+    },
+    {
+      "concepto": "Incremento para pequeñas empresas",
+      "importe": "+20%"
+    },
+    {
+      "concepto": "Subvención máxima",
+      "importe": "50.000 €"
+    }
+  ],
+  "requisitos": [
+    "Potencia mínima: 100 kWp",
+    "Potencia máxima: 1.000 kWp",
+    "Inversión elegible máxima: 750 €/kWh",
+    "Cumplimiento del Reglamento Electrotécnico de Baja Tensión",
+    "Principio DNSH (no causar perjuicio significativo al medio ambiente)"
+  ],
+  "proyectosSubvencionables": [
+    "Paneles solares fotovoltaicos",
+    "Sistemas de acondicionamiento de energía (inversores, convertidores)",
+    "Sistemas de acumulación con baterías (excluye plomo ácido)",
+    "Accesorios necesarios para funcionamiento",
+    "Montaje e interconexiones"
+  ],
+  "plazoEjecucion": "Hasta el 15 de octubre de 2026 (extensión posible hasta 30 de septiembre de 2027)",
   "imagen": "/images/subvenciones/energia.png",
   "destacada": true
 }

@@ -1,13 +1,72 @@
 {
   "id": "galicia-emprendimiento-plus-tr880b",
   "codigo": "TR880B",
-  "nombre": "Emprendimiento Plus 2026",
+  "nombre": "Subvenciones al Emprendimiento Plus 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "Xunta de Galicia",
+  "organismo": "Xunta de Galicia - Dirección General de Emprendimiento",
   "estado": "proxima",
   "plazoTexto": "Convocatoria prevista a inicios de 2026",
-  "objeto": "Apoyar la contratación y el equipamiento de nuevos emprendedores",
-  "beneficiarios": "Nuevos emprendedores y empresas de reciente creación en Galicia.",
-  "imagen": "/images/subvenciones/emprendimiento.png"
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
+  "objeto": "Apoyar la contratación y el equipamiento de nuevos emprendedores con proyectos de mayor envergadura",
+  "beneficiarios": "Personas trabajadoras autónomas y pymes con máximo 42 meses de antigüedad, domicilio social y fiscal en Galicia.",
+  "beneficiariosDetalle": [
+    "Domicilio social, fiscal y/o centro de trabajo en Galicia",
+    "Desarrollar actividad empresarial en Galicia",
+    "Máximo 42 meses de antigüedad desde la constitución",
+    "Ser viables técnica, económica y financieramente",
+    "Estar inscritas en registros administrativos gallegos"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Inversión mínima",
+      "importe": "10.000 €"
+    },
+    {
+      "concepto": "Subvención mínima",
+      "importe": "6.000 €"
+    },
+    {
+      "concepto": "Subvención máxima",
+      "importe": "90.000 €"
+    },
+    {
+      "concepto": "Tramo 10.000 € - 30.000 €",
+      "importe": "60% subvencionable"
+    },
+    {
+      "concepto": "Tramo 30.001 € - 50.000 €",
+      "importe": "55% subvencionable"
+    },
+    {
+      "concepto": "Tramo 50.001 € - 100.000 €",
+      "importe": "50% subvencionable"
+    },
+    {
+      "concepto": "Tramo 100.001 € - 200.000 €",
+      "importe": "45% subvencionable"
+    },
+    {
+      "concepto": "Contrataciones indefinidas o fijas discontinuas",
+      "importe": "6.000 € por contratación"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Equipamiento informático (tabletas, ordenadores, servidores)",
+    "Activos intangibles (software, patentes, licencias)",
+    "Equipamiento y mobiliario (maquinaria, herramientas, equipos transporte interno)",
+    "Reforma de instalaciones (obras, decoración, rotulación)",
+    "Bienes de segunda mano (de terceros no relacionados)",
+    "Costes indirectos (máximo 3% del proyecto)"
+  ],
+  "actividadesExcluidas": [
+    "Actividad bancaria y seguros",
+    "Fondos de pensiones",
+    "Seguridad nacional y fabricación de armamento",
+    "Juegos de azar y tabaco",
+    "Venta/alquiler de inmuebles"
+  ],
+  "plazoEjecucion": "1 de enero de 2026 - 31 de octubre de 2027",
+  "imagen": "/images/subvenciones/emprendimiento.png",
+  "destacada": true
 }

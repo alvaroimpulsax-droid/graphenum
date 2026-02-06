@@ -1,16 +1,56 @@
 {
   "id": "galicia-emprendimiento-tr880a",
   "codigo": "TR880A",
-  "nombre": "Emprendimiento 2026",
+  "nombre": "Ayudas al emprendimiento 2026 (Xempre)",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "Xunta de Galicia",
+  "organismo": "Xunta de Galicia - Dirección General de Emprendimiento",
   "estado": "abierta",
   "plazoInicio": "31 de enero de 2026",
   "plazoFin": "2 de marzo de 2026",
   "plazoTexto": "Desde el 31 de enero al 2 de marzo de 2026",
-  "objeto": "Apoyar inversiones en maquinaria, reformas y software para nuevos emprendedores",
-  "beneficiarios": "Nuevos emprendedores y empresas de reciente creación en Galicia.",
+  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
+  "objeto": "Apoyar a personas trabajadoras autónomas y pymes de reciente creación con inversiones para consolidar su actividad empresarial",
+  "beneficiarios": "Personas trabajadoras autónomas, mutualistas y pymes (incluyendo cooperativas y sociedades laborales) con domicilio fiscal en Galicia.",
+  "beneficiariosDetalle": [
+    "Domicilio fiscal en Galicia",
+    "Constituidas o dadas de alta entre el 1 de enero de 2024 y la fecha de solicitud",
+    "No haber sido beneficiarios en convocatorias anteriores (2021-2025)",
+    "Estar al corriente de obligaciones tributarias y de Seguridad Social"
+  ],
+  "cuantias": [
+    {
+      "concepto": "Inversión mínima requerida",
+      "importe": "5.000 €"
+    },
+    {
+      "concepto": "Subvención máxima",
+      "importe": "27.000 € (hasta 35.000 € con relevo generacional)"
+    },
+    {
+      "concepto": "Tramo 5.000 € - 20.000 €",
+      "importe": "55% subvencionable"
+    },
+    {
+      "concepto": "Tramo 20.001 € - 30.000 €",
+      "importe": "50% subvencionable"
+    },
+    {
+      "concepto": "Tramo 30.001 € - 60.000 €",
+      "importe": "45% subvencionable"
+    }
+  ],
+  "gastosSubvencionables": [
+    "Equipamiento informático (tabletas, ordenadores, servidores, conexión internet)",
+    "Activos intangibles (software, páginas web, patentes, licencias)",
+    "Inversiones en eficiencia energética",
+    "Bienes de equipamiento y mobiliario",
+    "Reforma y habilitación de locales",
+    "Gastos notariales/registrales (máximo 300 €)",
+    "Alquiler de inmuebles (máximo 1.500 €)",
+    "Activos de segunda mano (bajo condiciones específicas)"
+  ],
+  "plazoEjecucion": "Del 1 de julio de 2025 hasta la presentación de la solicitud",
   "imagen": "/images/subvenciones/emprendimiento.png",
   "destacada": true
 }
