@@ -117,3 +117,28 @@ collections:
         field: { label: "Requisito", name: "requisito", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image", required: false }
       - { label: "Destacada", name: "destacada", widget: "boolean", default: false }
+
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Artículo"
+    folder: "src/content/blog"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    summary: "{{title}} - {{date}}"
+    sortable_fields: ["title", "date"]
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL del artículo (ej: guia-subvenciones-2026)" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Extracto", name: "excerpt", widget: "text", hint: "Resumen corto del artículo" }
+      - { label: "Contenido", name: "content", widget: "markdown" }
+      - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Autor", name: "author", widget: "string", default: "Equipo Graphenum" }
+      - { label: "Imagen", name: "image", widget: "image", required: false }
+      - label: "Etiquetas"
+        name: "tags"
+        widget: "list"
+        required: false
+        field: { label: "Etiqueta", name: "tag", widget: "string" }
