@@ -2,7 +2,7 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 
-const CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID || 'Ov23liawWB1fS1mYdOvM';
+const CLIENT_ID = (import.meta.env.GITHUB_CLIENT_ID || 'Ov23liawWB1fS1mYdOvM').trim();
 const REDIRECT_URI = 'https://graphenumastro.vercel.app/api/auth/callback';
 
 export const GET: APIRoute = async ({ url }) => {

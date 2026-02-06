@@ -2,8 +2,8 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 
-const CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID || 'Ov23liawWB1fS1mYdOvM';
-const CLIENT_SECRET = import.meta.env.GITHUB_CLIENT_SECRET;
+const CLIENT_ID = (import.meta.env.GITHUB_CLIENT_ID || 'Ov23liawWB1fS1mYdOvM').trim();
+const CLIENT_SECRET = import.meta.env.GITHUB_CLIENT_SECRET?.trim();
 
 export const GET: APIRoute = async ({ url }) => {
   const code = url.searchParams.get('code');
