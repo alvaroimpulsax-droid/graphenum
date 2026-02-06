@@ -2,6 +2,7 @@ backend:
   name: github
   repo: alvaroimpulsax-droid/graphenum
   branch: master
+  base_url: https://sveltia-cms-auth.deno.dev
 
 # Para desarrollo local sin autenticación
 local_backend: true
