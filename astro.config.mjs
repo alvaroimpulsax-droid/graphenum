@@ -6,7 +6,6 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://graphenumastro.vercel.app',
-  output: 'hybrid',
   adapter: vercel(),
   integrations: [
     tailwind(),
