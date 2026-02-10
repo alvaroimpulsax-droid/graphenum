@@ -6,65 +6,158 @@
   "categoria": "inversion",
   "organismo": "Agencia Gallega de Desarrollo Rural - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "3 de febrero de 2026",
   "plazoFin": "6 de abril de 2026",
   "plazoTexto": "Desde el 3 de febrero al 6 de abril de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
-  "objeto": "Financiar proyectos productivos y no productivos en el territorio rural gallego",
+  "plazoEjecucion": "Según resolución de concesión. Proyectos NO pueden estar iniciados en fecha de solicitud.",
+
+  "tipoAyuda": "Subvención en régimen de concurrencia competitiva",
+  "regimen": "Régimen de minimis (financiación Feader - Fondos UE)",
+
+  "objeto": "Financiar proyectos productivos y no productivos en el territorio rural gallego para impulsar el desarrollo económico y social de las zonas rurales",
+  "objetoDetallado": "Esta ayuda LEADER financia inversiones rurales tramitadas por los Grupos de Desarrollo Rural (GDR) para el desarrollo económico de zonas rurales, incluyendo proyectos productivos (empresas, explotaciones agrarias) y no productivos (promovidos por entidades sin ánimo de lucro o administraciones públicas).",
+
   "beneficiarios": "Personas físicas o jurídicas privadas, entidades públicas locales/comarcales, comunidades de montes vecinales.",
   "beneficiariosDetalle": [
     "Personas físicas o jurídicas de carácter privado",
     "Entidades públicas locales o comarcales (ayuntamientos, mancomunidades, consorcios)",
-    "Comunidades de montes vecinales en mano común y sus mancomunidades"
+    "Comunidades de montes vecinales en mano común y sus mancomunidades",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Proyectos fuera del ámbito territorial elegible",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
   "ambitoTerritorial": [
-    "Territorio rural gallego con exclusiones específicas",
-    "Excluidos: núcleos urbanos >6.000 hab. (A Coruña y Pontevedra) o >10.000 hab. (Lugo y Ourense)",
-    "Excluidos completamente: municipios de Vigo y A Coruña",
-    "Excluidos: determinados parques empresariales"
+    "Territorio rural gallego definido en la estrategia de desarrollo local del GDR",
+    "Excluidos: entidades singulares de población superiores a 6.000 habitantes (provincias de A Coruña y Pontevedra)",
+    "Excluidos: entidades singulares de población superiores a 10.000 habitantes (provincias de Lugo y Ourense)",
+    "Excluidos completamente: municipios de Vigo y A Coruña en su totalidad",
+    "Excluidos: parques empresariales en A Coruña, Vigo, Ourense, Santiago, Lugo, Ferrol y Pontevedra"
   ],
+  "zonasExcluidas": [
+    "Municipios de Vigo y A Coruña",
+    "Núcleos urbanos con más de 6.000 habitantes (A Coruña y Pontevedra) o 10.000 habitantes (Lugo y Ourense)",
+    "Parques empresariales de las principales ciudades gallegas"
+  ],
+
+  "lineas": [
+    {
+      "nombre": "Proyectos Productivos",
+      "descripcion": "Actividades económicas que generan bienes/servicios con creación/mantenimiento de empleo",
+      "porcentaje": "15% - 50% según tipo de actividad",
+      "requisitos": [
+        "Viabilidad técnica, económica y financiera",
+        "Localizados en ámbito territorial elegible"
+      ]
+    },
+    {
+      "nombre": "Proyectos No Productivos",
+      "descripcion": "Promovidos por entidades sin ánimo de lucro o administraciones públicas sin actividad económica",
+      "porcentaje": "30% - 90%",
+      "requisitos": [
+        "Promotor sin ánimo de lucro o administración pública",
+        "Sin generación de actividad económica directa"
+      ]
+    }
+  ],
+
+  "ayudaMaxima": "200.000 € por proyecto",
+
   "cuantias": [
     {
       "concepto": "Producción agraria primaria",
-      "importe": "15% - 50%"
+      "importe": "15% - 50%",
+      "descripcion": "Según características del proyecto"
     },
     {
       "concepto": "Transformación y comercialización agraria",
-      "importe": "15% - 50%"
+      "importe": "15% - 50%",
+      "descripcion": "Productos agrarios"
     },
     {
       "concepto": "Transformación y comercialización forestal",
-      "importe": "15% - 40%"
+      "importe": "15% - 40%",
+      "descripcion": "Productos forestales"
     },
     {
       "concepto": "Empresas no agrarias",
-      "importe": "15% - 50%"
+      "importe": "15% - 50%",
+      "descripcion": "Actividades empresariales no agrarias"
     },
     {
       "concepto": "Proyectos no productivos",
-      "importe": "30% - 90%"
+      "importe": "30% - 90%",
+      "descripcion": "Sin actividad económica directa"
     },
     {
       "concepto": "Ayuda máxima por proyecto",
-      "importe": "200.000 €"
+      "importe": "200.000 €",
+      "descripcion": "Límite máximo de subvención"
     }
   ],
+
   "gastosSubvencionables": [
-    "Construcción, adquisición y mejora de inmuebles (máximo 50% en adquisiciones)",
-    "Adquisición de terrenos (hasta 10% del total)",
+    "Construcción, adquisición y mejora de inmuebles (máximo 50% del total en adquisiciones)",
+    "Adquisición de terrenos (hasta 10% del total de gastos subvencionables)",
     "Maquinaria y equipos nuevos",
-    "Inversiones intangibles (software, páginas web, digitalización)",
-    "Costes generales (máximo 12% del coste total)",
-    "Gastos notariales, registrales y licencias (máximo 20% combinado)",
-    "Medios de transporte específicos para empresas nuevas"
+    "Inversiones intangibles: programas informáticos, páginas web, estudios, digitalización",
+    "Costes generales: honorarios de profesionales, estudios de viabilidad (máximo 12% del coste inversión)",
+    "Gastos notariales, registrales, permisos, licencias, patentes, marcas (máximo 20% combinado con costes generales)",
+    "Vehículos exclusivamente empresariales en actividades que inician",
+    "Adecuación de vehículos para mercancías/servicios (no obligatoria legalmente)"
   ],
+  "gastosNoSubvencionables": [
+    "Energías renovables cuyo destino principal sea venta a red eléctrica",
+    "Maquinaria agraria/forestal para servicios agrarios",
+    "Vehículos de transporte profesional",
+    "Adquisición de inmuebles superiores al 50% del total",
+    "Adquisición de terrenos superior al 10% del total",
+    "Proyectos iniciados antes de la fecha de solicitud"
+  ],
+
   "requisitos": [
-    "Estar localizados en el ámbito territorial elegible",
+    "Estar localizados en el ámbito territorial elegible (según estrategia GDR)",
     "Ser viables técnica, económica y financieramente",
     "Ajustarse a la normativa sectorial aplicable",
     "No estar iniciados en la fecha de solicitud",
-    "Ser finalistas (cumplir objetivos para los que fueron aprobados)"
+    "Ser finalistas: cumplir los objetivos para los que fueron aprobados",
+    "Inversiones turísticas/hostelería: requieren convenio con Agencia Turismo Galicia"
   ],
+
+  "obligacionesBeneficiario": [
+    "No iniciar el proyecto antes de presentar la solicitud",
+    "Ejecutar el proyecto según el plan aprobado",
+    "Cumplir los objetivos establecidos (ser finalista)",
+    "Mantener las inversiones durante el período establecido",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "compatibilidades": [
+    "Compatible con otras intervenciones PEPAC (distintas a Leader) que financien el mismo gasto"
+  ],
+  "incompatibilidades": [
+    "No se puede recibir financiación simultánea del Feader y otros fondos UE por el mismo gasto",
+    "Comercio minorista y servicios: elegibilidad según estrategia de desarrollo local del GDR"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por CONCURRENCIA COMPETITIVA: se valoran los proyectos y se ordenan por puntuación",
+    "IMPORTANTE: Proyectos NO pueden estar iniciados en la fecha de solicitud",
+    "Financiación FEADER (Fondos Europeos de Desarrollo Rural)",
+    "La estrategia de desarrollo local del GDR determina la elegibilidad de comercio minorista y servicios",
+    "Inversiones turísticas/hostelería requieren convenio previo con Agencia Turismo Galicia",
+    "Consultar convocatoria oficial 2026 y estrategia del GDR correspondiente"
+  ],
+
+  "enlaceOficial": "https://agader.xunta.gal",
+
   "imagen": "/images/subvenciones/emprendimiento.png",
   "destacada": true
 }

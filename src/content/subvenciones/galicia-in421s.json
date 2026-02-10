@@ -4,51 +4,118 @@
   "nombre": "Subvención para proyectos de energía fotovoltaica 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "INEGA - Xunta de Galicia",
+  "organismo": "INEGA - Instituto Enerxético de Galicia - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "28 de enero de 2026",
   "plazoFin": "2 de marzo de 2026",
   "plazoTexto": "Desde el 28 de enero al 2 de marzo de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
-  "objeto": "Apoyar iniciativas de ahorro energético y promoción del uso de energías renovables mediante instalaciones de paneles solares en modalidad de autoconsumo",
-  "beneficiarios": "Autónomos y empresas que no se dediquen al sector de la pesca/acuicultura o producción primaria agrícola.",
+  "plazoEjecucion": "Hasta el 15 de octubre de 2026 (extensión posible hasta 30 de septiembre de 2027)",
+
+  "tipoAyuda": "Subvención en régimen de concurrencia competitiva",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Apoyar proyectos de ahorro energético y promoción del uso de energías renovables mediante instalaciones de paneles solares fotovoltaicos en modalidad de autoconsumo",
+  "objetoDetallado": "Esta ayuda financia instalaciones de generación eléctrica mediante paneles solares fotovoltaicos para empresas y autónomos gallegos, con el objetivo de reducir el consumo energético de la red y promover el autoconsumo de energía renovable.",
+
+  "beneficiarios": "Autónomos y empresas (incluyendo pymes) que no se dediquen al sector de la pesca/acuicultura o producción primaria agrícola.",
   "beneficiariosDetalle": [
-    "Autónomos y empresas con domicilio en Galicia",
-    "Excluidas: empresas del sector pesca, acuicultura y producción agrícola primaria (CNAE 1.11 al 2.40)"
+    "Autónomos con domicilio en Galicia",
+    "Empresas (incluyendo pymes) con domicilio en Galicia",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Empresas del sector pesca y acuicultura",
+    "Empresas de producción agrícola primaria (CNAE 1.11 al 2.40)",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
+  "ayudaMaxima": "50.000 €",
+  "porcentajeBase": "30%",
+
   "cuantias": [
     {
-      "concepto": "Intensidad base",
-      "importe": "30% del coste elegible"
+      "concepto": "Intensidad base (grandes empresas)",
+      "importe": "30% del coste elegible",
+      "descripcion": "Porcentaje base para grandes empresas"
     },
     {
-      "concepto": "Incremento para medianas empresas",
-      "importe": "+10%"
+      "concepto": "Intensidad para medianas empresas",
+      "importe": "40% (30% + 10%)",
+      "descripcion": "Incremento del 10% para medianas empresas"
     },
     {
-      "concepto": "Incremento para pequeñas empresas",
-      "importe": "+20%"
+      "concepto": "Intensidad para pequeñas empresas",
+      "importe": "50% (30% + 20%)",
+      "descripcion": "Incremento del 20% para pequeñas empresas"
     },
     {
-      "concepto": "Subvención máxima",
-      "importe": "50.000 €"
+      "concepto": "Subvención máxima por proyecto/empresa",
+      "importe": "50.000 €",
+      "descripcion": "Límite máximo de ayuda"
+    },
+    {
+      "concepto": "Inversión elegible máxima base",
+      "importe": "750 €/kWp (sin IVA)",
+      "descripcion": "Coste máximo subvencionable por kWp instalado"
+    },
+    {
+      "concepto": "Inversión elegible con baterías litio",
+      "importe": "Hasta 1.100 €/kWp",
+      "descripcion": "Si se instalan baterías de litio con capacidad ≥ potencia pico"
     }
   ],
+
   "requisitos": [
-    "Potencia mínima: 100 kWp",
-    "Potencia máxima: 1.000 kWp",
-    "Inversión elegible máxima: 750 €/kWh",
-    "Cumplimiento del Reglamento Electrotécnico de Baja Tensión",
-    "Principio DNSH (no causar perjuicio significativo al medio ambiente)"
+    "Potencia mínima instalada: 100 kWp",
+    "Potencia máxima instalada: 1.000 kWp",
+    "Inversión elegible máxima: 750 €/kWp (o 1.100 €/kWp con baterías litio)",
+    "Cumplimiento del Reglamento Electrotécnico de Baja/Alta Tensión (REBT)",
+    "Rendimiento mínimo de panel: 17%",
+    "Principio DNSH (no causar perjuicio significativo al medio ambiente)",
+    "Proyectos NO iniciados antes de la solicitud"
   ],
-  "proyectosSubvencionables": [
-    "Paneles solares fotovoltaicos",
-    "Sistemas de acondicionamiento de energía (inversores, convertidores)",
-    "Sistemas de acumulación con baterías (excluye plomo ácido)",
-    "Accesorios necesarios para funcionamiento",
-    "Montaje e interconexiones"
+
+  "gastosSubvencionables": [
+    "Paneles solares fotovoltaicos (rendimiento mínimo 17%)",
+    "Sistemas de acondicionamiento de energía: inversores, convertidores, reguladores, cuadros eléctricos, cableado, medidas",
+    "Sistema de monitorización: sensores, adquisición de datos, comunicación remota",
+    "Sistema de acumulación con baterías (excluidas baterías de plomo ácido)",
+    "Accesorios necesarios para el correcto funcionamiento",
+    "Montaje, conexionado e interconexiones"
   ],
-  "plazoEjecucion": "Hasta el 15 de octubre de 2026 (extensión posible hasta 30 de septiembre de 2027)",
+  "gastosNoSubvencionables": [
+    "Baterías de plomo ácido",
+    "Instalaciones de potencia inferior a 100 kWp",
+    "Instalaciones de potencia superior a 1.000 kWp",
+    "Costes que excedan los límites de inversión elegible",
+    "IVA y otros impuestos recuperables",
+    "Gastos realizados antes de la solicitud"
+  ],
+
+  "obligacionesBeneficiario": [
+    "No iniciar el proyecto antes de presentar la solicitud",
+    "Ejecutar el proyecto en los plazos establecidos",
+    "Cumplir normativa REBT de baja o alta tensión",
+    "Mantener la instalación durante el período establecido",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por CONCURRENCIA COMPETITIVA: se valoran los proyectos y se ordenan por puntuación",
+    "IMPORTANTE: Proyectos NO pueden estar iniciados antes de la solicitud",
+    "Porcentajes INCREMENTADOS para pymes: +10% medianas, +20% pequeñas",
+    "Baterías de litio permiten incrementar el límite de inversión elegible a 1.100 €/kWp",
+    "Plazo de ejecución extensible hasta septiembre 2027",
+    "Consultar convocatoria oficial 2026 para información definitiva"
+  ],
+
+  "enlaceOficial": "https://www.inega.gal",
+
   "imagen": "/images/subvenciones/energia.png",
   "destacada": true
 }

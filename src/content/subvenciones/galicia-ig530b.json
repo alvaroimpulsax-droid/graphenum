@@ -4,74 +4,173 @@
   "nombre": "Ayudas para la iniciativa Industria Innova 2026",
   "comunidad": "galicia",
   "categoria": "innovacion",
-  "organismo": "IGAPE - Xunta de Galicia",
+  "organismo": "IGAPE - Instituto Galego de Promoción Económica - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "17 de enero de 2026",
   "plazoFin": "17 de marzo de 2026",
   "plazoTexto": "Desde el 17 de enero al 17 de marzo de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
-  "objeto": "Apoyo al desarrollo de la innovación empresarial en Galicia a través de proyectos en I+D+i",
+  "plazoEjecucion": "2026: desde presentación hasta 31/12. 2027: hasta 30/11. 2028: hasta 30/09 (máximo 3 anualidades)",
+
+  "tipoAyuda": "Subvención en régimen de concurrencia competitiva",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Apoyo al desarrollo de la innovación empresarial en Galicia a través de proyectos en I+D+i de alto impacto",
+  "objetoDetallado": "Esta ayuda financia proyectos de investigación industrial, desarrollo experimental e innovación organizativa y de procesos, liderados por empresas industriales gallegas, individualmente o en colaboración con centros tecnológicos, con presupuestos entre 2 y 25 millones de euros.",
+
   "beneficiarios": "Pymes y grandes empresas del sector industrial con centro de trabajo en Galicia que lideren proyectos I+D+i.",
   "beneficiariosDetalle": [
-    "Pymes y grandes empresas del sector industrial con centro de trabajo en Galicia",
+    "Pymes del sector industrial con centro de trabajo en Galicia",
+    "Grandes empresas del sector industrial con centro de trabajo en Galicia",
     "Agrupaciones de pymes y grandes empresas en colaboración",
-    "Agrupaciones de empresas industriales con centros tecnológicos o de apoyo a la innovación"
+    "Agrupaciones de empresas industriales con centros tecnológicos o de apoyo a la innovación",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
-  "actividadesSubvencionables": [
-    "Investigación industrial",
-    "Desarrollo experimental",
-    "Innovación organizativa",
-    "Innovación en materia de procesos"
+  "beneficiariosExcluidos": [
+    "Empresas no industriales",
+    "Empresas sin centro de trabajo en Galicia",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
   ],
+
+  "lineas": [
+    {
+      "nombre": "Investigación Industrial",
+      "descripcion": "Investigación planificada o estudios críticos para adquirir nuevos conocimientos que permitan desarrollar nuevos productos, procesos o servicios",
+      "porcentaje": "50%-60% según tamaño empresa",
+      "requisitos": [
+        "Proyecto de investigación planificada",
+        "Adquisición de nuevos conocimientos"
+      ]
+    },
+    {
+      "nombre": "Desarrollo Experimental",
+      "descripcion": "Adquisición, combinación y uso de conocimientos para desarrollar productos, procesos o servicios nuevos o mejorados",
+      "porcentaje": "25%-45% según tamaño empresa",
+      "requisitos": [
+        "Desarrollo de prototipos o proyectos piloto",
+        "Productos, procesos o servicios nuevos o mejorados"
+      ]
+    },
+    {
+      "nombre": "Innovación Organizativa y de Procesos",
+      "descripcion": "Implementación de nuevos métodos organizativos o de producción",
+      "porcentaje": "50% (solo pymes)",
+      "requisitos": [
+        "Nuevos métodos organizativos o de producción",
+        "Solo para pymes"
+      ]
+    }
+  ],
+
+  "inversionMinima": "2.000.000 €",
+  "inversionMaxima": "25.000.000 €",
+
   "cuantias": [
     {
       "concepto": "Presupuesto subvencionable mínimo",
-      "importe": "2.000.000 €"
+      "importe": "2.000.000 €",
+      "descripcion": "Umbral mínimo de proyecto"
     },
     {
       "concepto": "Presupuesto subvencionable máximo",
-      "importe": "25.000.000 €"
+      "importe": "25.000.000 €",
+      "descripcion": "Umbral máximo de proyecto"
     },
     {
       "concepto": "Investigación Industrial - Pequeña empresa",
-      "importe": "60%"
+      "importe": "60%",
+      "descripcion": "Intensidad máxima para pequeñas empresas"
     },
     {
       "concepto": "Investigación Industrial - Mediana empresa",
-      "importe": "60%"
+      "importe": "60%",
+      "descripcion": "Intensidad máxima para medianas empresas"
     },
     {
       "concepto": "Investigación Industrial - Gran empresa",
-      "importe": "50%"
+      "importe": "50%",
+      "descripcion": "Intensidad máxima para grandes empresas"
     },
     {
       "concepto": "Desarrollo Experimental - Pequeña empresa",
-      "importe": "45%"
+      "importe": "45%",
+      "descripcion": "Intensidad máxima para pequeñas empresas"
     },
     {
       "concepto": "Desarrollo Experimental - Mediana empresa",
-      "importe": "35%"
+      "importe": "35%",
+      "descripcion": "Intensidad máxima para medianas empresas"
     },
     {
       "concepto": "Desarrollo Experimental - Gran empresa",
-      "importe": "25%"
+      "importe": "25%",
+      "descripcion": "Intensidad máxima para grandes empresas"
     },
     {
       "concepto": "Innovación Organizativa/Procesos - Pymes",
-      "importe": "50%"
+      "importe": "50%",
+      "descripcion": "Solo aplicable a pymes"
     }
   ],
+
   "gastosSubvencionables": [
-    "Costes de personal",
+    "Costes de personal: investigadores, técnicos y personal auxiliar dedicado al proyecto",
     "Equipamiento y material instrumental de nueva adquisición",
-    "Materiales y suministros",
-    "Adquisición de patentes",
-    "Subcontrataciones (servicios tecnológicos externos)",
-    "Informes de auditoría",
-    "Evaluación DNSH (no causar perjuicio ambiental)",
-    "Plan de comunicación y difusión"
+    "Materiales y suministros directamente relacionados con el proyecto",
+    "Adquisición de patentes y licencias de explotación",
+    "Subcontrataciones: servicios tecnológicos externos de centros de investigación",
+    "Informes de auditoría del proyecto",
+    "Evaluación DNSH (no causar perjuicio significativo al medio ambiente)",
+    "Plan de comunicación y difusión de resultados",
+    "Costes indirectos: calculados como porcentaje de costes directos"
   ],
-  "plazoEjecucion": "2026: desde presentación hasta 31/12. 2027: hasta 30/11. 2028: hasta 30/09 (máximo)",
+  "gastosNoSubvencionables": [
+    "Equipamiento de segunda mano",
+    "Gastos financieros y de garantía",
+    "IVA y otros impuestos recuperables",
+    "Gastos no directamente relacionados con el proyecto",
+    "Proyectos iniciados antes de la solicitud"
+  ],
+
+  "actividadesSubvencionables": [
+    "Investigación industrial para nuevos conocimientos",
+    "Desarrollo experimental de productos, procesos o servicios",
+    "Innovación organizativa (nuevos métodos de gestión)",
+    "Innovación en materia de procesos (nuevos métodos de producción)"
+  ],
+
+  "requisitos": [
+    "Empresa industrial con centro de trabajo en Galicia",
+    "Presupuesto entre 2 y 25 millones de euros",
+    "Proyecto de I+D+i alineado con las líneas elegibles",
+    "Capacidad técnica y financiera para ejecutar el proyecto",
+    "Proyectos NO iniciados antes de la solicitud",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+
+  "obligacionesBeneficiario": [
+    "No iniciar el proyecto antes de presentar la solicitud",
+    "Ejecutar el proyecto según el plan aprobado",
+    "Realizar informes de auditoría del proyecto",
+    "Cumplir con el principio DNSH (no causar perjuicio ambiental)",
+    "Difundir los resultados del proyecto",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por CONCURRENCIA COMPETITIVA: se valoran los proyectos y se ordenan por puntuación",
+    "PROYECTOS DE GRAN ENVERGADURA: entre 2 y 25 millones de euros",
+    "Pueden participar agrupaciones de empresas y centros tecnológicos",
+    "El proyecto puede tener hasta 3 anualidades (2026-2028)",
+    "La innovación organizativa y de procesos solo aplica a pymes",
+    "Consultar convocatoria oficial 2026 para información definitiva"
+  ],
+
+  "enlaceOficial": "https://www.igape.es",
+
   "imagen": "/images/subvenciones/innovacion-igape.png",
   "destacada": true
 }

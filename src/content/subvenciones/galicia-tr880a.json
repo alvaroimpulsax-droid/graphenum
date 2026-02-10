@@ -1,56 +1,122 @@
 {
   "id": "galicia-emprendimiento-tr880a",
   "codigo": "TR880A",
-  "nombre": "Ayudas al emprendimiento 2026 (Xempre)",
+  "nombre": "Apoyo al emprendimiento para personas trabajadoras autónomas y pequeñas y medianas empresas 2026 (Xempre)",
   "comunidad": "galicia",
   "categoria": "emprendedores",
   "organismo": "Xunta de Galicia - Dirección General de Emprendimiento",
   "estado": "abierta",
+
   "plazoInicio": "31 de enero de 2026",
   "plazoFin": "2 de marzo de 2026",
   "plazoTexto": "Desde el 31 de enero al 2 de marzo de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
-  "objeto": "Apoyar a personas trabajadoras autónomas y pymes de reciente creación con inversiones para consolidar su actividad empresarial",
-  "beneficiarios": "Personas trabajadoras autónomas, mutualistas y pymes (incluyendo cooperativas y sociedades laborales) con domicilio fiscal en Galicia.",
+  "plazoEjecucion": "Los gastos deben estar realizados y COMPLETAMENTE PAGADOS desde el 1 de julio de 2025 hasta la fecha de presentación de la solicitud.",
+
+  "tipoAyuda": "Subvención en régimen de concurrencia competitiva",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Facilitar las iniciativas de emprendimiento, contribuir al incremento de la actividad económica y la competitividad, y al mantenimiento de empleos de calidad en Galicia",
+  "objetoDetallado": "Esta ayuda está dirigida a nuevos emprendedores y empresas de reciente creación para apoyar sus inversiones iniciales en equipamiento, tecnología, reforma de locales y otros activos necesarios para consolidar su actividad empresarial.",
+
+  "beneficiarios": "Personas trabajadoras autónomas, mutualistas y pequeñas y medianas empresas (incluyendo cooperativas y sociedades laborales) con domicilio fiscal en Galicia.",
   "beneficiariosDetalle": [
-    "Domicilio fiscal en Galicia",
+    "Personas trabajadoras autónomas dadas de alta en el RETA",
+    "Mutualistas de colegios profesionales",
+    "Pequeñas y medianas empresas (según definición UE)",
+    "Cooperativas y sociedades laborales",
+    "Domicilio fiscal en Galicia obligatorio",
     "Constituidas o dadas de alta entre el 1 de enero de 2024 y la fecha de solicitud",
-    "No haber sido beneficiarios en convocatorias anteriores (2021-2025)",
-    "Estar al corriente de obligaciones tributarias y de Seguridad Social"
+    "Inscritas en los registros administrativos correspondientes de Galicia",
+    "Haber presentado las cuentas anuales en el Registro Mercantil o de Cooperativas (si corresponde)"
   ],
+  "beneficiariosExcluidos": [
+    "Beneficiarios de esta misma ayuda (TR880A) en convocatorias anteriores 2021-2025",
+    "Entidades que sean transformación o continuidad de empresas constituidas antes del 1 de enero de 2024",
+    "Empresas que no estén al corriente de obligaciones tributarias y Seguridad Social",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
+  "inversionMinima": "5.000 €",
+  "inversionMaxima": "60.000 €",
+  "ayudaMaxima": "27.000 € (hasta 35.000 € en casos de relevo generacional)",
+
   "cuantias": [
     {
-      "concepto": "Inversión mínima requerida",
-      "importe": "5.000 €"
+      "concepto": "Inversión de 5.000 € a 20.000 €",
+      "importe": "55% subvencionable",
+      "descripcion": "Primer tramo de inversión"
     },
     {
-      "concepto": "Subvención máxima",
-      "importe": "27.000 € (hasta 35.000 € con relevo generacional)"
+      "concepto": "Inversión de 20.001 € a 30.000 €",
+      "importe": "50% subvencionable",
+      "descripcion": "Segundo tramo de inversión"
     },
     {
-      "concepto": "Tramo 5.000 € - 20.000 €",
-      "importe": "55% subvencionable"
+      "concepto": "Inversión de 30.001 € a 60.000 €",
+      "importe": "45% subvencionable",
+      "descripcion": "Tercer tramo de inversión"
     },
     {
-      "concepto": "Tramo 20.001 € - 30.000 €",
-      "importe": "50% subvencionable"
-    },
-    {
-      "concepto": "Tramo 30.001 € - 60.000 €",
-      "importe": "45% subvencionable"
+      "concepto": "Relevo generacional",
+      "importe": "Hasta 35.000 € de ayuda máxima",
+      "descripcion": "Incremento especial para casos de relevo generacional acreditado"
     }
   ],
+
   "gastosSubvencionables": [
-    "Equipamiento informático (tabletas, ordenadores, servidores, conexión internet)",
-    "Activos intangibles (software, páginas web, patentes, licencias)",
-    "Inversiones en eficiencia energética",
-    "Bienes de equipamiento y mobiliario",
-    "Reforma y habilitación de locales",
-    "Gastos notariales/registrales (máximo 300 €)",
-    "Alquiler de inmuebles (máximo 1.500 €)",
-    "Activos de segunda mano (bajo condiciones específicas)"
+    "Equipamiento informático: tabletas, ordenadores, equipos de red, servidores, conexión a internet, escáneres (excluidos móviles/smartphones)",
+    "Activos intangibles: software y suscripciones de mercado, programas informáticos a medida, páginas web, patentes, licencias, derechos de propiedad intelectual",
+    "Inversiones en eficiencia energética: cambio de iluminación, maquinaria e instalaciones que reduzcan el consumo energético",
+    "Bienes de equipamiento y mobiliario: maquinaria, herramientas del proceso productivo, equipos de transporte interno, medios de protección medioambiental, mobiliario",
+    "Reforma e instalaciones de locales: reparaciones, decoración, rotulación (sin modificar estructura del edificio)",
+    "Gastos notariales y registrales: máximo 300 €",
+    "Alquiler de inmuebles: máximo 1.500 €",
+    "Activos de segunda mano: con declaración del vendedor de que no han sido subvencionados previamente, a precio de mercado verificado"
   ],
-  "plazoEjecucion": "Del 1 de julio de 2025 hasta la presentación de la solicitud",
+  "gastosNoSubvencionables": [
+    "Teléfonos móviles y smartphones",
+    "Vehículos de transporte externo",
+    "Modificaciones estructurales de edificios",
+    "Gastos realizados o pagados fuera del período elegible"
+  ],
+
+  "requisitos": [
+    "Domicilio fiscal en Galicia",
+    "Inscripción en registros administrativos gallegos correspondientes",
+    "Presentación de cuentas anuales en Registro Mercantil o Cooperativas (si aplica)",
+    "Constituida o dada de alta entre 1 de enero de 2024 y fecha de solicitud",
+    "No haber sido beneficiario de TR880A en convocatorias 2021-2025",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Al corriente de obligaciones tributarias y de Seguridad Social",
+    "No haber sido sancionado con pérdida de derecho a subvenciones"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Realizar y pagar completamente las inversiones antes de la solicitud",
+    "Mantener la actividad empresarial durante el período establecido",
+    "Conservar la documentación justificativa de los gastos",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "documentacionRequerida": [
+    "Solicitud cumplimentada",
+    "Facturas originales de los gastos",
+    "Documentos bancarios acreditativos del pago efectivo",
+    "Declaración responsable de cumplimiento de requisitos",
+    "Documentación acreditativa de la constitución (si es empresa)"
+  ],
+
+  "notasAdicionales": [
+    "IMPORTANTE: Todos los gastos deben estar realizados Y PAGADOS antes de presentar la solicitud",
+    "Los porcentajes de subvención son decrecientes según aumenta el importe de la inversión",
+    "La concesión es por concurrencia competitiva: se valoran los proyectos y se ordenan por puntuación",
+    "Existe un incremento especial para casos de relevo generacional (hasta 35.000€ de ayuda)",
+    "Los activos de segunda mano requieren declaración del vendedor y precio de mercado verificado"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal",
+
   "imagen": "/images/subvenciones/emprendimiento.png",
   "destacada": true
 }

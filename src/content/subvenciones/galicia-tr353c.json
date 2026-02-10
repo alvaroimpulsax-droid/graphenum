@@ -4,10 +4,78 @@
   "nombre": "Práctica Profesional Jóvenes 2026",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia",
+  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
   "estado": "proxima",
+
+  "plazoInicio": "Por determinar",
+  "plazoFin": "Por determinar",
   "plazoTexto": "Convocatoria prevista para mediados de 2026",
-  "objeto": "Incentivar los contratos para prácticas profesionales de jóvenes titulados",
-  "beneficiarios": "Empresas que contraten jóvenes titulados para prácticas profesionales.",
-  "imagen": "/images/subvenciones/emprendimiento.png"
+  "plazoEjecucion": "Según bases de convocatoria 2026",
+
+  "tipoAyuda": "Subvención para la contratación",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Incentivar los contratos para prácticas profesionales de jóvenes titulados universitarios o de formación profesional",
+  "objetoDetallado": "Esta ayuda incentiva la contratación de jóvenes titulados para que adquieran experiencia profesional en empresas gallegas, facilitando su inserción laboral mediante contratos de prácticas que permitan aplicar los conocimientos adquiridos en su formación académica.",
+
+  "beneficiarios": "Empresas y autónomos que contraten jóvenes titulados para prácticas profesionales.",
+  "beneficiariosDetalle": [
+    "Empresas de cualquier forma jurídica con centro de trabajo en Galicia",
+    "Personas trabajadoras autónomas",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+  "beneficiariosExcluidos": [
+    "Empresas sin centro de trabajo en Galicia",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
+  "colectivosPrioritarios": [
+    "Jóvenes titulados universitarios",
+    "Jóvenes titulados de Formación Profesional",
+    "Jóvenes con certificados de profesionalidad"
+  ],
+
+  "cuantias": [
+    {
+      "concepto": "Ayuda por contrato de prácticas",
+      "importe": "Por determinar en convocatoria 2026",
+      "descripcion": "Consultar bases oficiales"
+    }
+  ],
+
+  "condicionesContratacion": [
+    "Contrato de prácticas profesionales según normativa laboral vigente",
+    "Persona contratada debe ser joven titulado/a",
+    "Titulación relacionada con el puesto de trabajo",
+    "Centro de trabajo ubicado en Galicia"
+  ],
+
+  "requisitos": [
+    "Centro de trabajo en Galicia",
+    "Contrato de prácticas según normativa laboral",
+    "Persona contratada con titulación acorde al puesto",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Mantener el contrato durante el período establecido",
+    "Proporcionar formación práctica al joven contratado",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "notasAdicionales": [
+    "CONVOCATORIA PRÓXIMA: Pendiente de publicación de bases 2026",
+    "Los datos mostrados son orientativos basados en convocatorias anteriores",
+    "Consultar convocatoria oficial cuando se publique para información definitiva",
+    "Destinada a facilitar la inserción laboral de jóvenes titulados"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal",
+
+  "imagen": "/images/subvenciones/emprendimiento.png",
+  "destacada": false
 }

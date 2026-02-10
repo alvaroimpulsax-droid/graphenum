@@ -1,52 +1,227 @@
 {
   "id": "galicia-autonomos-contratacion-tr349f",
   "codigo": "TR349F",
-  "nombre": "Programa de ayudas a personas trabajadoras autónomas por contratación indefinida",
+  "nombre": "Programa de ayudas a personas trabajadoras autónomas por la contratación indefinida y la formación de personas asalariadas 2026",
   "comunidad": "galicia",
   "categoria": "contratacion",
-  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
+  "organismo": "Xunta de Galicia - Consellería de Emprego, Igualdade e Migracións",
   "estado": "abierta",
+
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
-  "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
-  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
-  "objeto": "Incentivar la contratación indefinida del 1º, 2º y 3º trabajador por parte de personas trabajadoras autónomas",
-  "beneficiarios": "Personas trabajadoras autónomas o profesionales con domicilio social y fiscal en Galicia que realicen contrataciones indefinidas.",
+  "plazoTexto": "Desde el 11 de febrero hasta el 30 de septiembre de 2026",
+  "plazoEjecucion": "Las contrataciones subvencionables deben realizarse entre el 1 de octubre de 2025 y el 30 de septiembre de 2026. El puesto de trabajo debe mantenerse obligatoriamente durante un período mínimo de 36 meses desde la fecha de contratación.",
+
+  "tipoAyuda": "Subvención a fondo perdido en régimen de concurrencia no competitiva (orden de entrada)",
+  "regimen": "Régimen de ayudas de minimis (Reglamento UE 2023/2831)",
+
+  "objeto": "Incentivar la contratación indefinida inicial del primer, segundo y tercer trabajador por parte de personas trabajadoras autónomas y profesionales con domicilio social y fiscal en Galicia, así como financiar acciones formativas para las personas contratadas",
+  "objetoDetallado": "Este programa de ayudas tiene como finalidad principal apoyar a las personas trabajadoras autónomas y profesionales establecidas en Galicia para que puedan realizar sus primeras contrataciones indefinidas, contribuyendo así al crecimiento del empleo estable y de calidad en la Comunidad Autónoma. La subvención se estructura en dos componentes complementarios y compatibles entre sí: el Bono de Contratación, que incentiva económicamente la contratación indefinida inicial de hasta tres personas trabajadoras, y el Bono de Formación, que financia acciones formativas para mejorar las competencias profesionales de las personas contratadas. El programa reconoce mediante cuantías incrementadas la contratación de personas pertenecientes a colectivos prioritarios que enfrentan mayores dificultades de inserción en el mercado laboral, así como las contrataciones realizadas en municipios rurales, fomentando así la fijación de empleo en el territorio.",
+
+  "beneficiarios": "Personas trabajadoras autónomas y profesionales con domicilio social y fiscal en la Comunidad Autónoma de Galicia que realicen contrataciones indefinidas de su primer, segundo o tercer trabajador por cuenta ajena.",
   "beneficiariosDetalle": [
-    "Autónomos con domicilio social y fiscal en Galicia",
-    "No haber desarrollado la misma o similar actividad en los 3 meses anteriores (coincidencia CNAE a 3 dígitos)",
-    "Quedan excluidas: sociedades civiles, comunidades de bienes, autónomos colaboradores"
+    "Personas trabajadoras autónomas dadas de alta en el Régimen Especial de Trabajadores Autónomos (RETA) de la Seguridad Social",
+    "Profesionales por cuenta propia dados de alta en mutualidad de colegio profesional como sistema alternativo al RETA",
+    "Deben tener establecido el domicilio social Y el domicilio fiscal en el territorio de la Comunidad Autónoma de Galicia",
+    "La ayuda aplica para la primera, segunda y tercera contratación indefinida por cuenta ajena",
+    "Para la primera contratación: debe realizarse durante el primer año de actividad como autónomo",
+    "Para la segunda y tercera contratación: deben realizarse dentro de los tres primeros años de actividad",
+    "No deben haber desarrollado la misma o similar actividad empresarial o profesional (coincidencia del código CNAE a nivel de 3 dígitos) en los 3 meses inmediatamente anteriores al alta como autónomo",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias y con la Seguridad Social"
   ],
-  "cuantias": [
+  "beneficiariosExcluidos": [
+    "Sociedades civiles y comunidades de bienes, así como las personas socias o comuneras de dichas entidades",
+    "Personas autónomas colaboradoras o familiares de autónomos",
+    "Personas autónomas que desarrollen actividad como continuidad o transformación de una actividad empresarial previa similar (mismo CNAE a 3 dígitos)",
+    "Personas autónomas que hayan despedido trabajadores en los 6 meses anteriores a la contratación subvencionable por causas objetivas o disciplinarias declaradas improcedentes",
+    "Empresas o autónomos que tengan deudas pendientes con la Administración pública",
+    "Personas que hayan sido sancionadas mediante resolución firme con la pérdida del derecho a obtener subvenciones"
+  ],
+
+  "lineas": [
     {
-      "concepto": "Primera contratación indefinida",
-      "importe": "7.500 € (9.000 € para colectivos prioritarios)"
+      "nombre": "Bono de Contratación",
+      "descripcion": "Subvención destinada a incentivar la contratación indefinida inicial del primer, segundo y tercer trabajador por cuenta ajena. Este componente constituye el núcleo principal del programa y ofrece cuantías diferenciadas según el número ordinal de la contratación y el perfil de la persona contratada. Las cuantías son proporcionales a la jornada de trabajo cuando se trata de contratos a tiempo parcial.",
+      "requisitos": [
+        "Contratación indefinida inicial a jornada completa o parcial (mínimo 50% de la jornada según convenio)",
+        "La persona contratada debe estar inscrita como desempleada en el Servicio Público de Empleo",
+        "La contratación debe realizarse entre el 1 de octubre de 2025 y el 30 de septiembre de 2026",
+        "Comunicación de la contratación a través de la plataforma Contrat@ en los 10 días hábiles siguientes",
+        "Mantenimiento del puesto de trabajo durante 36 meses"
+      ]
     },
     {
-      "concepto": "Segunda y tercera contratación",
-      "importe": "9.000 € (11.000 € para colectivos prioritarios)"
-    },
-    {
-      "concepto": "Incrementos adicionales acumulables",
-      "importe": "+15% (municipio rural, >45 años, personas trans, mujeres en profesiones subrepresentadas)"
+      "nombre": "Bono de Formación",
+      "descripcion": "Subvención complementaria destinada a financiar acciones formativas para las personas contratadas con contrato indefinido. Este componente permite mejorar las competencias profesionales de las personas trabajadoras y admite la modalidad de teleformación. Es compatible con el Bono de Contratación y puede solicitarse conjuntamente o de forma separada.",
+      "requisitos": [
+        "La persona trabajadora debe tener contrato indefinido vigente con la persona autónoma beneficiaria",
+        "Las acciones formativas deben estar relacionadas con la actividad empresarial o profesional desarrollada",
+        "Se admite formación presencial, semipresencial o teleformación",
+        "Las acciones formativas deben realizarse durante el período de vigencia del contrato"
+      ]
     }
   ],
-  "requisitos": [
-    "Contrataciones realizadas entre octubre 2025 y septiembre 2026",
-    "Contratos indefinidos o fijos discontinuos (mínimo 6 meses/año)",
-    "Jornada completa o parcial (mínimo 50% según convenio)",
-    "Persona contratada debe estar desempleada e inscrita como demandante de empleo",
-    "Mantener el puesto durante 36 meses"
+
+  "cuantias": [
+    {
+      "concepto": "Primera contratación indefinida - Cuantía base",
+      "importe": "7.500 €",
+      "descripcion": "Cuantía base para la primera contratación indefinida de una persona desempleada inscrita como demandante de empleo que no pertenezca a ninguno de los colectivos prioritarios. Esta cuantía se reduce proporcionalmente en caso de contrato a tiempo parcial según el porcentaje de jornada respecto a la jornada completa establecida en convenio colectivo."
+    },
+    {
+      "concepto": "Primera contratación indefinida - Colectivos prioritarios",
+      "importe": "9.000 €",
+      "descripcion": "Cuantía incrementada para la primera contratación indefinida cuando la persona contratada pertenece a alguno de los colectivos prioritarios: mujeres, personas desempleadas de larga duración, mayores de 52 años, personas con discapacidad, personas en riesgo de exclusión social, emigrantes retornados o personas extranjeras."
+    },
+    {
+      "concepto": "Segunda contratación indefinida - Cuantía base",
+      "importe": "9.000 €",
+      "descripcion": "Cuantía base para la segunda contratación indefinida de una persona desempleada inscrita como demandante de empleo. La segunda contratación debe realizarse dentro de los tres primeros años de actividad como persona autónoma."
+    },
+    {
+      "concepto": "Segunda contratación indefinida - Colectivos prioritarios",
+      "importe": "11.000 €",
+      "descripcion": "Cuantía incrementada para la segunda contratación indefinida cuando la persona contratada pertenece a alguno de los colectivos prioritarios establecidos en la convocatoria."
+    },
+    {
+      "concepto": "Tercera contratación indefinida - Cuantía base",
+      "importe": "9.000 €",
+      "descripcion": "Cuantía base para la tercera contratación indefinida de una persona desempleada inscrita como demandante de empleo. La tercera contratación debe realizarse dentro de los tres primeros años de actividad como persona autónoma."
+    },
+    {
+      "concepto": "Tercera contratación indefinida - Colectivos prioritarios",
+      "importe": "11.000 €",
+      "descripcion": "Cuantía incrementada para la tercera contratación indefinida cuando la persona contratada pertenece a alguno de los colectivos prioritarios establecidos en la convocatoria."
+    },
+    {
+      "concepto": "Bono de Formación",
+      "importe": "4.000 €",
+      "descripcion": "Cuantía máxima para financiar acciones formativas por cada persona trabajadora contratada con contrato indefinido que cumpla los requisitos establecidos. Este importe puede destinarse a una o varias acciones formativas."
+    }
   ],
+  "ayudaMaxima": "Hasta 20.250 € por contratación (cuantía máxima de 9.000€ para colectivos prioritarios + todos los incrementos acumulados del 125%)",
+
+  "incrementos": [
+    {
+      "concepto": "Incremento por centro de trabajo en municipio rural",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento del 25% sobre la cuantía base o de colectivo prioritario cuando el centro de trabajo donde prestará servicios la persona contratada está ubicado en un ayuntamiento clasificado como rural según la normativa vigente. Este incremento fomenta la creación de empleo en zonas rurales y contribuye a la fijación de población en el territorio."
+    },
+    {
+      "concepto": "Incremento por contratación de mujer",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento del 25% cuando la persona contratada es una mujer. Este incremento forma parte de las políticas de fomento del empleo femenino y reducción de la brecha de género en el mercado laboral."
+    },
+    {
+      "concepto": "Incremento por persona contratada mayor de 45 años",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento del 25% cuando la persona contratada tiene más de 45 años de edad. Este incremento NO es aplicable cuando la persona ya tiene derecho al incremento por pertenecer al colectivo prioritario de mayores de 52 años, ya que no pueden acumularse ambos beneficios relacionados con la edad."
+    },
+    {
+      "concepto": "Incremento por contratación de emigrante retornado/a",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento del 25% cuando la persona contratada acredita la condición de emigrante retornado/a según la normativa de la Secretaría General de Emigración."
+    },
+    {
+      "concepto": "Incremento por contratación de persona trans",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento del 25% cuando la persona contratada es una persona trans. Este incremento forma parte de las medidas de acción positiva para colectivos que enfrentan mayores barreras de acceso al empleo."
+    },
+    {
+      "concepto": "Incremento por mujer en profesión con subrepresentación femenina",
+      "importe": "+25%",
+      "descripcion": "Se aplica un incremento adicional del 25% cuando se contrata a una mujer para desempeñar un puesto de trabajo en una ocupación o profesión donde las mujeres están subrepresentadas según el listado oficial publicado por el Instituto Galego de Cualificaciones."
+    }
+  ],
+
   "colectivosPrioritarios": [
-    "Mujeres",
-    "Desempleados de larga duración",
-    "Mayores de 52 años",
-    "Personas con discapacidad",
-    "Personas en situación de exclusión social",
-    "Emigrantes retornados",
-    "Personas extranjeras"
+    "Mujeres desempleadas inscritas como demandantes de empleo",
+    "Personas desempleadas de larga duración, definidas como aquellas que hayan permanecido inscritas como demandantes de empleo durante al menos 360 días en los 540 días anteriores a la fecha de contratación",
+    "Personas mayores de 52 años en el momento de la contratación",
+    "Personas con discapacidad reconocida igual o superior al 33% según certificado oficial",
+    "Personas en situación o riesgo de exclusión social, debidamente acreditada mediante certificado de los servicios sociales competentes o mediante su condición de perceptoras de la Renta de Inclusión Social de Galicia (RISGA)",
+    "Personas emigrantes retornadas a Galicia según la definición establecida por la Secretaría General de Emigración",
+    "Personas de nacionalidad extranjera con autorización de residencia y trabajo en vigor"
   ],
+
+  "condicionesContratacion": [
+    "Las contrataciones subvencionables deben formalizarse entre el 1 de octubre de 2025 y el 30 de septiembre de 2026",
+    "La contratación debe realizarse ANTES o el mismo día en que se presenta la solicitud de subvención. No se admiten solicitudes para contrataciones futuras",
+    "La contratación debe comunicarse a través de la plataforma Contrat@ del SEPE en los 10 días hábiles siguientes al inicio de la relación laboral",
+    "Modalidades de contrato admitidas: contrato indefinido ordinario inicial o contrato fijo discontinuo con un mínimo de 6 meses de actividad efectiva al año",
+    "Jornada de trabajo: se admite jornada completa o parcial, con un mínimo del 50% de la jornada ordinaria establecida en el convenio colectivo de aplicación. En caso de jornada parcial, la cuantía se reduce proporcionalmente",
+    "La persona contratada debe estar inscrita como demandante de empleo en los servicios públicos de empleo en el momento inmediatamente anterior a la contratación",
+    "No puede existir relación de parentesco hasta el segundo grado de consanguinidad o afinidad entre la persona autónoma y la persona contratada",
+    "La persona contratada no puede haber trabajado para la misma persona autónoma en los 6 meses anteriores a la contratación subvencionable"
+  ],
+
+  "requisitos": [
+    "Tener domicilio social y fiscal establecido en el territorio de la Comunidad Autónoma de Galicia",
+    "Estar dado de alta como persona trabajadora autónoma en el RETA o en mutualidad de colegio profesional",
+    "No haber desarrollado la misma o similar actividad empresarial o profesional (coincidencia del código CNAE a nivel de 3 dígitos) en los 3 meses inmediatamente anteriores al alta como autónomo",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con la Administración del Estado y con la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Tesorería General de la Seguridad Social",
+    "No haber sido sancionado mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones",
+    "No estar incurso en ninguna de las prohibiciones para obtener la condición de beneficiario recogidas en el artículo 10 de la Ley 9/2007 de subvenciones de Galicia",
+    "No haber despedido trabajadores por causas objetivas o disciplinarias que hayan sido declaradas improcedentes en los 6 meses anteriores a la contratación subvencionable"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Mantener el puesto de trabajo subvencionado durante un período mínimo de 36 meses desde la fecha de inicio del contrato, salvo baja voluntaria, jubilación o fallecimiento del trabajador",
+    "Comunicar a la Consellería de Emprego cualquier modificación de las circunstancias que afecten al contrato de trabajo subvencionado en el plazo de 15 días desde que se produzca",
+    "Permitir la sustitución del trabajador únicamente cuando ya exista resolución de concesión de la ayuda. Solo se permite una sustitución por puesto subvencionado",
+    "Si el trabajador causa baja por cualquier motivo distinto a baja voluntaria, jubilación o fallecimiento sin que se produzca sustitución, proceder al reintegro proporcional de la ayuda correspondiente al tiempo de mantenimiento no cumplido",
+    "Conservar la documentación justificativa del contrato y de la relación laboral durante un período de 4 años desde la resolución de concesión",
+    "Cumplir con todas las obligaciones laborales, tributarias y de Seguridad Social derivadas del contrato de trabajo",
+    "Someterse a las actuaciones de comprobación y control que realice la Administración"
+  ],
+  "mantenimientoEmpleo": "El puesto de trabajo subvencionado debe mantenerse durante un período mínimo de 36 meses desde la fecha de inicio del contrato. Se permite una única sustitución por puesto subvencionado, siempre que ya exista resolución de concesión de la ayuda. La sustitución debe realizarse en el plazo máximo de 2 meses desde la baja del trabajador sustituido. Si no se produce sustitución válida o se despide al trabajador sin causa justificada, se deberá devolver la parte proporcional de la ayuda correspondiente al tiempo de mantenimiento no cumplido. El incumplimiento total del mantenimiento del empleo supondrá el reintegro íntegro de la subvención más los intereses de demora.",
+
+  "incompatibilidades": [
+    "Otras subvenciones, ayudas, ingresos o recursos públicos para los mismos conceptos subvencionables y para la misma finalidad procedentes de cualquier Administración pública",
+    "Ayudas del programa Galicia Emprega (TR342C) para la misma contratación",
+    "Programas de integración laboral de personas con discapacidad que subvencionen la misma contratación"
+  ],
+  "compatibilidades": [
+    "Bonificaciones a la Seguridad Social (reducciones de cuotas empresariales por contratación)",
+    "Otras ayudas públicas siempre que tengan distinta finalidad y no se supere el límite máximo de ayuda acumulada",
+    "El límite de ayuda concurrente no puede superar el 70% del coste salarial de dos anualidades (ampliable al 80% si el trabajador pertenece a colectivo prioritario)"
+  ],
+
+  "documentacionNecesaria": [
+    "Solicitud normalizada debidamente cumplimentada según el modelo oficial (Anexo I del procedimiento TR349F)",
+    "Declaración responsable sobre otras ayudas solicitadas o concedidas y sobre el cumplimiento de requisitos",
+    "Copia del contrato de trabajo indefinido formalizado con la persona trabajadora",
+    "Comunicación del contrato a través de la plataforma Contrat@ del SEPE",
+    "Informe de vida laboral de la empresa y del trabajador contratado",
+    "Certificado de inscripción como demandante de empleo del trabajador en fecha anterior a la contratación",
+    "Alta en el Impuesto de Actividades Económicas de la persona autónoma",
+    "Documentación acreditativa de la pertenencia del trabajador a colectivo prioritario, en su caso",
+    "Para municipio rural: certificado de ubicación del centro de trabajo",
+    "Para Bono de Formación: programa formativo y presupuesto de la acción formativa"
+  ],
+
+  "tramitacion": "Las solicitudes deben presentarse obligatoriamente por medios electrónicos a través del formulario normalizado disponible en la sede electrónica de la Xunta de Galicia (https://sede.xunta.gal). El procedimiento es TR349F. Las personas interesadas deben disponer de certificado electrónico o Chave365. El plazo de resolución es de 3 meses desde la entrada de la solicitud completa. Las solicitudes se tramitan por riguroso orden de entrada hasta el agotamiento del crédito presupuestario disponible.",
+
+  "notasAdicionales": [
+    "IMPORTANTE: Los incrementos del 25% son ACUMULABLES entre sí. Una persona puede acumular varios incrementos: municipio rural + mujer + mayor de 45 años + trans + emigrante retornado, llegando a incrementar significativamente la ayuda base",
+    "Los colectivos prioritarios (que dan derecho a cuantías superiores) NO son acumulables entre sí: aunque la persona contratada pertenezca a varios colectivos prioritarios, solo se aplica uno de ellos",
+    "El Bono de Formación (4.000€) es compatible y adicional al Bono de Contratación. Puede solicitarse conjuntamente o de forma separada una vez formalizado el contrato indefinido",
+    "La concesión es por estricto orden de entrada de las solicitudes completas hasta agotar el presupuesto disponible. Se recomienda presentar la solicitud cuanto antes una vez formalizado el contrato",
+    "La contratación debe estar formalizada ANTES de presentar la solicitud. No se admiten solicitudes para contrataciones futuras o previstas",
+    "Las cuantías para contratos a tiempo parcial se reducen proporcionalmente según el porcentaje de jornada respecto a la jornada completa del convenio colectivo aplicable",
+    "La primera contratación debe realizarse durante el primer año de actividad como autónomo. La segunda y tercera deben realizarse dentro de los tres primeros años",
+    "El Bono de Formación admite teleformación, lo que facilita la capacitación del personal contratado sin necesidad de desplazamientos"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal/detalle-procedemento?codtram=TR349F",
+  "normativaAplicable": [
+    "Orden de convocatoria para el ejercicio 2026 de la Consellería de Emprego, Igualdade e Migracións",
+    "Ley 9/2007, de 13 de junio, de subvenciones de Galicia",
+    "Real Decreto Legislativo 2/2015, de 23 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto de los Trabajadores",
+    "Reglamento (UE) 2023/2831 de la Comisión, relativo a la aplicación de los artículos 107 y 108 del TFUE a las ayudas de minimis"
+  ],
+
   "imagen": "/images/subvenciones/contratacion-autonomos.png",
   "destacada": true
 }

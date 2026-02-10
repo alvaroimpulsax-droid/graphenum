@@ -6,62 +6,157 @@
   "categoria": "contratacion",
   "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
   "estado": "proxima",
+
+  "plazoInicio": "Por determinar",
+  "plazoFin": "Por determinar",
   "plazoTexto": "Convocatoria prevista para mediados de 2026",
-  "tipoAyuda": "Concurrencia no competitiva. Orden de entrada.",
-  "objeto": "Financiar acciones formativas no formal de corta duración para mejorar la cualificación de los trabajadores de empresas gallegas",
+  "plazoEjecucion": "Desarrollo de acciones formativas entre julio 2026 y septiembre 2027",
+
+  "tipoAyuda": "Subvención por concurrencia no competitiva (orden de entrada)",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Financiar acciones formativas no formales de corta duración para mejorar la cualificación de los trabajadores de empresas gallegas",
+  "objetoDetallado": "Esta ayuda financia bonos de formación para que las empresas gallegas mejoren las competencias de sus trabajadores en áreas estratégicas como digitalización, procesos industriales, gestión empresarial, atención al cliente, ámbito asistencial y tecnologías limpias.",
+
   "beneficiarios": "Microempresas, pymes, grandes empresas y personas autónomas con actividad ininterrumpida desde al menos el 11 de julio de 2023.",
   "beneficiariosDetalle": [
-    "Microempresas, pymes y grandes empresas válidamente constituidas",
-    "Personas autónomas",
-    "Requisito: actividad ininterrumpida desde al menos 11 de julio de 2023"
+    "Microempresas válidamente constituidas",
+    "Pequeñas y medianas empresas (pymes)",
+    "Grandes empresas",
+    "Personas trabajadoras autónomas",
+    "Requisito: actividad empresarial ininterrumpida desde al menos 11 de julio de 2023",
+    "Centro de trabajo en Galicia",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
-  "areasFormativas": [
-    "Competencias digitales",
-    "Procesos industriales",
-    "Gestión empresarial",
-    "Prestación de servicios a clientes",
-    "Ámbito asistencial",
-    "Tecnologías limpias y eficientes"
+  "beneficiariosExcluidos": [
+    "Empresas con menos de 2 años de actividad continuada",
+    "Empresas sin centro de trabajo en Galicia",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
   ],
-  "caracteristicasFormacion": [
-    "Duración: mínimo 16 horas, máximo 100 horas por acción",
-    "Máximo 3 acciones formativas por entidad",
-    "Modalidad: presencial o aula virtual",
-    "Período: desarrollo entre julio 2026 y septiembre 2027"
+
+  "lineas": [
+    {
+      "nombre": "Competencias digitales",
+      "descripcion": "Formación en herramientas y tecnologías digitales",
+      "requisitos": ["Acciones de 16-100 horas"]
+    },
+    {
+      "nombre": "Procesos industriales",
+      "descripcion": "Formación en mejora de procesos productivos",
+      "requisitos": ["Acciones de 16-100 horas"]
+    },
+    {
+      "nombre": "Gestión empresarial",
+      "descripcion": "Formación en administración y gestión de empresas",
+      "requisitos": ["Acciones de 16-100 horas"]
+    },
+    {
+      "nombre": "Prestación de servicios a clientes",
+      "descripcion": "Formación en atención y servicio al cliente",
+      "requisitos": ["Acciones de 16-100 horas"]
+    },
+    {
+      "nombre": "Ámbito asistencial",
+      "descripcion": "Formación en servicios asistenciales y cuidados",
+      "requisitos": ["Acciones de 16-100 horas"]
+    },
+    {
+      "nombre": "Tecnologías limpias y eficientes",
+      "descripcion": "Formación en sostenibilidad y eficiencia energética",
+      "requisitos": ["Acciones de 16-100 horas"]
+    }
   ],
+
+  "ayudaMaxima": "25.000 € por entidad",
+
   "cuantias": [
     {
       "concepto": "Cuantía máxima por entidad",
-      "importe": "25.000 €"
+      "importe": "25.000 €",
+      "descripcion": "Límite total para todas las acciones formativas"
     },
     {
       "concepto": "Grandes empresas",
-      "importe": "50% de costes subvencionables"
+      "importe": "50% de costes subvencionables",
+      "descripcion": "Porcentaje de financiación para grandes empresas"
     },
     {
       "concepto": "Medianas empresas",
-      "importe": "60%"
+      "importe": "60%",
+      "descripcion": "Porcentaje de financiación para medianas empresas"
     },
     {
       "concepto": "Pequeñas y microempresas",
-      "importe": "70%"
+      "importe": "70%",
+      "descripcion": "Porcentaje de financiación para pequeñas empresas"
     },
     {
       "concepto": "Sector transporte marítimo",
-      "importe": "100% (condiciones especiales)"
+      "importe": "100%",
+      "descripcion": "Condiciones especiales para el sector marítimo"
     },
     {
       "concepto": "Coste hora formación por participante",
-      "importe": "16,70 €"
+      "importe": "16,70 €",
+      "descripcion": "Módulo económico para costes de formación"
     },
     {
       "concepto": "Coste hora para salarios participantes",
-      "importe": "17,93 €"
+      "importe": "17,93 €",
+      "descripcion": "Módulo económico para costes salariales"
     }
   ],
-  "incompatibilidades": [
-    "No es compatible con otras subvenciones, ayudas e ingresos procedentes de cualquier otra Administración"
+
+  "areasFormativas": [
+    "Competencias digitales: ofimática avanzada, herramientas colaborativas, ciberseguridad",
+    "Procesos industriales: automatización, control de calidad, lean manufacturing",
+    "Gestión empresarial: finanzas, marketing, recursos humanos",
+    "Prestación de servicios a clientes: atención al cliente, ventas, idiomas",
+    "Ámbito asistencial: cuidados, primeros auxilios, prevención",
+    "Tecnologías limpias y eficientes: eficiencia energética, economía circular, sostenibilidad"
   ],
+
+  "caracteristicasFormacion": [
+    "Duración: mínimo 16 horas, máximo 100 horas por acción formativa",
+    "Máximo 3 acciones formativas por entidad",
+    "Modalidad: presencial o aula virtual (síncrona)",
+    "Período de desarrollo: julio 2026 - septiembre 2027",
+    "Formación no formal (no conducente a título oficial)"
+  ],
+
+  "requisitos": [
+    "Actividad empresarial ininterrumpida desde al menos 11/07/2023",
+    "Centro de trabajo en Galicia",
+    "Acciones formativas de 16-100 horas cada una",
+    "Máximo 3 acciones formativas por empresa",
+    "Modalidad presencial o aula virtual",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Ejecutar las acciones formativas en el período establecido",
+    "Mantener registro de asistencia de participantes",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "incompatibilidades": [
+    "No es compatible con otras subvenciones, ayudas o ingresos procedentes de cualquier otra Administración para las mismas acciones formativas"
+  ],
+
+  "notasAdicionales": [
+    "CONVOCATORIA PRÓXIMA: Pendiente de publicación de bases 2026",
+    "Máximo 3 ACCIONES FORMATIVAS por entidad",
+    "Duración de cada acción: entre 16 y 100 horas",
+    "El sector transporte marítimo tiene cobertura del 100%",
+    "Los porcentajes de ayuda son mayores para empresas más pequeñas",
+    "Consultar convocatoria oficial cuando se publique para información definitiva"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal",
+
   "imagen": "/images/subvenciones/galicia-emprega.png",
   "destacada": false
 }

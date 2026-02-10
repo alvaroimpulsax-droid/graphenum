@@ -4,15 +4,15 @@ import heroBg from '../assets/hero-bg.webp';
 ---
 
 <section class="relative overflow-hidden">
-  <!-- Background image -->
+  <!-- Background image (LCP element) -->
   <div class="absolute inset-0">
-    <Image src={heroBg} alt="" class="w-full h-full object-cover" loading="eager" />
+    <Image src={heroBg} alt="" class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
     <div class="absolute inset-0 bg-slate-900/85"></div>
   </div>
 
-  <!-- Background icon decoration -->
-  <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 opacity-[0.08] pointer-events-none">
-    <img src="/icon.svg" alt="" class="w-[800px] h-[800px]" />
+  <!-- Background icon decoration (hidden on mobile, lazy loaded) -->
+  <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 opacity-[0.08] pointer-events-none" aria-hidden="true">
+    <img src="/icon.svg" alt="" class="w-[800px] h-[800px]" loading="lazy" decoding="async" fetchpriority="low" />
   </div>
 
   <div class="container-tight pt-32 pb-20 md:pt-36 md:pb-24 relative">
@@ -36,15 +36,15 @@ import heroBg from '../assets/hero-bg.webp';
           <span class="text-sm text-slate-300">Especialistas en</span>
           <div class="flex items-center gap-3">
             <span class="flex items-center gap-1.5">
-              <img src="/flags/madrid.svg" alt="" class="w-5 h-3 rounded-sm" />
+              <img src="/flags/madrid.svg" alt="Madrid" class="w-5 h-3 rounded-sm" width="20" height="12" loading="eager" decoding="async" />
               <span class="text-sm font-medium text-white">Madrid</span>
             </span>
             <span class="flex items-center gap-1.5">
-              <img src="/flags/canarias.svg" alt="" class="w-5 h-3 rounded-sm" />
+              <img src="/flags/canarias.svg" alt="Canarias" class="w-5 h-3 rounded-sm" width="20" height="12" loading="eager" decoding="async" />
               <span class="text-sm font-medium text-white">Canarias</span>
             </span>
             <span class="flex items-center gap-1.5">
-              <img src="/flags/galicia.svg" alt="" class="w-5 h-3 rounded-sm" />
+              <img src="/flags/galicia.svg" alt="Galicia" class="w-5 h-3 rounded-sm" width="20" height="12" loading="eager" decoding="async" />
               <span class="text-sm font-medium text-white">Galicia</span>
             </span>
           </div>

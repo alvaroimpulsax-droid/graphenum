@@ -4,66 +4,201 @@
   "nombre": "Ayudas para la promoción del empleo autónomo 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "Xunta de Galicia - Consellería de Emprego e Igualdade",
+  "organismo": "Xunta de Galicia - Consellería de Emprego, Igualdade e Migracións",
   "estado": "abierta",
+
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
-  "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
-  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
-  "objeto": "Conceder ayuda económica a personas desempleadas que inicien actividad empresarial o profesional en Galicia como trabajadoras autónomas",
-  "beneficiarios": "Personas que causen alta en el RETA o régimen especial por cuenta propia entre el 1 de octubre de 2025 y el 30 de septiembre de 2026.",
+  "plazoTexto": "Desde el 11 de febrero hasta el 30 de septiembre de 2026",
+  "plazoEjecucion": "El alta como persona trabajadora autónoma debe producirse entre el 1 de octubre de 2025 y el 30 de septiembre de 2026. Es imprescindible que la actividad económica esté iniciada con anterioridad a la fecha de presentación de la solicitud de subvención.",
+
+  "tipoAyuda": "Subvención a fondo perdido en régimen de concurrencia no competitiva",
+  "regimen": "Régimen de ayudas de minimis (Reglamento UE 2023/2831)",
+
+  "objeto": "Concesión de ayuda económica a personas desempleadas que pretendan desarrollar su actividad empresarial o profesional en Galicia como trabajadoras autónomas, destinada a hacer frente a los gastos generados en el inicio de la actividad",
+  "objetoDetallado": "Esta línea de subvenciones tiene como finalidad principal apoyar económicamente a las personas en situación de desempleo que decidan iniciar una actividad empresarial o profesional por cuenta propia en el territorio de la Comunidad Autónoma de Galicia. La ayuda está específicamente diseñada para sufragar los gastos inherentes al comienzo de la actividad como persona trabajadora autónoma, tales como el alta en el régimen correspondiente de la Seguridad Social, los gastos de constitución y puesta en marcha, la adquisición de material y equipamiento inicial, los gastos de asesoramiento y gestoría, así como cualquier otro coste derivado del arranque del negocio. El programa contempla cuantías incrementadas para aquellos colectivos que presentan mayores dificultades de inserción en el mercado laboral, reconociendo así las barreras adicionales que enfrentan determinados grupos de población a la hora de emprender. La subvención se otorga por estricto orden de entrada de las solicitudes hasta el agotamiento del crédito presupuestario disponible, lo que significa que no existe competencia entre solicitantes más allá de la rapidez en la presentación.",
+
+  "beneficiarios": "Personas desempleadas que causen alta en el Régimen Especial de Trabajadores Autónomos (RETA) de la Seguridad Social, en otro régimen especial por cuenta propia de la Seguridad Social, o en la mutualidad del colegio profesional correspondiente, entre el 1 de octubre de 2025 y el 30 de septiembre de 2026.",
   "beneficiariosDetalle": [
-    "Estar inscrita como demandante de empleo",
-    "Haber iniciado la actividad antes de solicitar la subvención",
-    "No tener ningún alta como persona autónoma desde el 4 de febrero de 2021",
-    "Estar dado de alta en el Impuesto de Actividades Económicas (IAE)",
-    "Desarrollar actividad en Galicia con domicilio fiscal en Galicia"
+    "Estar inscrita como demandante de empleo en los servicios públicos de empleo en el momento de causar alta como persona trabajadora autónoma. En el caso de personas mutualistas de colegios profesionales, se requiere carecer de ocupación efectiva en el momento del alta",
+    "Haber iniciado efectivamente la actividad empresarial o profesional CON ANTERIORIDAD a la fecha de presentación de la solicitud de la subvención. No se admitirán solicitudes de personas que aún no hayan comenzado su actividad",
+    "No haber figurado de alta como persona trabajadora autónoma o por cuenta propia en ningún régimen de la Seguridad Social ni en mutualidad de colegio profesional desde el 4 de febrero de 2021 hasta la fecha de la nueva alta",
+    "Estar dado de alta en el Impuesto de Actividades Económicas (IAE) en el epígrafe correspondiente a la actividad desarrollada",
+    "Desarrollar fundamentalmente la actividad empresarial o profesional en el territorio de la Comunidad Autónoma de Galicia",
+    "Tener el domicilio fiscal establecido en Galicia con anterioridad a la presentación de la solicitud",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con la Administración del Estado y con la Administración de la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Seguridad Social",
+    "No haber sido sancionada mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones",
+    "No haber percibido subvenciones al amparo de los distintos programas de promoción del empleo autónomo en los tres años anteriores al inicio de la nueva actividad"
   ],
-  "cuantias": [
-    {
-      "concepto": "Importe base general",
-      "importe": "2.000 €"
-    },
-    {
-      "concepto": "Colectivos específicos (menores 30, parados larga duración, discapacidad, exclusión social, emigrantes, mayores 52)",
-      "importe": "4.000 €"
-    },
-    {
-      "concepto": "Incremento por ser mujer",
-      "importe": "+15%"
-    },
-    {
-      "concepto": "Incremento centro trabajo en municipio rural",
-      "importe": "+15%"
-    },
-    {
-      "concepto": "Incremento mayores de 45 años",
-      "importe": "+15%"
-    },
-    {
-      "concepto": "Incremento personas trans",
-      "importe": "+15%"
-    },
-    {
-      "concepto": "Máximo posible (acumulando incrementos)",
-      "importe": "7.000 €"
-    }
+  "beneficiariosExcluidos": [
+    "Personas que hayan figurado de alta como trabajadoras autónomas o por cuenta propia en cualquier régimen de la Seguridad Social o mutualidad desde el 4 de febrero de 2021",
+    "Quienes no se encuentren inscritos como demandantes de empleo en los servicios públicos de empleo en el momento de causar alta como autónomos",
+    "Personas que desarrollen la actividad empresarial o profesional fuera del territorio de la Comunidad Autónoma de Galicia",
+    "Socias de sociedades mercantiles, sociedades laborales o cooperativas (salvo las excepciones establecidas para la Línea 2)",
+    "Personas autónomas colaboradoras o familiares de autónomos",
+    "Personas que hayan desarrollado como trabajadoras autónomas la misma o similar actividad (coincidencia de CNAE a nivel de 3 dígitos) en los 6 meses anteriores al inicio de la nueva actividad",
+    "Personas que estuviesen de alta como autónomas en la Seguridad Social en los 3 meses inmediatamente anteriores a la nueva alta, cuando dicha situación presuponga el desarrollo de una actividad"
   ],
+
   "lineas": [
     {
-      "nombre": "Línea 1",
-      "descripcion": "Inicio de actividad económica y mantenimiento del empleo como autónomo"
+      "nombre": "Línea 1: Ayuda al inicio de la actividad económica",
+      "descripcion": "Subvención destinada a hacer frente a los distintos gastos generados en el comienzo de la actividad laboral por cuenta propia. Esta línea cubre los costes iniciales de establecimiento del negocio, incluyendo altas administrativas, gastos de constitución, adquisición de equipamiento básico, gastos de asesoramiento profesional, y cualquier otro coste necesario para la puesta en marcha de la actividad empresarial o profesional.",
+      "requisitos": [
+        "Estar inscrita como demandante de empleo en el momento del alta como autónoma",
+        "Haber iniciado la actividad empresarial antes de presentar la solicitud",
+        "No haber estado de alta como persona autónoma desde el 4 de febrero de 2021",
+        "Desarrollar la actividad en Galicia con domicilio fiscal en territorio gallego",
+        "No haber percibido subvenciones de promoción del empleo autónomo en los 3 años anteriores"
+      ]
     },
     {
-      "nombre": "Línea 2",
-      "descripcion": "Sufragar gastos de mantenimiento equivalente a 12 meses de cuota reducida"
+      "nombre": "Línea 2: Ayuda para el mantenimiento con cuota reducida",
+      "descripcion": "Subvención complementaria destinada a sufragar los gastos del mantenimiento de la actividad por cuenta propia durante el período de aplicación de la cuota reducida (tarifa plana). Esta ayuda equivale aproximadamente a 12 meses de cuota reducida y está pensada para facilitar la consolidación del negocio durante el primer año de actividad.",
+      "requisitos": [
+        "Cumplir todos los requisitos establecidos para la Línea 1",
+        "Ser beneficiaria de la cuota reducida de cotización a la Seguridad Social (tarifa plana) en el momento de presentar la solicitud",
+        "Para socias de sociedades mercantiles, sociedades laborales o cooperativas: estas deben ser de nueva creación, constituidas a partir del 30 de septiembre de 2025",
+        "En el caso de comunidades de bienes o sociedades civiles, cada persona socia debe solicitar la ayuda a título individual"
+      ]
     }
   ],
-  "incompatibilidades": [
-    "Programa Emega 2026",
-    "Programa Nueva Oportunidad 2026",
-    "Cualquier otra ayuda por los mismos conceptos de administración pública"
+
+  "cuantias": [
+    {
+      "concepto": "Cuantía base para desempleados en general",
+      "importe": "2.000 €",
+      "descripcion": "Importe base de la subvención para personas desempleadas que inicien actividad como autónomas y que no pertenezcan a ninguno de los colectivos prioritarios establecidos. Este importe puede incrementarse mediante la aplicación de los diferentes bonificaciones acumulables previstas en la convocatoria."
+    },
+    {
+      "concepto": "Cuantía para colectivos prioritarios",
+      "importe": "4.000 €",
+      "descripcion": "Importe de la subvención para personas pertenecientes a alguno de los colectivos prioritarios: menores de 30 años, personas desempleadas de larga duración, personas con discapacidad o en situación de dependencia, personas en situación o riesgo de exclusión social, emigrantes retornados, personas extranjeras o mayores de 52 años. IMPORTANTE: Los colectivos prioritarios NO son acumulables entre sí, solo se aplica uno de ellos."
+    },
+    {
+      "concepto": "Ayuda adicional Línea 2 (mantenimiento cuota reducida)",
+      "importe": "Hasta 960 €",
+      "descripcion": "Cuantía adicional para beneficiarios de la Línea 2 equivalente a aproximadamente 12 meses de cuota reducida, destinada a compensar los gastos de mantenimiento de la actividad durante el período de tarifa plana."
+    }
   ],
-  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "ayudaMaxima": "Hasta 7.000 € acumulando la cuantía base/prioritaria más todos los incrementos aplicables",
+
+  "incrementos": [
+    {
+      "concepto": "Incremento por mujer emprendedora",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% sobre la cuantía base o prioritaria cuando la persona beneficiaria de la ayuda es una mujer. Este incremento es acumulable con el resto de incrementos previstos y forma parte de la política de fomento del emprendimiento femenino."
+    },
+    {
+      "concepto": "Incremento por centro de trabajo en municipio rural",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% cuando el centro de trabajo o el domicilio fiscal de la persona beneficiaria está ubicado en un ayuntamiento clasificado como rural según la normativa vigente. Este incremento pretende fomentar el emprendimiento en zonas rurales y contribuir a la fijación de población en el territorio."
+    },
+    {
+      "concepto": "Incremento por mayor de 45 años",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% cuando la persona beneficiaria tiene más de 45 años de edad. Este incremento NO es aplicable cuando la persona ya tiene derecho al incremento por ser mayor de 52 años como colectivo prioritario, ya que no pueden acumularse ambos beneficios relacionados con la edad."
+    },
+    {
+      "concepto": "Incremento por emigrante retornado/a",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% cuando la persona beneficiaria acredita la condición de emigrante retornado/a según la normativa aplicable. Este incremento reconoce las dificultades adicionales de reinserción laboral que enfrentan las personas que regresan tras un período de emigración."
+    },
+    {
+      "concepto": "Incremento por persona trans",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% cuando la persona beneficiaria es una persona trans. Este incremento forma parte de las medidas de acción positiva para colectivos que enfrentan mayores barreras de acceso al empleo."
+    },
+    {
+      "concepto": "Incremento por profesión con subrepresentación femenina",
+      "importe": "+15%",
+      "descripcion": "Se aplica un incremento del 15% cuando una mujer se da de alta en una profesión u oficio donde las mujeres están subrepresentadas. El listado de profesiones y oficios con subrepresentación femenina es elaborado y publicado por el Instituto Galego de Cualificaciones. Este incremento busca fomentar la presencia femenina en sectores tradicionalmente masculinizados."
+    }
+  ],
+
+  "colectivosPrioritarios": [
+    "Personas menores de 30 años en el momento del alta como autónomas",
+    "Personas desempleadas de larga duración, definidas como aquellas que hayan permanecido inscritas como demandantes de empleo al menos 360 días durante los 540 días anteriores a la fecha del alta como autónomas",
+    "Personas con discapacidad reconocida igual o superior al 33% o en situación de dependencia según la normativa vigente",
+    "Personas en situación o riesgo de exclusión social, debidamente acreditada por los servicios sociales competentes",
+    "Personas emigrantes retornadas a Galicia según la definición establecida por la Secretaría General de Emigración",
+    "Personas de nacionalidad extranjera con permiso de residencia y trabajo en vigor",
+    "Personas mayores de 52 años en el momento del alta como autónomas"
+  ],
+
+  "requisitos": [
+    "Estar inscrita como demandante de empleo en los servicios públicos de empleo (SEPE u oficinas de empleo de la Xunta) en el momento inmediatamente anterior al alta como persona trabajadora autónoma",
+    "Darse de alta en el Régimen Especial de Trabajadores Autónomos (RETA), en otro régimen especial por cuenta propia de la Seguridad Social, o en la mutualidad del colegio profesional correspondiente, en el período comprendido entre el 1 de octubre de 2025 y el 30 de septiembre de 2026",
+    "Haber iniciado efectivamente la actividad empresarial o profesional antes de la fecha de presentación de la solicitud de subvención",
+    "No haber figurado de alta como persona trabajadora autónoma o por cuenta propia en ningún régimen de la Seguridad Social ni en mutualidad de colegio profesional desde el 4 de febrero de 2021",
+    "Estar dado de alta en el Impuesto de Actividades Económicas (IAE) en el epígrafe correspondiente a la actividad que se va a desarrollar",
+    "Desarrollar fundamentalmente la actividad empresarial o profesional en el territorio de la Comunidad Autónoma de Galicia",
+    "Tener establecido el domicilio fiscal en Galicia con anterioridad a la fecha de presentación de la solicitud",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con la Administración del Estado y con la Administración de la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Tesorería General de la Seguridad Social",
+    "No haber sido sancionada mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones públicas",
+    "No estar incursa en ninguna de las prohibiciones para obtener la condición de beneficiaria recogidas en el artículo 10 de la Ley 9/2007, de 13 de junio, de subvenciones de Galicia"
+  ],
+
+  "incompatibilidades": [
+    "Programa Emega 2026 de fomento del emprendimiento femenino (Vicepresidencia y Consellería de Presidencia, Xustiza e Deportes)",
+    "Programa Nueva Oportunidad 2026 de la Consellería de Emprego, Igualdade e Migracións",
+    "Otras ayudas para el fomento del empleo autónomo de la Consellería de Emprego, Igualdade e Migracións",
+    "Programas de fomento de cooperativas y del empleo en cooperativas y sociedades laborales",
+    "Programas de iniciativas de empleo e iniciativas de empleo de base tecnológica",
+    "Programas de integración laboral de personas con discapacidad",
+    "Cualquier otra ayuda pública por los mismos conceptos y para la misma finalidad concedida por cualquier administración pública estatal, autonómica o local"
+  ],
+  "compatibilidades": [
+    "Ayudas de la Secretaría General de Emigración para el autoempleo y emprendimiento de emigrantes retornados y sus descendientes",
+    "Programa Bono Nueva Oportunidad para personas que reinician actividad autónoma",
+    "Bonificaciones a la Seguridad Social (tarifa plana y otras reducciones de cuotas)",
+    "Otras ayudas públicas siempre que tengan distinta finalidad y no se supere el límite de minimis"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Mantener el alta como persona trabajadora autónoma y desarrollar la actividad durante un período mínimo de 2 años desde la fecha del alta, salvo causa de fuerza mayor debidamente acreditada",
+    "Comunicar a la Consellería de Emprego, Igualdade e Migracións cualquier modificación de las circunstancias que sirvieron de base para la concesión de la ayuda en el plazo de 15 días desde que se produzca",
+    "Conservar los documentos justificativos de la aplicación de los fondos recibidos durante un plazo de 4 años desde la resolución de concesión",
+    "Someterse a las actuaciones de comprobación, seguimiento y control que realice la Consellería de Emprego, aportando cuanta información y documentación le sea requerida",
+    "Proceder al reintegro total o parcial de las cantidades percibidas en los supuestos previstos en la normativa de subvenciones",
+    "Dar la adecuada publicidad al carácter público de la financiación recibida conforme a lo establecido en la normativa de subvenciones"
+  ],
+
+  "documentacionNecesaria": [
+    "Solicitud normalizada debidamente cumplimentada según el modelo oficial (Anexo I)",
+    "Declaración responsable sobre otras ayudas solicitadas o concedidas y sobre el cumplimiento de requisitos",
+    "Copia del DNI/NIE de la persona solicitante (solo si no autoriza su consulta telemática)",
+    "Certificado de inscripción como demandante de empleo en la fecha del alta como autónoma",
+    "Informe de vida laboral actualizado emitido por la Tesorería General de la Seguridad Social",
+    "Alta en el Impuesto de Actividades Económicas o declaración censal (modelos 036/037)",
+    "Documentación acreditativa de la pertenencia a colectivo prioritario, en su caso: certificado de discapacidad, certificado de servicios sociales, certificado de emigrante retornado, etc.",
+    "Para la Línea 2: justificante de ser beneficiaria de la cuota reducida (tarifa plana)",
+    "Para municipio rural: certificado de ubicación del centro de trabajo o domicilio fiscal",
+    "Para mujeres en profesión subrepresentada: declaración de la actividad que se va a desarrollar"
+  ],
+
+  "tramitacion": "Las solicitudes deben presentarse obligatoriamente por medios electrónicos a través del formulario normalizado disponible en la sede electrónica de la Xunta de Galicia (https://sede.xunta.gal). El procedimiento es TR341D. Las personas interesadas deben disponer de certificado electrónico o Chave365. El plazo de resolución es de 3 meses desde la entrada de la solicitud. Las solicitudes se tramitan por riguroso orden de entrada hasta el agotamiento del crédito presupuestario.",
+
+  "notasAdicionales": [
+    "IMPORTANTE: Los incrementos del 15% son ACUMULABLES entre sí. Una persona puede acumular varios incrementos: mujer + rural + emigrante retornada + trans + profesión subrepresentada, llegando a incrementar la ayuda hasta en un 75% adicional",
+    "Los colectivos prioritarios (que dan derecho a 4.000€ en lugar de 2.000€) NO son acumulables entre sí: aunque una persona pertenezca a varios colectivos prioritarios, solo se aplica uno de ellos",
+    "La concesión es por estricto orden de entrada de las solicitudes completas hasta agotar el presupuesto disponible. Se recomienda presentar la solicitud cuanto antes una vez iniciada la actividad",
+    "La actividad debe haberse iniciado ANTES de solicitar la ayuda. No se concederán ayudas a proyectos futuros o que aún no se hayan puesto en marcha",
+    "Para la Línea 2, las sociedades mercantiles, laborales o cooperativas de las que sea socia la persona solicitante deben ser de nueva creación (constituidas a partir del 30 de septiembre de 2025)",
+    "Pueden ser beneficiarias las personas que formen parte de comunidades de bienes, sociedades civiles u otras entidades sin personalidad jurídica de nueva creación, pero deben solicitar la ayuda a título individual y la entidad debe estar constituida antes de la solicitud",
+    "La determinación de 'misma o similar actividad' se realiza por coincidencia del código CNAE a nivel de 3 dígitos",
+    "El incumplimiento de la obligación de mantenimiento del alta durante 2 años supondrá el reintegro proporcional de la ayuda correspondiente al período no cumplido"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal/detalle-procedemento?codtram=TR341D",
+  "normativaAplicable": [
+    "Orden de convocatoria para el ejercicio 2026 de la Consellería de Emprego, Igualdade e Migracións",
+    "Ley 9/2007, de 13 de junio, de subvenciones de Galicia",
+    "Reglamento (UE) 2023/2831 de la Comisión, relativo a la aplicación de los artículos 107 y 108 del TFUE a las ayudas de minimis"
+  ],
+
+  "imagen": "/images/subvenciones/empleo-autonomo.png",
   "destacada": true
 }

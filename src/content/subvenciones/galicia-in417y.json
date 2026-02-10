@@ -4,76 +4,165 @@
   "nombre": "Subvenciones para proyectos de ahorro y eficiencia energética 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "INEGA - Xunta de Galicia",
+  "organismo": "INEGA - Instituto Enerxético de Galicia - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "30 de enero de 2026",
   "plazoFin": "15 de septiembre de 2026",
   "plazoTexto": "Desde el 30 de enero al 15 de septiembre de 2026",
-  "tipoAyuda": "Concurrencia no competitiva. Orden de entrada.",
-  "objeto": "Apoyar proyectos de ahorro y eficiencia energética en empresas con sede en Galicia",
+  "plazoEjecucion": "Hasta el 15 de septiembre de 2027",
+
+  "tipoAyuda": "Subvención por concurrencia no competitiva (orden de entrada)",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Apoyar proyectos de ahorro y eficiencia energética en empresas gallegas para reducir el consumo energético y las emisiones de gases de efecto invernadero",
+  "objetoDetallado": "Esta ayuda financia proyectos de eficiencia energética que demuestren un ahorro energético significativo, con diferentes líneas según el tamaño de empresa y tipo de proyecto, incluyendo mejoras en procesos industriales, iluminación, climatización y envolvente de edificios.",
+
   "beneficiarios": "Empresas legalmente constituidas y autónomos con domicilio social o centro de trabajo en Galicia.",
   "beneficiariosDetalle": [
     "Empresas legalmente constituidas con domicilio social o centro de trabajo en Galicia",
     "Empresarios autónomos",
-    "Empresas de servicios energéticos que gestionen instalaciones consumidoras",
-    "Excluidas: producción agrícola primaria, industria extractiva energética, refinación de petróleo, generación/distribución de energía eléctrica, actividades financieras"
+    "Empresas de servicios energéticos (ESE) que gestionen instalaciones consumidoras de energía",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Producción agrícola primaria (CNAE secciones 1.11-2.40)",
+    "Industria extractiva energética",
+    "Refinación de petróleo y biocombustibles",
+    "Empresas de generación, transporte y distribución de energía eléctrica",
+    "Actividades financieras y de seguros (sección L del CNAE-2025)",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
   "lineas": [
     {
-      "nombre": "PAPEME",
-      "descripcion": "Proyectos en pymes con ratio ≥0,18 kWh/€"
+      "nombre": "PAPEME - Pymes",
+      "descripcion": "Proyectos de eficiencia energética en pymes",
+      "porcentaje": "35% base (+20% pequeñas, +10% medianas)",
+      "requisitos": [
+        "Ratio mínimo de ahorro: ≥0,18 kWh/€ invertido",
+        "Ser pequeña o mediana empresa"
+      ]
     },
     {
-      "nombre": "PAGE",
-      "descripcion": "Proyectos en grandes empresas con ratio ≥0,25 kWh/€"
+      "nombre": "PAGE - Grandes Empresas",
+      "descripcion": "Proyectos de eficiencia energética en grandes empresas",
+      "porcentaje": "35% base",
+      "requisitos": [
+        "Ratio mínimo de ahorro: ≥0,25 kWh/€ invertido",
+        "Ser gran empresa"
+      ]
     },
     {
-      "nombre": "PAE",
-      "descripcion": "Proyectos que reduzcan emisiones GEI ≥30% con ratio ≥0,1 kWh/€"
+      "nombre": "PAE - Reducción Emisiones GEI",
+      "descripcion": "Proyectos que reducen emisiones de gases de efecto invernadero ≥30%",
+      "porcentaje": "35% base (+20% pequeñas, +10% medianas)",
+      "requisitos": [
+        "Reducción de emisiones GEI ≥30%",
+        "Ratio mínimo de ahorro: ≥0,1 kWh/€ invertido"
+      ]
     },
     {
-      "nombre": "PAP",
-      "descripcion": "Infraestructuras públicas con ratio ≥0,18 kWh/€"
+      "nombre": "PAP - Infraestructuras Públicas",
+      "descripcion": "Proyectos en infraestructuras públicas",
+      "porcentaje": "35% base (+20% pequeñas, +10% medianas)",
+      "requisitos": [
+        "Ratio mínimo de ahorro: ≥0,18 kWh/€ invertido",
+        "Infraestructura de titularidad pública"
+      ]
     }
   ],
+
+  "ayudaMaxima": "2.000.000 € por beneficiario",
+  "porcentajeBase": "35%",
+
   "cuantias": [
     {
-      "concepto": "Intensidad base",
-      "importe": "35% del coste elegible"
+      "concepto": "Intensidad base (grandes empresas)",
+      "importe": "35% del coste elegible",
+      "descripcion": "Porcentaje base para proyectos estándar"
     },
     {
-      "concepto": "Incremento pequeñas empresas",
-      "importe": "+20%"
+      "concepto": "Intensidad para pequeñas empresas",
+      "importe": "55% (35% + 20%)",
+      "descripcion": "Incremento del 20% para pequeñas empresas"
     },
     {
-      "concepto": "Incremento medianas empresas",
-      "importe": "+10%"
+      "concepto": "Intensidad para medianas empresas",
+      "importe": "45% (35% + 10%)",
+      "descripcion": "Incremento del 10% para medianas empresas"
     },
     {
-      "concepto": "Para edificios (base)",
-      "importe": "20%"
+      "concepto": "Intensidad para edificios (base)",
+      "importe": "20%",
+      "descripcion": "Porcentaje base para mejoras en edificios"
     },
     {
       "concepto": "Máximo por expediente",
-      "importe": "1.000.000 €"
+      "importe": "1.000.000 €",
+      "descripcion": "Límite por proyecto individual"
     },
     {
       "concepto": "Máximo por beneficiario",
-      "importe": "2.000.000 €"
+      "importe": "2.000.000 €",
+      "descripcion": "Límite total acumulado por empresa"
     },
     {
       "concepto": "Límite sector pesca/acuicultura",
-      "importe": "300.000 €"
+      "importe": "300.000 €",
+      "descripcion": "Límite especial para empresas del sector pesquero"
     }
   ],
+
+  "gastosSubvencionables": [
+    "Costes de inversión adicionales necesarios para lograr mayor eficiencia energética",
+    "Mejoras en sistemas de iluminación (cumpliendo UNE-EN 12464)",
+    "Mejoras en sistemas de climatización y HVAC",
+    "Mejoras en envolvente térmica de edificios",
+    "Mejoras en procesos industriales",
+    "Sistemas de gestión y monitorización energética",
+    "Obra civil asociada a las mejoras (mínimo 70% residuos para reutilización/reciclaje)"
+  ],
+  "gastosNoSubvencionables": [
+    "Proyectos iniciados antes de la solicitud",
+    "Materiales con amianto",
+    "Sustancias muy preocupantes según normativa REACH",
+    "Gastos que no contribuyan al ahorro energético demostrado",
+    "IVA y otros impuestos recuperables"
+  ],
+
   "requisitos": [
-    "Ahorro energético mínimo justificado documentalmente",
+    "Ahorro energético mínimo justificado documentalmente según ratio de cada línea",
     "Proyectos técnica, jurídica, económica y financieramente viables",
     "Para iluminación: cumplir norma UNE-EN 12464",
-    "Obra civil: 70% mínimo residuos construcción para reutilización/reciclaje",
-    "Prohibición de amianto y sustancias preocupantes"
+    "Obra civil: 70% mínimo de residuos de construcción para reutilización/reciclaje",
+    "Prohibición de amianto y sustancias muy preocupantes",
+    "Proyectos NO iniciados antes de la solicitud"
   ],
-  "plazoEjecucion": "15 de septiembre de 2027",
+
+  "obligacionesBeneficiario": [
+    "No iniciar el proyecto antes de presentar la solicitud",
+    "Ejecutar el proyecto en los plazos establecidos (hasta 15/09/2027)",
+    "Justificar el ahorro energético conseguido",
+    "Mantener las mejoras durante el período establecido",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por ORDEN DE ENTRADA: primero en solicitar, primero en recibir (hasta agotar presupuesto)",
+    "IMPORTANTE: Cada línea tiene un RATIO MÍNIMO de ahorro (kWh/€ invertido) diferente",
+    "Porcentajes INCREMENTADOS para pymes: +10% medianas, +20% pequeñas",
+    "El sector pesca/acuicultura tiene un límite especial de 300.000 €",
+    "Las mejoras en iluminación deben cumplir la norma UNE-EN 12464",
+    "Consultar convocatoria oficial 2026 para información definitiva"
+  ],
+
+  "enlaceOficial": "https://www.inega.gal",
+
   "imagen": "/images/subvenciones/energia.png",
   "destacada": true
 }

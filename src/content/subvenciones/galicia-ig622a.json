@@ -4,72 +4,155 @@
   "nombre": "Galicia Exporta Empresas 2026",
   "comunidad": "galicia",
   "categoria": "internacionalizacion",
-  "organismo": "IGAPE - Xunta de Galicia",
+  "organismo": "IGAPE - Instituto Galego de Promoción Económica - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "28 de enero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 28 de enero al 30 de septiembre de 2026",
-  "tipoAyuda": "Concurrencia no competitiva. Régimen de minimis.",
-  "objeto": "Apoyar la participación de empresas gallegas en ferias, misiones comerciales y acciones de promoción internacional",
+  "plazoEjecucion": "Gastos elegibles: del 1 de enero al 15 de diciembre de 2026. Reservas pueden ser anteriores si eventos se celebran dentro del plazo.",
+
+  "tipoAyuda": "Subvención por concurrencia no competitiva (orden de entrada)",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Incentivar acciones de promoción exterior que mejoren la competitividad de empresas gallegas en mercados internacionales",
+  "objetoDetallado": "Esta ayuda apoya la participación de empresas gallegas en ferias internacionales, misiones comerciales, campañas de publicidad exterior, internacionalización digital y e-commerce, con el objetivo de facilitar su acceso a nuevos mercados y consolidar su presencia internacional.",
+
   "beneficiarios": "Pymes, empresas, autónomos y sociedades con al menos un centro de trabajo en Galicia.",
   "beneficiariosDetalle": [
-    "Al menos un centro de trabajo en Galicia",
-    "Requisito de un trabajador (excepto empresas con menos de 42 meses)",
-    "Estar al corriente de obligaciones tributarias y Seguridad Social",
-    "Estar inscritos en programas avanzados de IGAPE desde 1 de enero de 2013"
+    "Pymes según definición europea",
+    "Empresas, autónomos o sociedades con personalidad jurídica propia",
+    "Al menos un centro de trabajo radicado en Galicia",
+    "Mínimo un trabajador en plantilla (excepto empresas <42 meses o con Certificación Startup ENISA)",
+    "Estar inscritos en programas avanzados IGAPE de internacionalización con informe positivo desde 01/01/2013",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Empresas sin centro de trabajo en Galicia",
+    "Empresas sin inscripción en programas avanzados IGAPE desde 2013",
+    "Empresas que no cumplan el requisito de un trabajador (excepto <42 meses o startups certificadas)",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
+  "inversionMinima": "3.500 € (mínimo a solicitar)",
+  "ayudaMaxima": "150.000 € por beneficiario",
+  "porcentajeBase": "70%",
+
   "cuantias": [
     {
       "concepto": "Porcentaje subvencionable",
-      "importe": "70% de la inversión"
+      "importe": "70% de la inversión",
+      "descripcion": "Aplicable a todos los gastos elegibles"
     },
     {
       "concepto": "Mínimo a solicitar",
-      "importe": "3.500 €"
+      "importe": "3.500 €",
+      "descripcion": "Importe mínimo de ayuda solicitada"
     },
     {
       "concepto": "Máximo total por beneficiario",
-      "importe": "150.000 €"
+      "importe": "150.000 €",
+      "descripcion": "Límite máximo conjunto de todas las líneas"
     },
     {
-      "concepto": "Promoción Internacional y Competitividad",
-      "importe": "Máximo 100.000 €"
+      "concepto": "Líneas A+B: Promoción Internacional y Competitividad",
+      "importe": "Máximo 100.000 €",
+      "descripcion": "Límite conjunto para líneas A y B"
     },
     {
-      "concepto": "Digitalización para internacionalización",
-      "importe": "Máximo 50.000 €"
+      "concepto": "Línea C: Internacionalización Digital",
+      "importe": "Máximo 50.000 €",
+      "descripcion": "Límite exclusivo para línea C"
+    },
+    {
+      "concepto": "Costes indirectos",
+      "importe": "7% de costes directos",
+      "descripcion": "Gastos administrativos, suministros, seguros, mantenimiento"
     }
   ],
+
   "actuacionesSubvencionables": [
     {
       "linea": "A) Promoción Internacional",
+      "porcentaje": "70%",
+      "descripcion": "Participación en ferias y misiones comerciales",
       "items": [
-        "Participación como expositor en ferias",
-        "Misiones comerciales directas e inversas",
-        "Alquiler de stands y servicios relacionados",
-        "Gastos de viaje y alojamiento (máximo 2 personas)",
-        "Intérpretes y asistencia externa en destino"
+        {"nombre": "Participación como expositor en ferias internacionales", "descripcion": "Ferias y eventos expositivos en el extranjero"},
+        {"nombre": "Misiones comerciales directas e inversas", "descripcion": "Visitas a clientes potenciales o recepciones de compradores"},
+        {"nombre": "Alquiler de stands y espacios", "descripcion": "Incluyendo servicios asociados al stand"},
+        {"nombre": "Muestras y catálogos", "descripcion": "Material promocional para eventos"},
+        {"nombre": "Asistencia externa en destino", "descripcion": "Apoyo profesional en el país de destino"},
+        {"nombre": "Intérpretes", "descripcion": "Servicios de interpretación"},
+        {"nombre": "Gastos de viaje", "descripcion": "Máximo 2 personas: billetes, alquiler vehículos (sin taxi/VTC)"},
+        {"nombre": "Alojamiento en destino", "descripcion": "Régimen media pensión"}
       ]
     },
     {
       "linea": "B) Competitividad Internacional",
+      "porcentaje": "70%",
+      "descripcion": "Acciones de marketing y consultoría internacional",
       "items": [
-        "Campañas publicitarias en medios extranjeros",
-        "Catálogos físicos o digitales para mercados internacionales",
-        "Consultoría para análisis de mercados",
-        "Servicios de traducción"
+        {"nombre": "Campañas de publicidad en medios extranjeros", "descripcion": "Medios impresos o digitales con difusión exterior"},
+        {"nombre": "Inserciones en catálogos de importadores/distribuidores", "descripcion": "Presencia en publicaciones del sector"},
+        {"nombre": "Catálogos para mercados extranjeros", "descripcion": "Físicos o digitales adaptados a mercados internacionales"},
+        {"nombre": "Consultoría de mercados", "descripcion": "Análisis y descubrimiento de nuevos mercados"},
+        {"nombre": "Seguimiento de contactos/clientes extranjeros", "descripcion": "Gestión de relaciones comerciales internacionales"},
+        {"nombre": "Asistencia jurídica/técnica internacional", "descripcion": "Acuerdos, certificaciones, marcas, patentes"},
+        {"nombre": "Servicios de traducción", "descripcion": "Traducción de documentación comercial"},
+        {"nombre": "Tasas específicas inherentes", "descripcion": "Tasas relacionadas con operaciones internacionales"}
       ]
     },
     {
-      "linea": "C) Internacionalización Digital",
+      "linea": "C) Internacionalización Digital y E-commerce",
+      "porcentaje": "70%",
+      "descripcion": "Digitalización para mercados internacionales",
       "items": [
-        "Creación/adaptación de tiendas en línea",
-        "Catálogos digitales B2B/B2C",
-        "Campañas de inbound marketing internacional"
+        {"nombre": "Creación/adaptación de tiendas en línea", "descripcion": "E-commerce adaptado a mercados internacionales"},
+        {"nombre": "Catálogos digitales B2B/B2C", "descripcion": "Adaptados a mercados electrónicos internacionales"},
+        {"nombre": "Campañas de inbound marketing internacional", "descripcion": "Marketing de atracción para mercados exteriores"},
+        {"nombre": "Soluciones de analítica y visualización de datos", "descripcion": "KPIs y métricas de rendimiento internacional"}
       ]
     }
   ],
-  "plazoEjecucion": "Del 1 de enero al 15 de diciembre de 2026",
+
+  "gastosNoSubvencionables": [
+    "Gastos realizados fuera del período elegible",
+    "Taxi y VTC (solo se admite alquiler de vehículos)",
+    "Alojamiento más allá de media pensión",
+    "Más de 2 personas por empresa en viajes",
+    "IVA y otros impuestos recuperables"
+  ],
+
+  "requisitos": [
+    "Al menos un centro de trabajo en Galicia",
+    "Mínimo un trabajador en plantilla (excepto <42 meses o startups ENISA)",
+    "Inscripción en programas avanzados IGAPE desde 01/01/2013",
+    "Una única solicitud por beneficiario",
+    "Mínimo 3.500 € de ayuda a solicitar",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Ejecutar las acciones subvencionadas en el plazo establecido",
+    "Justificar los gastos y pagos antes del 15 de diciembre de 2026",
+    "Conservar la documentación justificativa",
+    "Someterse a las actuaciones de comprobación",
+    "Comunicar cualquier modificación de las condiciones"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por ORDEN DE ENTRADA: primero en solicitar, primero en recibir (hasta agotar presupuesto)",
+    "COBERTURA DEL 70%: Se financia el 70% de los gastos subvencionables",
+    "IMPORTANTE: Solo UNA solicitud por beneficiario",
+    "Las reservas para eventos pueden ser anteriores a 2026 si los eventos se celebran dentro del plazo",
+    "Requisito previo: inscripción en programas avanzados IGAPE con informe positivo desde 2013",
+    "Consultar convocatoria oficial 2026 para información definitiva"
+  ],
+
+  "enlaceOficial": "https://www.igape.es",
+
   "imagen": "/images/subvenciones/internacional.png",
   "destacada": true
 }

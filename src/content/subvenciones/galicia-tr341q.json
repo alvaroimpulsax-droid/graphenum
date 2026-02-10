@@ -4,43 +4,216 @@
   "nombre": "Programa Bono de las Personas Autónomas 2026",
   "comunidad": "galicia",
   "categoria": "inversion",
-  "organismo": "Xunta de Galicia - Consellería de Economía, Emprego e Industria",
+  "organismo": "Xunta de Galicia - Consellería de Emprego, Igualdade e Migracións",
   "estado": "abierta",
+
   "plazoInicio": "11 de febrero de 2026",
   "plazoFin": "30 de septiembre de 2026",
-  "plazoTexto": "Desde el 11 de febrero al 30 de septiembre de 2026",
-  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
-  "objeto": "Apoyo a la consolidación de personas autónomas con más de 42 meses de antigüedad, contribuyendo a mejorar su competitividad empresarial",
-  "beneficiarios": "Personas trabajadoras autónomas con domicilio fiscal en Galicia y antigüedad superior a 42 meses ininterrumpidos.",
+  "plazoTexto": "Desde el 11 de febrero hasta el 30 de septiembre de 2026",
+  "plazoEjecucion": "Gastos realizados y completamente PAGADOS desde el 1 de octubre de 2025 hasta la fecha de presentación de la solicitud. IMPORTANTE: Solo son elegibles los gastos que estén totalmente abonados antes de solicitar la ayuda.",
+
+  "tipoAyuda": "Subvención a fondo perdido en régimen de concurrencia no competitiva (orden de entrada)",
+  "regimen": "Régimen de ayudas de minimis (Reglamento UE 2023/2831)",
+
+  "objeto": "Fijar los criterios y requisitos para la concesión de ayudas del Programa del Bono de las Personas Autónomas, destinadas a mejorar la competitividad y consolidación de las personas trabajadoras autónomas con actividad consolidada en Galicia",
+  "objetoDetallado": "El Programa Bono de las Personas Autónomas tiene como finalidad principal apoyar a las personas trabajadoras autónomas con actividad consolidada (más de 42 meses de antigüedad) para que puedan mejorar su competitividad empresarial mediante la contratación de servicios profesionales externos y la realización de inversiones en equipamiento y mejora de sus instalaciones. Esta ayuda reconoce el esfuerzo de los autónomos que han conseguido mantener su actividad de forma sostenida en el tiempo y les proporciona recursos para afrontar los retos de la transformación digital, la mejora de procesos productivos y la adaptación a las nuevas condiciones del mercado. El programa contempla dos líneas de actuación complementarias: la Línea 1 de Servicios de Competitividad, destinada a financiar la contratación de estudios, planes estratégicos, planes de marketing y otros servicios profesionales; y la Línea 2 de Inversiones en Competitividad, para la adquisición de maquinaria, equipamiento informático, reformas de locales y otros activos. Ambas líneas son compatibles entre sí y pueden solicitarse conjuntamente hasta alcanzar el límite máximo de subvención.",
+
+  "beneficiarios": "Personas trabajadoras autónomas dadas de alta en el Régimen Especial de Trabajadores Autónomos (RETA) de la Seguridad Social o en la mutualidad del colegio profesional correspondiente, con domicilio fiscal en Galicia y antigüedad superior a 42 meses ininterrumpidos de actividad efectiva.",
   "beneficiariosDetalle": [
-    "Domicilio fiscal en Galicia",
-    "Antigüedad superior a 42 meses ininterrumpidos en actividad efectiva",
-    "No haber recibido esta ayuda en convocatorias 2021-2025",
-    "Rendimiento neto IRPF 2024 inferior a 50.000 €",
-    "Facturación mínima anual 2024: 12.000 € (IVA incluido)"
+    "Personas trabajadoras autónomas dadas de alta en el RETA de la Seguridad Social o en la mutualidad del colegio profesional correspondiente como sistema alternativo al RETA",
+    "Deben tener establecido el domicilio fiscal en el territorio de la Comunidad Autónoma de Galicia",
+    "Antigüedad superior a 42 meses ininterrumpidos de actividad efectiva como persona autónoma. Los períodos de inactividad por maternidad, paternidad, riesgo durante el embarazo, incapacidad temporal o similares no interrumpen el cómputo",
+    "Rendimiento neto de la actividad económica declarado en el IRPF del ejercicio 2024 inferior a 50.000 euros. Este límite se refiere al rendimiento neto antes de aplicar las reducciones por rendimientos del trabajo",
+    "Facturación mínima anual en el ejercicio 2024 de 12.000 euros IVA incluido, acreditada mediante la declaración del IVA anual o por cualquier otro medio de prueba admitido en derecho",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con el Estado y con la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Tesorería General de la Seguridad Social"
   ],
+  "beneficiariosDetalleAdicional": [
+    "Para SOCIEDADES y COMUNIDADES DE BIENES: deben tener domicilio fiscal en Galicia, contar con al menos una persona autónoma societaria con más de 42 meses de antigüedad, facturación mínima de 12.000 € IVA incluido en 2024, y base imponible del Impuesto de Sociedades (o resultado contable en comunidades de bienes) del ejercicio 2024 inferior a 30.000 euros"
+  ],
+  "beneficiariosExcluidos": [
+    "Familiares de la persona autónoma que trabajen habitualmente con ella sin tener la condición de trabajadores por cuenta ajena debidamente acreditada mediante contrato de trabajo e inclusión en el régimen correspondiente de la Seguridad Social",
+    "Personas que hayan sido beneficiarias de esta misma ayuda (TR341Q) en cualquiera de las convocatorias de los años 2021, 2022, 2023, 2024 o 2025",
+    "Personas trabajadoras autónomas con menos de 42 meses de antigüedad ininterrumpida",
+    "Personas con rendimiento neto de la actividad económica en IRPF 2024 igual o superior a 50.000 euros",
+    "Personas con facturación anual en 2024 inferior a 12.000 euros IVA incluido",
+    "Personas autónomas que no tengan el domicilio fiscal establecido en Galicia",
+    "Personas que no estén al corriente de sus obligaciones tributarias y con la Seguridad Social"
+  ],
+
+  "lineas": [
+    {
+      "nombre": "Línea 1 - Servicios de Competitividad",
+      "descripcion": "Subvención destinada a financiar la contratación de servicios externos profesionales orientados a mejorar la competitividad empresarial de la persona autónoma. Esta línea cubre la contratación de estudios, planes estratégicos, planes de marketing, servicios de consultoría y otros servicios profesionales que contribuyan a la mejora del posicionamiento competitivo del negocio. Los servicios deben ser prestados por profesionales externos cualificados y estar debidamente facturados y completamente pagados antes de la presentación de la solicitud.",
+      "serviciosSubvencionables": [
+        "Investigación de mercado: estudios sobre el mercado objetivo, análisis de la competencia, identificación de oportunidades de negocio",
+        "Plan de marketing y comunicación: estrategias de posicionamiento, planes de comunicación, campañas publicitarias",
+        "Plan estratégico empresarial: definición de la visión, misión y objetivos estratégicos del negocio a medio y largo plazo",
+        "Plan de crecimiento o expansión: estrategias para ampliar el negocio, apertura de nuevos mercados o líneas de actividad",
+        "Plan de reorientación del negocio: pivotaje estratégico, cambio de modelo de negocio, adaptación a nuevas circunstancias del mercado",
+        "Plan de transformación digital: diagnóstico digital, hoja de ruta de digitalización, implementación de tecnologías digitales",
+        "Plan de refinanciación: reestructuración de deuda, optimización financiera, búsqueda de nuevas fuentes de financiación",
+        "Cofinanciación privada del programa Re-Acciona del IGAPE: aportación del beneficiario a proyectos del programa de reactivación empresarial",
+        "Otros estudios o servicios profesionales que aumenten la competitividad empresarial y estén debidamente justificados"
+      ],
+      "requisitos": [
+        "Los servicios deben ser prestados por profesionales o empresas externas cualificadas",
+        "Deben estar debidamente facturados con facturas que cumplan los requisitos fiscales",
+        "Deben estar completamente pagados antes de la presentación de la solicitud",
+        "El pago debe acreditarse mediante documentos bancarios (transferencia, cargo en cuenta)"
+      ]
+    },
+    {
+      "nombre": "Línea 2 - Inversiones en Competitividad",
+      "descripcion": "Subvención destinada a financiar la adquisición de activos materiales e inmateriales que contribuyan a mejorar la competitividad del negocio. Esta línea cubre la compra de maquinaria, equipamiento informático, herramientas, mobiliario, reforma de locales, desarrollo de páginas web y otras inversiones. Los bienes deben ser nuevos de primera adquisición (salvo los casos específicos de bienes de segunda mano) y estar debidamente facturados y completamente pagados antes de la presentación de la solicitud.",
+      "inversionesSubvencionables": [
+        "Maquinaria y bienes de equipo para el proceso productivo",
+        "Inversiones en eficiencia energética: equipos de bajo consumo, iluminación LED, sistemas de climatización eficientes",
+        "Sustitución de combustibles o materiales críticos: cambio a fuentes de energía menos contaminantes o materiales más sostenibles",
+        "Utillaje y herramientas necesarias para la actividad",
+        "Reforma y acondicionamiento del local de negocio: obras menores de reparación, decoración, adecuación del espacio (excluye el domicilio personal salvo imprescindibilidad debidamente acreditada)",
+        "Equipamiento informático y de oficina: ordenadores, impresoras, escáneres, servidores, equipos de red",
+        "Rótulos y señalética: elementos identificativos del negocio, cartelería exterior e interior",
+        "Aplicaciones informáticas: software de gestión, programas especializados, licencias de software",
+        "Páginas web y comercio electrónico: desarrollo de sitio web, tienda online, aplicaciones móviles",
+        "Diseño de marca e identidad corporativa: logotipo, manual de identidad, imagen corporativa",
+        "Mobiliario comercial: mesas, sillas, estanterías, mostradores, vitrinas, expositores"
+      ],
+      "requisitos": [
+        "Los bienes deben ser nuevos de primera adquisición (excepto bienes de segunda mano en casos justificados)",
+        "Deben estar debidamente facturados con facturas que cumplan los requisitos fiscales",
+        "Deben estar completamente pagados antes de la presentación de la solicitud",
+        "El pago debe acreditarse mediante documentos bancarios (transferencia, cargo en cuenta)",
+        "No se admiten pagos en efectivo superiores a los límites legalmente establecidos"
+      ]
+    }
+  ],
+
+  "inversionMinima": "1.000 € de gasto subvencionable",
+  "ayudaMaxima": "7.000 € (requiere inversión mínima de 11.666,67 € para alcanzar este máximo)",
+  "porcentajeBase": "60% del gasto subvencionable",
+
   "cuantias": [
     {
       "concepto": "Intensidad de ayuda",
-      "importe": "60% de la inversión"
+      "importe": "60% del gasto subvencionable",
+      "descripcion": "Se subvenciona el 60% de los gastos elegibles debidamente justificados y pagados. Este porcentaje se aplica sobre la base imponible de las facturas (sin IVA) o sobre el importe total si el IVA no es deducible."
     },
     {
-      "concepto": "Subvención máxima",
-      "importe": "7.000 € (requiere inversión mínima de 11.666 €)"
+      "concepto": "Subvención mínima por solicitud",
+      "importe": "600 €",
+      "descripcion": "Cuantía mínima de subvención, que corresponde a un gasto subvencionable mínimo de 1.000 euros."
+    },
+    {
+      "concepto": "Subvención máxima por beneficiario",
+      "importe": "7.000 €",
+      "descripcion": "Cuantía máxima de subvención por persona beneficiaria. Para alcanzar esta cuantía máxima se requiere un gasto subvencionable mínimo de 11.666,67 euros (7.000 / 0,60)."
     }
   ],
+
   "gastosSubvencionables": [
-    "Maquinaria",
-    "Eficiencia energética",
-    "Sustitución de combustibles/materiales críticos",
-    "Utillaje y herramientas",
-    "Reforma del local",
-    "Equipamiento informático y de oficina",
-    "Rótulos",
-    "Aplicaciones informáticas, páginas web, apps",
-    "Diseño de marca"
+    "LÍNEA 1 - SERVICIOS DE COMPETITIVIDAD:",
+    "Investigación de mercado, estudios de viabilidad y análisis de la competencia",
+    "Plan de marketing, comunicación y posicionamiento de marca",
+    "Plan estratégico empresarial a medio y largo plazo",
+    "Plan de crecimiento, expansión o diversificación del negocio",
+    "Plan de reorientación o pivotaje del modelo de negocio",
+    "Plan de transformación digital y diagnóstico tecnológico",
+    "Plan de refinanciación y reestructuración financiera",
+    "Cofinanciación privada del programa Re-Acciona del IGAPE",
+    "Otros estudios y servicios profesionales que mejoren la competitividad empresarial",
+    "",
+    "LÍNEA 2 - INVERSIONES EN COMPETITIVIDAD:",
+    "Maquinaria y bienes de equipo para el proceso productivo",
+    "Inversiones en eficiencia energética (equipos de bajo consumo, iluminación LED, climatización eficiente)",
+    "Sustitución de combustibles o materiales por alternativas más sostenibles",
+    "Utillaje y herramientas para la actividad profesional",
+    "Reforma y acondicionamiento del local de negocio (obras menores, decoración, adecuación)",
+    "Equipamiento informático: ordenadores, impresoras, escáneres, servidores, equipos de red",
+    "Rótulos y señalética del negocio",
+    "Aplicaciones informáticas, software de gestión, licencias de programas",
+    "Páginas web, tiendas online, comercio electrónico, aplicaciones móviles",
+    "Diseño de marca, logotipo e identidad corporativa",
+    "Mobiliario comercial (mesas, sillas, estanterías, mostradores, vitrinas)"
   ],
-  "plazoEjecucion": "Gastos realizados desde 1 de octubre de 2025 hasta la fecha de solicitud",
-  "imagen": "/images/subvenciones/contratacion-autonomos.png",
+  "gastosNoSubvencionables": [
+    "Reformas y obras en el domicilio personal de la persona autónoma, salvo que se acredite documentalmente que dicho domicilio es imprescindible para el ejercicio de la actividad y está debidamente autorizado",
+    "Gastos realizados fuera del período elegible (antes del 1 de octubre de 2025 o después de la fecha de solicitud)",
+    "Gastos no pagados completamente antes de la fecha de presentación de la solicitud",
+    "Vehículos de transporte externo, incluyendo automóviles, furgonetas, motocicletas y cualquier vehículo matriculado",
+    "IVA y otros impuestos recuperables o deducibles por la persona beneficiaria",
+    "Gastos financieros, intereses y comisiones bancarias",
+    "Pagos en efectivo superiores a los límites legalmente establecidos (actualmente 1.000 euros)",
+    "Bienes o servicios adquiridos a empresas vinculadas con la persona beneficiaria sin autorización expresa",
+    "Gastos de personal propio o autoempleo",
+    "Arrendamientos y alquileres de cualquier tipo"
+  ],
+
+  "requisitos": [
+    "Tener el domicilio fiscal establecido en el territorio de la Comunidad Autónoma de Galicia",
+    "Estar dado de alta como persona trabajadora autónoma en el RETA o en la mutualidad del colegio profesional correspondiente",
+    "Antigüedad superior a 42 meses ininterrumpidos de actividad efectiva como persona autónoma",
+    "No haber sido beneficiario de esta misma ayuda (TR341Q) en las convocatorias de 2021, 2022, 2023, 2024 o 2025",
+    "Rendimiento neto de la actividad económica en IRPF 2024 inferior a 50.000 euros",
+    "Facturación mínima anual en 2024 de 12.000 euros IVA incluido",
+    "Todos los gastos deben estar realizados Y completamente PAGADOS entre el 1 de octubre de 2025 y la fecha de presentación de la solicitud",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con el Estado y la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Tesorería General de la Seguridad Social",
+    "No haber sido sancionado mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Realizar y pagar completamente todos los gastos antes de la fecha de presentación de la solicitud. Este es un requisito indispensable para poder solicitar la ayuda",
+    "Mantener la actividad empresarial como persona autónoma durante un período mínimo de 2 años desde la fecha de resolución de concesión de la ayuda",
+    "Conservar la documentación justificativa de los gastos (facturas, justificantes de pago, presupuestos) durante un período de 4 años desde la resolución de concesión",
+    "Someterse a las actuaciones de comprobación, seguimiento y control que realice la Consellería de Emprego, aportando cuanta documentación le sea requerida",
+    "Comunicar a la Administración cualquier modificación de las circunstancias que sirvieron de base para la concesión de la ayuda en el plazo de 15 días desde que se produzca",
+    "Proceder al reintegro de las cantidades percibidas en los supuestos previstos en la normativa de subvenciones",
+    "Dar la adecuada publicidad al carácter público de la financiación recibida"
+  ],
+
+  "documentacionNecesaria": [
+    "Solicitud normalizada debidamente cumplimentada según el modelo oficial (Anexo del procedimiento TR341Q)",
+    "Declaración responsable de cumplimiento de requisitos y de otras ayudas solicitadas o concedidas",
+    "Facturas originales o copias compulsadas de todos los gastos para los que se solicita subvención",
+    "Documentos bancarios acreditativos del pago efectivo de cada factura (extractos bancarios con el cargo, transferencias, recibos de cargo en cuenta)",
+    "Declaración del IRPF del ejercicio 2024 o certificado de la AEAT acreditativo del rendimiento neto de la actividad",
+    "Declaración anual del IVA del ejercicio 2024 o documentación acreditativa de la facturación anual",
+    "Informe de vida laboral actualizado emitido por la Tesorería General de la Seguridad Social",
+    "Para sociedades: base imponible del Impuesto de Sociedades 2024 o resultado contable"
+  ],
+
+  "tramitacion": "Las solicitudes deben presentarse obligatoriamente por medios electrónicos a través del formulario normalizado disponible en la sede electrónica de la Xunta de Galicia (https://sede.xunta.gal). El procedimiento es TR341Q. Las personas autónomas deben disponer de certificado electrónico o Chave365. Las solicitudes se tramitan por riguroso orden de entrada hasta el agotamiento del crédito presupuestario. El plazo de resolución es de 3 meses desde la entrada de la solicitud completa.",
+
+  "compatibilidades": [
+    "Compatible con otras ayudas públicas hasta alcanzar un máximo del 80% del coste total subvencionable",
+    "Compatible con las ayudas del programa Re-Acciona del IGAPE para la cofinanciación de la parte privada",
+    "Compatible con otras ayudas siempre que no se subvencionen los mismos conceptos y gastos concretos"
+  ],
+  "incompatibilidades": [
+    "Otras subvenciones, ayudas o recursos públicos de cualquier Administración para los mismos conceptos y gastos concretos",
+    "Ayudas de digitalización y modernización de empresas comerciales del mismo ejercicio que financien los mismos gastos",
+    "El límite máximo de ayuda acumulada de todas las fuentes públicas no puede superar el 80% del coste total"
+  ],
+
+  "notasAdicionales": [
+    "IMPORTANTE: La concesión es por estricto ORDEN DE ENTRADA de las solicitudes completas. Se recomienda presentar la solicitud lo antes posible una vez pagados todos los gastos",
+    "REQUISITO ESENCIAL: Todos los gastos deben estar REALIZADOS Y COMPLETAMENTE PAGADOS antes de presentar la solicitud. No se admiten gastos pendientes de pago ni pagos parciales",
+    "Las Líneas 1 y 2 NO son excluyentes entre sí: se pueden solicitar gastos de ambas líneas en la misma solicitud hasta alcanzar el límite máximo de 7.000 € de subvención",
+    "El límite máximo acumulable con todas las ayudas públicas es del 80% del coste total subvencionable",
+    "Para sociedades y comunidades de bienes: la base imponible del IS o el resultado contable debe ser inferior a 30.000 € en el ejercicio 2024",
+    "El período de gastos elegibles va desde el 1 de octubre de 2025 hasta la fecha de presentación de la solicitud",
+    "Los pagos en efectivo solo se admiten hasta el límite legal (actualmente 1.000 euros) y deben estar debidamente justificados",
+    "No haber sido beneficiario de esta ayuda en convocatorias anteriores (2021-2025) es requisito obligatorio"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal/detalle-procedemento?codtram=TR341Q",
+  "normativaAplicable": [
+    "Orden de convocatoria para el ejercicio 2026 de la Consellería de Emprego, Igualdade e Migracións",
+    "Ley 9/2007, de 13 de junio, de subvenciones de Galicia",
+    "Reglamento (UE) 2023/2831 de la Comisión, relativo a la aplicación de los artículos 107 y 108 del TFUE a las ayudas de minimis"
+  ],
+
+  "imagen": "/images/subvenciones/bono-autonomos.png",
   "destacada": true
 }

@@ -4,48 +4,126 @@
   "nombre": "Ayudas a Startups en Galicia 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "IGAPE - Xunta de Galicia",
+  "organismo": "IGAPE - Instituto Galego de Promoción Económica - Xunta de Galicia",
   "estado": "abierta",
+
   "plazoInicio": "28 de enero de 2026",
   "plazoFin": "30 de septiembre de 2026",
   "plazoTexto": "Desde el 28 de enero al 30 de septiembre de 2026",
-  "tipoAyuda": "Orden de entrada. Régimen de minimis.",
-  "objeto": "Fomentar la actividad de las startups gallegas (reconocidas oficialmente) o con un centro de trabajo en Galicia",
+  "plazoEjecucion": "Gastos realizados desde el 1 de enero de 2026 hasta la fecha de solicitud",
+
+  "tipoAyuda": "Subvención por orden de entrada",
+  "regimen": "Régimen de minimis",
+
+  "objeto": "Fomentar la actividad de las startups gallegas reconocidas oficialmente o con centro de trabajo en Galicia",
+  "objetoDetallado": "Esta ayuda está dirigida a startups con reconocimiento oficial (certificación ENISA, EIBT, aceleración pública, etc.) para financiar todo tipo de gastos e inversiones necesarios para el desarrollo de su actividad empresarial innovadora, con una cobertura del 100% de la inversión hasta 20.000€.",
+
   "beneficiarios": "Startups gallegas o con centro de trabajo en Galicia con menos de 5 años desde inscripción en registro mercantil (7 años en biotecnología, energía e industriales innovadores).",
   "beneficiariosDetalle": [
-    "Startups gallegas o con centro de trabajo en Galicia",
+    "Startups gallegas o con centro de trabajo permanente en Galicia",
     "Menos de 5 años desde inscripción en registro mercantil",
-    "7 años máximo para biotecnología, energía e industriales innovadores"
+    "7 años máximo para sectores: biotecnología, energía e industriales innovadores",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Empresas sin certificación o reconocimiento oficial de startup",
+    "Empresas con más de 5 años desde inscripción (7 años en sectores específicos)",
+    "Empresas en situación de crisis",
+    "Empresas sancionadas con pérdida de derecho a subvenciones"
+  ],
+
   "requisitosAlMenosUno": [
-    "Certificación de ENISA",
-    "Cualificación de Iniciativa de empleo de base tecnológica (EIBT) de la Xunta",
-    "Participación en procesos de aceleración públicos",
-    "Spin-off universitarios, de FP o centros tecnológicos",
-    "Inscripción en Registro de Pymes Innovadoras",
-    "Certificación EA 0047:2015 o EA 0043:2015",
-    "Marca EIBT de ANCES"
+    "Certificación oficial de ENISA como startup",
+    "Cualificación de Iniciativa de Empleo de Base Tecnológica (EIBT) de la Xunta de Galicia",
+    "Participación en procesos de aceleración públicos reconocidos",
+    "Spin-off de universidades, centros de Formación Profesional o centros tecnológicos",
+    "Inscripción en el Registro de Pymes Innovadoras del Ministerio de Economía",
+    "Certificación EA 0047:2015 (Gestión de la I+D+i) o EA 0043:2015 (Vigilancia tecnológica)",
+    "Marca EIBT otorgada por ANCES (Asociación Nacional de CEEIs Españoles)"
   ],
+
+  "inversionMinima": "10.000 €",
+  "ayudaMaxima": "20.000 €",
+  "porcentajeBase": "100%",
+
   "cuantias": [
     {
       "concepto": "Inversión mínima",
-      "importe": "10.000 €"
+      "importe": "10.000 €",
+      "descripcion": "Importe mínimo de inversión para poder solicitar la ayuda"
     },
     {
-      "concepto": "Cobertura",
-      "importe": "100% de la inversión"
+      "concepto": "Cobertura de la inversión",
+      "importe": "100%",
+      "descripcion": "Se financia el 100% de los gastos subvencionables"
     },
     {
       "concepto": "Subvención máxima",
-      "importe": "20.000 €"
+      "importe": "20.000 €",
+      "descripcion": "Límite máximo de ayuda por beneficiario"
     }
   ],
+
+  "gastosSubvencionables": [
+    "Todo tipo de gastos realizados por la startup desde el 1 de enero de 2026",
+    "Equipamiento informático y tecnológico",
+    "Software y licencias",
+    "Desarrollo de producto o servicio",
+    "Personal cualificado",
+    "Servicios de consultoría y asesoramiento",
+    "Marketing y comunicación",
+    "Patentes y propiedad industrial",
+    "Participación en ferias y eventos",
+    "Infraestructura tecnológica",
+    "Materiales y suministros para la actividad"
+  ],
+  "gastosNoSubvencionables": [
+    "Gastos realizados antes del 1 de enero de 2026",
+    "Gastos realizados después de la fecha de solicitud",
+    "Adquisiciones a personas o entidades vinculadas",
+    "IVA y otros impuestos recuperables",
+    "Gastos que excedan el valor de mercado"
+  ],
+
   "requisitos": [
+    "Cumplir al menos uno de los requisitos de certificación/reconocimiento oficial",
     "Inversiones realizadas desde el 1 de enero de 2026 hasta la fecha de solicitud",
     "Activos deben ser nuevos, adquiridos en propiedad a terceros no vinculados",
-    "Mantener activos durante mínimo 2 años",
-    "No exceder el valor de mercado"
+    "Mantener los activos adquiridos durante mínimo 2 años",
+    "No exceder el valor de mercado en las adquisiciones",
+    "Inversión mínima de 10.000 €",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social"
   ],
+
+  "obligacionesBeneficiario": [
+    "Mantener los activos adquiridos durante un mínimo de 2 años",
+    "Conservar la documentación justificativa de los gastos",
+    "Someterse a las actuaciones de comprobación de la Administración",
+    "Comunicar cualquier modificación de las condiciones del proyecto",
+    "Mantener la actividad empresarial durante el período establecido"
+  ],
+
+  "documentacionRequerida": [
+    "Solicitud cumplimentada según modelo oficial",
+    "Acreditación del reconocimiento oficial de startup (ENISA, EIBT, etc.)",
+    "Facturas originales de los gastos",
+    "Documentos bancarios acreditativos del pago efectivo",
+    "Declaración responsable de cumplimiento de requisitos",
+    "Inscripción en Registro Mercantil"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por ORDEN DE ENTRADA: primero en solicitar, primero en recibir (hasta agotar presupuesto)",
+    "COBERTURA DEL 100%: Esta ayuda financia el total de la inversión (hasta el límite de 20.000€)",
+    "IMPORTANTE: Deben cumplirse AL MENOS UNO de los requisitos de certificación/reconocimiento",
+    "Sectores especiales (biotecnología, energía, industriales innovadores): amplían el límite a 7 años de antigüedad",
+    "Los gastos deben estar pagados antes de presentar la solicitud",
+    "Consultar convocatoria oficial 2026 para información definitiva"
+  ],
+
+  "enlaceOficial": "https://www.igape.es",
+
   "imagen": "/images/subvenciones/innovacion-igape.png",
   "destacada": true
 }

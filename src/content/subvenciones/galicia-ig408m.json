@@ -1,60 +1,147 @@
 {
   "id": "galicia-inteligencia-artificial-ig408m",
   "codigo": "IG408M",
-  "nombre": "Ayudas a la Inteligencia Artificial IGAPE - IA360",
+  "nombre": "IA360 - Ayudas a la Inteligencia Artificial IGAPE 2026",
   "comunidad": "galicia",
   "categoria": "digitalizacion",
-  "organismo": "IGAPE - Xunta de Galicia",
+  "organismo": "IGAPE - Instituto Galego de Promoción Económica",
   "estado": "abierta",
+
   "plazoInicio": "17 de enero de 2026",
   "plazoFin": "17 de marzo de 2026",
   "plazoTexto": "Desde el 17 de enero al 17 de marzo de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis (excepto ayudas >300.000€).",
-  "objeto": "Apoyo a pymes y grandes empresas gallegas en desarrollo tecnológico e innovación mediante Inteligencia Artificial",
-  "beneficiarios": "Pymes y grandes empresas gallegas con centro permanente en Galicia, en sectores estratégicos.",
+  "plazoEjecucion": "Línea A: desde solicitud hasta 15/09/2027 (justificación hasta 30/09/2027). Línea B: desde solicitud hasta 30/09/2026 (justificación hasta 15/10/2026).",
+
+  "tipoAyuda": "Subvención en régimen de concurrencia competitiva",
+  "regimen": "Régimen de minimis (excepto ayudas superiores a 300.000€)",
+
+  "objeto": "Apoyo a pymes y grandes empresas gallegas en el desarrollo tecnológico e innovación empresarial mediante el uso de tecnologías de Inteligencia Artificial",
+  "objetoDetallado": "Esta ayuda financia tanto el desarrollo de nuevos productos y servicios basados en IA (Línea A) como la implantación de soluciones de IA comerciales existentes (Línea B), para mejorar los procesos productivos y la competitividad de las empresas gallegas.",
+
+  "beneficiarios": "Pymes y grandes empresas gallegas o con centro de trabajo permanente en Galicia, que desarrollen actividades en sectores estratégicos o emergentes.",
   "beneficiariosDetalle": [
-    "Línea A (Desarrollo): Pymes y grandes empresas gallegas",
-    "Línea B (Implantación): Solo pymes gallegas",
-    "Sectores estratégicos: agroalimentación, automoción, energías renovables, naval, textil",
-    "Sectores emergentes: aeronáutica, salud, biotecnología, TIC"
+    "Línea A (Desarrollo Tecnológico): Pymes y grandes empresas gallegas o con sede permanente en Galicia",
+    "Línea B (Implantación): Solo pymes gallegas o con sede permanente en Galicia",
+    "Deben desarrollar actividades en sectores estratégicos o emergentes definidos en la RIS3",
+    "Capacidad administrativa, financiera y operativa suficiente"
   ],
+  "beneficiariosExcluidos": [
+    "Asociaciones, fundaciones y entidades sin ánimo de lucro",
+    "Empresas en crisis (según Reglamento UE 651/2014)",
+    "Empresas sujetas a orden de recuperación de ayudas de la Comisión Europea",
+    "Empresas que incumplan la Ley 9/2007 de subvenciones de Galicia",
+    "Para ayudas >30.000€: empresas que incumplan la Ley 3/2004 de plazos de pago"
+  ],
+
+  "sectoresElegibles": [
+    "SECTORES ESTRATÉGICOS: Agroalimentación, productos del mar y acuicultura",
+    "SECTORES ESTRATÉGICOS: Automoción",
+    "SECTORES ESTRATÉGICOS: Energías renovables",
+    "SECTORES ESTRATÉGICOS: Madera y forestal",
+    "SECTORES ESTRATÉGICOS: Naval e industria marítima",
+    "SECTORES ESTRATÉGICOS: Piedra natural",
+    "SECTORES ESTRATÉGICOS: Textil y moda",
+    "SECTORES EMERGENTES: Aeronáutico y aeroespacial",
+    "SECTORES EMERGENTES: Industria de salud y bienestar",
+    "SECTORES EMERGENTES: Industrias creativas",
+    "SECTORES EMERGENTES: Biotecnología",
+    "SECTORES EMERGENTES: Nuevos materiales",
+    "SECTORES EMERGENTES: Ecoindustria",
+    "SECTORES EMERGENTES: Tecnologías de la Información y Comunicación (TIC)"
+  ],
+
   "lineas": [
     {
-      "nombre": "Línea A - Desarrollo de IA",
-      "descripcion": "Desarrollo de productos/servicios basados en IA para mejora de procesos industriales",
+      "nombre": "Línea A - Desarrollo Tecnológico de IA",
+      "descripcion": "Desarrollo de productos y servicios basados en Inteligencia Artificial para mejora de procesos industriales",
       "cuantiaMinima": "150.000 €",
       "cuantiaMaxima": "500.000 €",
-      "porcentajes": "25-45% según tamaño empresa (+15% por divulgación)"
+      "porcentaje": "25% grandes empresas, 35% medianas, 45% pequeñas (+15% adicional por divulgación, máximo 60%)",
+      "requisitos": [
+        "Proyectos NO iniciados antes de la solicitud",
+        "Nivel de madurez tecnológica mínimo TRL 5",
+        "Alineación obligatoria con la Estrategia RIS3 Galicia"
+      ]
     },
     {
       "nombre": "Línea B - Implantación de IA",
-      "descripcion": "Adquisición e implantación de soluciones IA comerciales existentes",
+      "descripcion": "Adquisición e implantación de soluciones de IA comerciales existentes",
       "cuantiaMinima": "30.000 €",
       "cuantiaMaxima": "100.000 €",
-      "porcentajes": "50% de la inversión"
+      "porcentaje": "50% de la inversión",
+      "requisitos": [
+        "Proyectos NO iniciados antes de la solicitud",
+        "Alineación con la Estrategia RIS3 Galicia"
+      ]
     }
   ],
-  "gastosSubvencionables": [
-    "Costes de personal (máximo 80% Línea A, 30% Línea B)",
-    "Materiales y suministros directos",
-    "Equipamiento nuevo",
-    "Patentes y activos inmateriales",
-    "Consultoría e investigación contractual",
-    "Auditoría (máximo 1.500€/año)",
-    "Subcontrataciones (máximo 50%)",
-    "Licencias software por suscripción (Línea B)",
-    "Costes indirectos (20% a tanto alzado)"
-  ],
+
   "tecnologiasPrioritarias": [
-    "Machine Learning",
-    "RPA (Automatización Robótica de Procesos)",
-    "Visión artificial",
-    "NLP (Procesamiento de Lenguaje Natural)",
-    "IA generativa",
-    "Análisis de datos",
-    "Computación cuántica"
+    "Machine Learning y Deep Learning (reconocimiento de patrones)",
+    "RPA - Automatización Robótica de Procesos",
+    "Visión artificial y robótica",
+    "NLP - Procesamiento de Lenguaje Natural (Transformers)",
+    "IA generativa y agentes de IA",
+    "Análisis avanzado de datos",
+    "Computación cuántica aplicada a IA"
   ],
-  "plazoEjecucion": "Línea A: hasta 15/09/2027. Línea B: hasta 30/09/2026",
+
+  "gastosSubvencionablesDetalle": [
+    {
+      "linea": "Línea A - Gastos de Desarrollo",
+      "items": [
+        {"nombre": "Personal propio y de nueva contratación", "importeMax": "Máximo 80% del presupuesto total"},
+        {"nombre": "Materiales y licencias vinculados al proyecto", "descripcion": "Licencias software por suscripción/pago por uso. Excluye material de oficina y consumibles informáticos"},
+        {"nombre": "Equipamiento inventariable de nueva adquisición", "descripcion": "100% del coste si uso exclusivo del proyecto, amortización proporcional si vida útil superior"},
+        {"nombre": "Patentes y activos inmateriales", "descripcion": "Obtención, validación y defensa de patentes, modelos de utilidad, derechos de propiedad intelectual en España e internacional. Excluye mantenimiento/ampliación de patentes existentes"},
+        {"nombre": "Investigación contractual y consultoría", "descripcion": "Servicios equivalentes en condiciones de plena competencia, sin vinculación con el beneficiario"},
+        {"nombre": "Auditoría del proyecto", "importeMax": "Máximo 1.500 €/año"},
+        {"nombre": "Subcontrataciones", "importeMax": "Máximo 50% de los costes directos elegibles"},
+        {"nombre": "Costes indirectos", "descripcion": "20% a tanto alzado sobre costes directos. Incluye gestión administrativa, supervisión, suministros, seguros"}
+      ]
+    },
+    {
+      "linea": "Línea B - Gastos de Implantación",
+      "items": [
+        {"nombre": "Personal", "importeMax": "Máximo 30% del presupuesto total"},
+        {"nombre": "Materiales y equipamiento", "descripcion": "Directamente relacionados con la implantación de la solución IA"},
+        {"nombre": "Consultoría y servicios tecnológicos especializados", "descripcion": "Servicios de desarrollo e implantación de la solución"},
+        {"nombre": "Auditoría del proyecto", "importeMax": "Máximo 1.500 €/año"},
+        {"nombre": "Gastos de explotación derivados del proyecto", "descripcion": "Incluye licencias software por suscripción"},
+        {"nombre": "Subcontrataciones", "importeMax": "Máximo 50% de los costes directos elegibles"}
+      ]
+    }
+  ],
+
+  "requisitos": [
+    "Empresa gallega o con centro de trabajo permanente en Galicia",
+    "Desarrollar actividad en sectores estratégicos o emergentes (RIS3)",
+    "Capacidad administrativa, financiera y operativa suficiente",
+    "No estar en situación de empresa en crisis",
+    "No estar sujeta a orden de recuperación de ayudas CE",
+    "Estar al corriente de obligaciones tributarias y Seguridad Social",
+    "Para ayudas >30.000€: cumplir Ley 3/2004 de plazos de pago",
+    "Proyectos NO iniciados antes de la solicitud"
+  ],
+
+  "obligacionesBeneficiario": [
+    "No iniciar el proyecto antes de presentar la solicitud",
+    "Ejecutar el proyecto en los plazos establecidos",
+    "Justificar los gastos según los procedimientos establecidos",
+    "Mantener la documentación a disposición de la Administración",
+    "Cumplir con las obligaciones de publicidad y divulgación (si aplica el +15%)"
+  ],
+
+  "notasAdicionales": [
+    "La concesión es por CONCURRENCIA COMPETITIVA: se valoran los proyectos y se ordenan por puntuación",
+    "Los proyectos deben estar alineados con la Estrategia de Especialización Inteligente RIS3 Galicia",
+    "Línea A requiere un nivel de madurez tecnológica mínimo TRL 5",
+    "El +15% adicional por divulgación solo aplica en Línea A si se cumplen requisitos de publicidad",
+    "Los sectores elegibles están definidos en la RIS3 de Galicia"
+  ],
+
+  "enlaceOficial": "https://www.igape.es",
+
   "imagen": "/images/subvenciones/innovacion-igape.png",
   "destacada": true
 }

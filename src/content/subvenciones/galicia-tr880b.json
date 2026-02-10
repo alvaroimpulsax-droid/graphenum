@@ -4,69 +4,184 @@
   "nombre": "Subvenciones al Emprendimiento Plus 2026",
   "comunidad": "galicia",
   "categoria": "emprendedores",
-  "organismo": "Xunta de Galicia - Dirección General de Emprendimiento",
+  "organismo": "Xunta de Galicia - Dirección General de Emprendimiento y Cooperativismo",
   "estado": "proxima",
-  "plazoTexto": "Convocatoria prevista a inicios de 2026",
-  "tipoAyuda": "Concurrencia competitiva. Régimen de minimis.",
-  "objeto": "Apoyar la contratación y el equipamiento de nuevos emprendedores con proyectos de mayor envergadura",
-  "beneficiarios": "Personas trabajadoras autónomas y pymes con máximo 42 meses de antigüedad, domicilio social y fiscal en Galicia.",
+
+  "plazoInicio": "Previsto inicios de 2026",
+  "plazoFin": "Por determinar",
+  "plazoTexto": "Convocatoria prevista para el primer trimestre de 2026. Los datos mostrados se basan en la convocatoria de 2023 y están sujetos a posibles modificaciones.",
+  "plazoEjecucion": "Período de ejecución de gastos e inversiones: desde el 1 de enero de 2026 hasta el 31 de octubre de 2027 (dos anualidades). Las inversiones deben realizarse y pagarse dentro de este período para ser elegibles.",
+
+  "tipoAyuda": "Subvención a fondo perdido en régimen de concurrencia competitiva",
+  "regimen": "Régimen de ayudas de minimis (Reglamento UE 2023/2831)",
+
+  "objeto": "Apoyar la inversión y la creación de empleo con el objetivo de fortalecer y consolidar iniciativas de emprendimiento de personas trabajadoras autónomas y pequeñas y medianas empresas en Galicia",
+  "objetoDetallado": "El programa Emprendimiento Plus constituye la línea de ayudas de mayor envergadura para nuevos emprendedores en Galicia, dirigida a proyectos de inversión significativos que requieren un apoyo económico sustancial para su puesta en marcha y consolidación. A diferencia del programa TR880A de emprendimiento básico, este programa está diseñado para inversiones de mayor cuantía (desde 10.000 hasta 200.000 euros) y contempla porcentajes de subvención decrecientes según aumenta el importe de la inversión, favoreciendo así tanto a proyectos medianos como a iniciativas de mayor escala. El programa financia inversiones en equipamiento informático, activos intangibles (software, patentes, licencias), bienes de equipamiento y mobiliario, reforma e instalaciones de locales, y también incentiva la creación de empleo mediante una subvención fija por cada contratación indefinida o fija discontinua. Está dirigido específicamente a emprendedores con un máximo de 42 meses de antigüedad, lo que garantiza que las ayudas lleguen a empresas jóvenes en proceso de consolidación que necesitan un impulso significativo para afianzarse en el mercado.",
+
+  "beneficiarios": "Personas trabajadoras autónomas y pequeñas y medianas empresas (pymes) con un máximo de 42 meses de antigüedad desde su constitución o alta, con domicilio social, fiscal y/o centro de trabajo en la Comunidad Autónoma de Galicia.",
   "beneficiariosDetalle": [
-    "Domicilio social, fiscal y/o centro de trabajo en Galicia",
-    "Desarrollar actividad empresarial en Galicia",
-    "Máximo 42 meses de antigüedad desde la constitución",
-    "Ser viables técnica, económica y financieramente",
-    "Estar inscritas en registros administrativos gallegos"
+    "Personas trabajadoras autónomas dadas de alta en el Régimen Especial de Trabajadores Autónomos (RETA) de la Seguridad Social o en la mutualidad del colegio profesional correspondiente",
+    "Pequeñas y medianas empresas (pymes) según la definición del Anexo I del Reglamento (UE) 651/2014 de la Comisión",
+    "Deben tener domicilio social, domicilio fiscal y/o centro de trabajo ubicado en el territorio de la Comunidad Autónoma de Galicia",
+    "Desarrollo efectivo de la actividad empresarial o profesional en Galicia",
+    "Un máximo de 42 meses de antigüedad desde la fecha de constitución o de alta en el régimen de autónomos. Para sociedades, se computa desde la fecha de inscripción en el Registro Mercantil o de Cooperativas",
+    "Ser viables técnica, económica y financieramente. Esta viabilidad debe justificarse en la memoria del proyecto presentada con la solicitud",
+    "Figurar inscritas en los correspondientes registros administrativos de la Comunidad Autónoma de Galicia (Registro Mercantil, Registro de Cooperativas, etc.)",
+    "Haber efectuado la comunicación previa del inicio de la actividad conforme a la normativa aplicable",
+    "Haber presentado las cuentas anuales del último ejercicio cerrado en el Registro Mercantil o de Cooperativas, cuando estén obligadas a ello",
+    "Estar dadas de alta en el Impuesto de Actividades Económicas (IAE) en el epígrafe correspondiente a la actividad desarrollada",
+    "Estar al corriente en el cumplimiento de las obligaciones tributarias con el Estado y la Comunidad Autónoma de Galicia",
+    "Estar al corriente en el cumplimiento de las obligaciones con la Tesorería General de la Seguridad Social"
   ],
+  "beneficiariosExcluidos": [
+    "Personas trabajadoras autónomas que sean socias o socios únicos en otra empresa unipersonal activa",
+    "Personas que lleven dadas de alta en el régimen de personas autónomas más de 42 meses",
+    "Empresas sancionadas mediante resolución firme con la pérdida de la posibilidad de obtener subvenciones",
+    "Empresas que desarrollen actividades relacionadas con la actividad bancaria, seguros o fondos de pensiones",
+    "Empresas relacionadas con la seguridad nacional o fabricación de armamento y material militar",
+    "Empresas dedicadas a juegos de azar y apuestas",
+    "Empresas de transformación, distribución o venta de tabaco",
+    "Empresas dedicadas exclusivamente a la venta y/o alquiler de inmuebles",
+    "Empresas en situación de crisis según la definición del Reglamento (UE) 651/2014",
+    "Empresas que no estén al corriente de sus obligaciones tributarias y con la Seguridad Social"
+  ],
+
+  "actividadesSubvencionables": [
+    "SECTOR INDUSTRIAL: Industrias, fábricas y locales destinados a la producción de bienes y materiales. Incluye actividades manufactureras, producción artesanal a escala industrial, transformación de materias primas y fabricación de productos acabados.",
+    "TRANSFORMACIÓN Y COMERCIALIZACIÓN: Actividades de transformación y/o comercialización de productos agrícolas, ganaderos, forestales, pesqueros y alimentarios en general, siempre que cumplan la normativa sectorial aplicable.",
+    "SERVICIOS A EMPRESAS: Prestación de servicios profesionales a empresas de los sectores de agricultura, silvicultura, industria y servicios. Incluye consultoría, asesoría, servicios técnicos y de apoyo empresarial.",
+    "SERVICIOS SOCIALES: Prestación de servicios sociales como guarderías infantiles, centros de día, atención y cuidado de personas mayores, servicios a personas con discapacidad, granjas escuela y servicios educativos complementarios.",
+    "OCIO Y DEPORTE: Actividades de ocio, recreativas, deportivas y de entretenimiento. Incluye centros deportivos, instalaciones recreativas, turismo activo y actividades al aire libre.",
+    "ARTESANÍA: Artesanía y actividades artesanales reconocidas. Las personas artesanas deben estar inscritas en el Repertorio de Oficios Artesanos de Galicia para beneficiarse de este programa.",
+    "TECNOLOGÍA E INNOVACIÓN: Actividades basadas en las TIC, innovación tecnológica, desarrollo de software, aplicaciones móviles, comercio electrónico, servicios digitales y startups tecnológicas.",
+    "SERVICIOS PROFESIONALES: Ingeniería, arquitectura, servicios técnicos, limpieza industrial, contabilidad y auditoría, veterinaria, formación y enseñanza no reglada, y otros servicios profesionales cualificados.",
+    "COMERCIO MINORISTA: Comercio al por menor de productos, siempre que aporte valor añadido diferencial. Se excluyen las franquicias de grandes cadenas comerciales.",
+    "HOSTELERÍA (con restricciones): Exclusivamente nuevos hoteles y restaurantes situados en construcciones patrimoniales singulares como pazos gallegos, molinos rehabilitados, patrimonio industrial reconvertido, pallozas tradicionales, faros habilitados u otras construcciones de valor patrimonial. Además, deben comprometerse a utilizar producto de proximidad y contribuir a la puesta en valor del patrimonio gallego."
+  ],
+
+  "inversionMinima": "10.000 € de inversión subvencionable",
+  "inversionMaxima": "200.000 € de inversión subvencionable",
+  "ayudaMinima": "6.000 €",
+  "ayudaMaxima": "90.000 € (más las ayudas adicionales por contratación)",
+
   "cuantias": [
     {
-      "concepto": "Inversión mínima",
-      "importe": "10.000 €"
+      "concepto": "Tramo 1: Inversión de 10.000 € a 30.000 €",
+      "importe": "60% subvencionable",
+      "descripcion": "Primer tramo de inversión con el porcentaje más elevado. Subvención máxima en este tramo: 18.000 € (60% de 30.000 €). Diseñado para apoyar proyectos de tamaño medio con alta intensidad de ayuda."
     },
     {
-      "concepto": "Subvención mínima",
-      "importe": "6.000 €"
+      "concepto": "Tramo 2: Inversión de 30.001 € a 50.000 €",
+      "importe": "55% subvencionable",
+      "descripcion": "Segundo tramo de inversión. Se aplica el 55% sobre la parte de inversión comprendida entre 30.001 € y 50.000 €. Subvención adicional máxima en este tramo: 11.000 € (55% de 20.000 €)."
     },
     {
-      "concepto": "Subvención máxima",
-      "importe": "90.000 €"
+      "concepto": "Tramo 3: Inversión de 50.001 € a 100.000 €",
+      "importe": "50% subvencionable",
+      "descripcion": "Tercer tramo de inversión. Se aplica el 50% sobre la parte de inversión comprendida entre 50.001 € y 100.000 €. Subvención adicional máxima en este tramo: 25.000 € (50% de 50.000 €)."
     },
     {
-      "concepto": "Tramo 10.000 € - 30.000 €",
-      "importe": "60% subvencionable"
+      "concepto": "Tramo 4: Inversión de 100.001 € a 200.000 €",
+      "importe": "45% subvencionable",
+      "descripcion": "Cuarto y último tramo de inversión con el porcentaje más bajo. Se aplica el 45% sobre la parte de inversión comprendida entre 100.001 € y 200.000 €. Subvención adicional máxima en este tramo: 45.000 € (45% de 100.000 €)."
     },
     {
-      "concepto": "Tramo 30.001 € - 50.000 €",
-      "importe": "55% subvencionable"
-    },
-    {
-      "concepto": "Tramo 50.001 € - 100.000 €",
-      "importe": "50% subvencionable"
-    },
-    {
-      "concepto": "Tramo 100.001 € - 200.000 €",
-      "importe": "45% subvencionable"
-    },
-    {
-      "concepto": "Contrataciones indefinidas o fijas discontinuas",
-      "importe": "6.000 € por contratación"
+      "concepto": "Incentivo por contratación indefinida",
+      "importe": "6.000 € por contrato",
+      "descripcion": "Cuantía fija adicional por cada contratación indefinida o fija discontinua realizada en el marco del proyecto. Este incentivo es independiente de la inversión y se suma a la subvención por inversiones."
     }
   ],
+
   "gastosSubvencionables": [
-    "Equipamiento informático (tabletas, ordenadores, servidores)",
-    "Activos intangibles (software, patentes, licencias)",
-    "Equipamiento y mobiliario (maquinaria, herramientas, equipos transporte interno)",
-    "Reforma de instalaciones (obras, decoración, rotulación)",
-    "Bienes de segunda mano (de terceros no relacionados)",
-    "Costes indirectos (máximo 3% del proyecto)"
+    "EQUIPAMIENTO INFORMÁTICO: Aparatos electrónicos y servicios anexos que posibiliten una mayor eficiencia en el procesamiento, almacenamiento y visualización de la información. Incluye: tabletas electrónicas, ordenadores de sobremesa y portátiles, equipamientos de red (routers, switches, puntos de acceso), servidores, equipos para conexión a internet de alta velocidad, escáneres y periféricos profesionales. EXCLUIDOS: teléfonos móviles y smartphones.",
+    "ACTIVOS INTANGIBLES: Adquisición de la propiedad o del derecho de uso de programas informáticos, ya sean estándar de mercado o desarrollados a medida. Incluye: licencias de software, suscripciones a servicios cloud, patentes, licencias de explotación, conocimientos técnicos (know-how) y otros derechos de propiedad intelectual o industrial.",
+    "BIENES DE EQUIPAMIENTO Y MOBILIARIO: Maquinaria, bienes de equipo y herramientas mediante las cuales se mejore el proceso productivo o la prestación de servicios. Incluye: equipos y medios de transporte interno (carretillas, transpaletas, que no salgan al exterior del centro de trabajo), medios de protección ambiental, mobiliario para la actividad normal de la empresa (mesas, sillas, estanterías, mostradores, vitrinas, expositores). EXCLUIDOS: vehículos matriculados, naves y aeronaves, bienes considerados mercancía, mobiliario suntuoso o de lujo.",
+    "REFORMA E INSTALACIONES: Obras que consisten normalmente en reparaciones, decoraciones u ornatos (incluida la rotulación) que no modifican la estructura constructiva del local. Se refiere exclusivamente al centro de trabajo declarado en la solicitud. EXCLUIDO: domicilio habitual de la persona autónoma, salvo que sea imprescindible para la actividad y esté debidamente autorizado.",
+    "BIENES DE SEGUNDA MANO (condiciones especiales): Son subvencionables si cumplen TODOS estos requisitos: (1) adquisición a un tercero no relacionado con el comprador, (2) declaración formal del vendedor sobre el origen del bien y confirmación de que no ha sido objeto de subvención pública anterior, (3) precio no superior al valor de mercado, (4) certificación de tasador independiente que acredite el valor.",
+    "COSTES INDIRECTOS: Hasta un máximo del 3% del presupuesto total del proyecto. Incluye gastos generales de funcionamiento directamente atribuibles al proyecto de inversión."
   ],
-  "actividadesExcluidas": [
-    "Actividad bancaria y seguros",
-    "Fondos de pensiones",
-    "Seguridad nacional y fabricación de armamento",
-    "Juegos de azar y tabaco",
-    "Venta/alquiler de inmuebles"
+  "gastosNoSubvencionables": [
+    "Teléfonos móviles y smartphones de cualquier tipo",
+    "Vehículos matriculados, naves, aeronaves y cualquier medio de transporte destinado a circular fuera del centro de trabajo",
+    "Bienes considerados mercancía o materia prima para la venta",
+    "Mobiliario suntuoso, de lujo o no relacionado directamente con la actividad empresarial",
+    "Reformas y obras en el domicilio habitual de la persona autónoma (salvo imprescindibilidad acreditada y autorización)",
+    "Modificaciones de la estructura constructiva del local (obras mayores que requieran licencia de obra mayor)",
+    "IVA y otros impuestos recuperables o deducibles por el beneficiario",
+    "Gastos financieros, intereses de préstamos y comisiones bancarias",
+    "Gastos de personal propio, sueldos y salarios (salvo el incentivo específico por contratación)",
+    "Arrendamientos y alquileres de cualquier tipo",
+    "Gastos realizados fuera del período de ejecución establecido"
   ],
-  "plazoEjecucion": "1 de enero de 2026 - 31 de octubre de 2027",
-  "imagen": "/images/subvenciones/emprendimiento.png",
+
+  "requisitos": [
+    "Domicilio social, fiscal y/o centro de trabajo ubicado en la Comunidad Autónoma de Galicia",
+    "Desarrollo efectivo de la actividad empresarial o profesional en territorio gallego",
+    "Un máximo de 42 meses de antigüedad desde la constitución de la empresa o el alta como autónomo",
+    "Ser viables técnica, económica y financieramente, justificándolo en la memoria del proyecto",
+    "Figurar inscritas en los registros administrativos correspondientes (Registro Mercantil, Cooperativas, etc.)",
+    "Haber efectuado la comunicación previa del inicio de actividad según normativa aplicable",
+    "Haber presentado las cuentas anuales en el Registro correspondiente (si están obligadas)",
+    "Estar dadas de alta en el Impuesto de Actividades Económicas (IAE)",
+    "Estar al corriente de las obligaciones tributarias con el Estado y la Comunidad Autónoma de Galicia",
+    "Estar al corriente de las obligaciones con la Tesorería General de la Seguridad Social",
+    "Inversión mínima de 10.000 euros en conceptos subvencionables",
+    "No desarrollar ninguna de las actividades excluidas (banca, seguros, armamento, juego, tabaco, inmobiliarias)"
+  ],
+
+  "obligacionesBeneficiario": [
+    "Ejecutar el proyecto de inversión en los plazos establecidos: hasta el 31 de octubre de 2027 para la ejecución completa del proyecto",
+    "Mantener las inversiones realizadas y los puestos de trabajo creados durante un período mínimo de 3 años (5 años para grandes inversiones) desde la finalización del proyecto",
+    "Justificar los gastos mediante facturas y documentos de pago según los procedimientos establecidos en la convocatoria",
+    "Conservar la documentación justificativa de los gastos e inversiones durante un período de 4 años desde la resolución de concesión",
+    "Someterse a las actuaciones de comprobación, seguimiento y control que realice la Administración o los órganos de control competentes",
+    "Comunicar a la Administración cualquier modificación de las condiciones del proyecto o de la situación de la empresa en el plazo de 15 días desde que se produzca",
+    "Mantener las contrataciones realizadas según las condiciones específicas establecidas para el incentivo por contratación",
+    "Dar la adecuada publicidad al carácter público de la financiación recibida conforme a la normativa de subvenciones",
+    "No transmitir ni enajenar los bienes subvencionados durante el período de mantenimiento obligatorio"
+  ],
+
+  "documentacionNecesaria": [
+    "Solicitud normalizada debidamente cumplimentada según el modelo oficial del procedimiento TR880B",
+    "Memoria descriptiva del proyecto de inversión que incluya: descripción de la actividad, análisis de viabilidad técnica, económica y financiera, plan de inversiones desglosado, calendario de ejecución, y plan de creación de empleo si procede",
+    "Presupuestos detallados de las inversiones a realizar, con al menos 3 ofertas de diferentes proveedores para gastos superiores a determinados umbrales",
+    "Declaración responsable de cumplimiento de requisitos y de otras ayudas solicitadas o concedidas",
+    "Cuentas anuales del último ejercicio cerrado depositadas en el Registro Mercantil o de Cooperativas (si procede)",
+    "Alta en el Impuesto de Actividades Económicas",
+    "Certificados de estar al corriente de obligaciones tributarias y con la Seguridad Social (si no autoriza la consulta telemática)",
+    "Para contrataciones: contratos de trabajo y documentación acreditativa del alta en Seguridad Social"
+  ],
+
+  "tramitacion": "Las solicitudes deben presentarse obligatoriamente por medios electrónicos a través del formulario normalizado disponible en la sede electrónica de la Xunta de Galicia (https://sede.xunta.gal). El procedimiento es TR880B. La tramitación se realiza en régimen de concurrencia competitiva, lo que significa que las solicitudes se valoran según criterios objetivos de puntuación y se ordenan de mayor a menor puntuación, concediéndose las ayudas hasta el agotamiento del crédito presupuestario.",
+
+  "criteriosValoracion": [
+    "Calidad y viabilidad del proyecto empresarial: coherencia del plan de negocio, solidez del análisis de mercado, realismo de las proyecciones financieras",
+    "Generación de empleo: número de puestos de trabajo a crear, calidad del empleo (indefinidos vs temporales), contratación de colectivos prioritarios",
+    "Carácter innovador del proyecto: incorporación de tecnología, diferenciación respecto a la competencia, aportación de valor añadido",
+    "Ubicación del proyecto: priorización de zonas rurales, municipios con pérdida de población, comarcas con mayores tasas de desempleo",
+    "Perfil del emprendedor/a: pertenencia a colectivos con mayores dificultades de inserción laboral (jóvenes, mayores de 45, mujeres en sectores masculinizados, personas con discapacidad)",
+    "Impacto medioambiental positivo: economía circular, eficiencia energética, reducción de emisiones, sostenibilidad"
+  ],
+
+  "notasAdicionales": [
+    "IMPORTANTE: Los datos mostrados están basados en la convocatoria de 2023 y PUEDEN VARIAR en la convocatoria de 2026. Consultar las bases definitivas cuando se publiquen.",
+    "La concesión es por CONCURRENCIA COMPETITIVA: los proyectos se valoran según criterios objetivos y se ordenan por puntuación. No es por orden de entrada.",
+    "Período de ejecución de gastos: desde el 1 de enero de 2026 hasta el 31 de octubre de 2027 (dos anualidades)",
+    "Los porcentajes de subvención son DECRECIENTES según aumenta el importe de la inversión: 60% hasta 30.000€, 55% hasta 50.000€, 50% hasta 100.000€, 45% hasta 200.000€",
+    "Las contrataciones indefinidas o fijas discontinuas se subvencionan con cuantía FIJA de 6.000 € por contrato, independiente de la inversión",
+    "El sector HOSTELERÍA tiene restricciones especiales: solo se admiten proyectos en edificios patrimoniales singulares (pazos, molinos, patrimonio industrial, pallozas, faros) con compromiso de uso de producto de proximidad",
+    "Los bienes de segunda mano son subvencionables si cumplen requisitos específicos: tercero no relacionado, declaración de no subvención previa, precio de mercado certificado por tasador",
+    "Los costes indirectos están limitados al 3% del presupuesto total del proyecto"
+  ],
+
+  "enlaceOficial": "https://sede.xunta.gal/detalle-procedemento?codtram=TR880B",
+  "normativaAplicable": [
+    "Orden de bases reguladoras y convocatoria para el ejercicio 2026 de la Consellería de Economía, Industria e Innovación (cuando se publique)",
+    "Ley 9/2007, de 13 de junio, de subvenciones de Galicia",
+    "Reglamento (UE) 2023/2831 de la Comisión, relativo a la aplicación de los artículos 107 y 108 del TFUE a las ayudas de minimis",
+    "Reglamento (UE) 651/2014 de la Comisión, por el que se declaran determinadas categorías de ayudas compatibles con el mercado interior"
+  ],
+
+  "imagen": "/images/subvenciones/emprendimiento-plus.png",
   "destacada": true
 }
